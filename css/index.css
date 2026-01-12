@@ -1,1 +1,9 @@
-@import "../css/index.css";
+@import "../css/var.css";
+
+body {
+    padding-inline: 165px;
+}
+
+header {
+text-align: center;
+}

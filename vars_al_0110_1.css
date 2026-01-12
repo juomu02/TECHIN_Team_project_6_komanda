@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*----- GLOBAL STYLES -----*/
+
+:root{
+
+    /* COLORS */
+    --prime-dark-pink: #ba4270;
+    --prime-link-water-white: #fbfcfe;
+
+    --sec-san-juan-blue: #36536b;
+    --sec-mirage-blue: #1b262f;
+    --sec-charm-pink-actives: #da6d97;
+    --sec-light-san-juan-blue: #6c8294;
+
+    /* FONT FAMILY */
+    --font-family-headings: "DM Serif Display", serif;
+    --font-family-h3-sm: "Public Sans", sans-serif;
+    --font-family-body: "Public Sans", sans-serif;
+
+    /* TYPOGRAPHY TOKENS */
+    --text-h1-lg-size: 72px; 
+    --text-h1-lg-line: 1;
+    --text-h1-lg-letter-spacing: -0.55px;
+    
+    --text-h1-sm-size: 56px; 
+    --text-h1-sm-line: 1;
+    --text-h1-sm-letter-spacing: -0.43px;
+    
+    --text-h2-size: 48px; 
+    --text-h2-line: 1.17;
+    --text-h2-letter-spacing: -0.37px;
+    
+    --text-h3-lg-size: 32px; 
+    --text-h3-lg-line: 1.25;
+    --text-h3-lg-letter-spacing: -0.25px;
+    
+    --text-h3-sm-size: 18px;
+    --text-h3-sm-line: 1.39;
+    --text-h3-sm-letter-spacing: -0.14px;
+
+    --text-h4-size: 24px;  
+    --text-h4-line: 1.33;
+    --text-h4-letter-spacing: -0.18px;
+
+    --text-body-size: 15px; 
+    --text-body-line: 1.87; 
+
+    --text-body2-size: 16px;
+    --text-body2-opacity: 0.7;
+
+    /* FONT WEIGHT */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    /* BUTTONS */
+
+    --btn-radius: 24px;
+    --btn-letter-spacing: -0.12px;
+    --btn-font-family: "Public Sans", sans-serif;
+    --btn-font-weight: 700;
+
+    --prime-bg-normal: #BA4270;
+    --prime-bg-hover: #DA6D97;
+    --prime-bg-disabled: #BA4270;
+    --prime-font-color: #FBFCFE;
+    --prime-width: 173px;
+    --prime-height: 48px;
+    --prime-opacity-disabled: 0.5;
+
+    --sec-lt-bg-normal: #1B262F;
+    --sec-lt-bg-hover: #FBFCFE;
+    --sec-lt-bg-disabled: #1B262F;
+    --sec-lt-font-normal: #FBFCFE;
+    --sec-lt-font-hover: #1B262F;
+    --sec-lt-font-disabled: #FBFCFE;
+    --sec-lt-border: 1px solid #FBFCFE;
+    --sec-lt-width: 129px;
+    --sec-lt-height: 48px; 
+    
+    --sec-dk-bg-normal: #fbfcfe;
+    --sec-dk-bg-hover: #36536b;
+    --sec-dk-bg-disabled: #fbfcfe;
+    --sec-dk-border: 1px solid #36536b;
+    --sec-dk-width: 152px;
+    --sec-dk-height: 48px;
+
+    /* CHECKBOX */
+
+    --chbx-width: 24px;
+    --chbx-height: 24px;
+    --chbx-bg-normal: #36536B;
+    --chbx-bg-active: #BA4270;
+    --chbx-bg-disabled: #36536b;
+    --chbx-opacity-normal: 0.25;
+    --chbx-opacity-disabled: 0.05;
+
+    /* MEDIA QUERIES */
+    --mq-tab: (max-width: 1439px);
+    --mq-mob: (max-width: 375px);
+}
+
+/*h1 {
+    font-size: var(--text-h1-large-size);
+}*/

@@ -1,9 +1,6 @@
 @import "../css/var.css";
 
-body {
+.index_wrapper {
     padding-inline: 165px;
-}
-
-header {
-text-align: center;
+    background-color: var(--background-light);
 }

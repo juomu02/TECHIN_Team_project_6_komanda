@@ -1,1 +1,6 @@
 @import "../css/var.css";
+
+.pricing_wrapper {
+    padding-inline: 165px;
+    background-color: var(--background-light);
+}

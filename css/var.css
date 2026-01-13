@@ -117,7 +117,7 @@
     align-items: center;
     justify-content:space-between;
 }
-.cta-title {
+.cta h2 {
     letter-spacing: var(--text-h2-letter-spacing);
     font-size: var(--text-h2-size);
     font-family: var(--font-family-headings);
@@ -154,7 +154,7 @@
 }
 
 /* Call to action: "schedule a demo" mygtukas */
-.cta-btn {
+.btn-prime {
     padding: 16px 24.5px 15px 26.5px;
     border-radius: var(--btn-radius);
     background-color: var(--prime-dark-pink);
@@ -166,6 +166,6 @@
     font-weight: var(--btn-font-weight);
     letter-spacing: var(--btn-letter-spacing);
 }
-.cta-btn:hover {
+.btn-prime:hover {
     background-color: var(--sec-charm-pink-actives);
 }

@@ -1,9 +1,83 @@
 @import "../css/var.css";
 
-body {
+/*body {
     padding-inline: 165px;
-}
+}*/
 
 header {
 text-align: center;
+}
+
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    gap: 24px;
+    margin: 64px auto 120px auto;
+    /*margin-left: 165px;*/
+    background-color: var(--sec-mirage-blue);
+    text-align: center;
+}
+
+.container_partners {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    gap: 48px;
+    padding: 106px 0 100px 0;
+}
+
+.partners-text {
+    width: 445px;
+    gap: 131px;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.h2 {
+    font-size: var(--text-h2-size);
+    line-height: var(--text-h2-line);
+    letter-spacing: var(--text-h2-letter-spacing);
+    font-weight: var(--font-weight-normal);
+    color: var(--prime-link-water-white);
+    font-family: var(--font-family-headings);
+    /*margin-left: 165px;*/
+    margin-bottom: 8px;
+}
+
+.body { 
+    font-size: var(--text-body-size);
+    line-height: var(--text-body-line);
+    font-weight: var(--font-weight-normal);
+    color: var(--prime-link-water-white);
+    font-family: var(--font-family-body);
+    /*margin-left: 165px;*/
+}
+
+.btn-sec-lt {
+    background-color: var(--sec-lt-bg-normal);
+    color: var(--sec-lt-font-normal);
+    border: var(--sec-lt-border);
+    width: var(--sec-lt-width);
+    height: var(--sec-lt-height);
+    border-radius: var(--btn-radius);
+    font-family: var(--btn-font-family);
+    font-weight: var(--btn-font-weight);
+    letter-spacing: var(--btn-letter-spacing);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    /*margin-left: 165px;*/
+}
+
+.sponsors-grid {
+    max-width: 830px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
 }

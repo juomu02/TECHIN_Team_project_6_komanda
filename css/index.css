@@ -8,10 +8,9 @@ body {
 header {
   text-align: center;
 }
-
 .hero-section {
   display: flex;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .index-grid {
   display: flex;

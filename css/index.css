@@ -1,10 +1,14 @@
 @import "var.css";
-
+* {
+  box-sizing: border-box;
+}
 body {
   padding-inline: 165px;
   background-color: var(--background-light);
   background-color: #edf3f8;
-  max-width: 1440px;
+  min-width: 1440px;
+  max-width: 1441px;
+  
 }
 
 header {
@@ -20,15 +24,16 @@ header {
   display: block;
   width: 37.917%;
   margin-top: 149px;
-  margin-right: 208px; /*iki telefono yra 208, bet img turi padinga*/
+  /* margin-right: 208px; iki telefono yra 208, bet img turi padinga */
 }
 .h1-lg {
   font-size: var(--text-h1-lg-size);
   line-height: var(--text-h1-lg-line);
   letter-spacing: var(--text-h1-lg-letter-spacing);
   color: var(--sec-san-juan-blue);
-  height: 243px;
+  /* height: 243px; */
   margin: 0;
+  margin-right: 208px; /*iki telefono yra 208, bet img turi padinga*/
   display: flex;
   align-items: center;
 }

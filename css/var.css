@@ -12,10 +12,10 @@
   --sec-charm-pink-actives: #da6d97;
   --sec-light-san-juan-blue: #6c8294;
 
-    --background-light: #EDF3F8;
-    --background-light-circle: #36536B40;
-    --background-dark: #1B262F;
-    --background-dark-circle: #36536b;
+  --background-light: #edf3f8;
+  --background-light-circle: #36536b40;
+  --background-dark: #1b262f;
+  --background-dark-circle: #36536b;
 
   /* FONT FAMILY */
   --font-family-headings: "DM Serif Display", serif;
@@ -108,63 +108,61 @@
     font-size: var(--text-h1-large-size);
 }*/
 
-
-
 /* Call to action: bendrybės ir tekstas */
 .container_cta {
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .cta h2 {
-    letter-spacing: var(--text-h2-letter-spacing);
-    font-size: var(--text-h2-size);
-    font-family: var(--font-family-headings);
-    font-weight: var(--font-weigth-normal);
-    line-height: var(--text-h2-line);
-    color: var(--sec-san-juan-blue);
-    text-align: left;
+  letter-spacing: var(--text-h2-letter-spacing);
+  font-size: var(--text-h2-size);
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weigth-normal);
+  line-height: var(--text-h2-line);
+  color: var(--sec-san-juan-blue);
+  text-align: left;
 }
 
 /* Call to action: mygtukas*/
 .cta-form {
-    display: flex;
-    border-radius: var(--btn-radius);
-    overflow: hidden;
-    border: none;
-    width: 445px;
-    background-color: var(--prime-link-water-white);
-    box-shadow: 0 10px 25px -5px #36536b4D;
+  display: flex;
+  border-radius: var(--btn-radius);
+  overflow: hidden;
+  border: none;
+  width: 445px;
+  background-color: var(--prime-link-water-white);
+  box-shadow: 0 10px 25px -5px #36536b4d;
 }
 .cta-input {
-    padding: 16px 0px 15px 27px;
-    font-size: 17px;
-    border: none;
-    text-align: left;
-    font-family: var(--btn-font-family);
-    font-weight: var(--btn-font-weight);
-    letter-spacing: var(--btn-letter-spacing);
-    outline: none;
-    color: var(--sec-san-juan-blue);
+  padding: 16px 0px 15px 27px;
+  font-size: 17px;
+  border: none;
+  text-align: left;
+  font-family: var(--btn-font-family);
+  font-weight: var(--btn-font-weight);
+  letter-spacing: var(--btn-letter-spacing);
+  outline: none;
+  color: var(--sec-san-juan-blue);
 }
 .cta-input::placeholder {
-    opacity: var(--prime-opacity-disabled);
-    color: var(--sec-light-san-juan-blue);
+  opacity: var(--prime-opacity-disabled);
+  color: var(--sec-light-san-juan-blue);
 }
 
 /* Call to action: "schedule a demo" mygtukas */
 .btn-prime {
-    padding: 16px 24.5px 15px 26.5px;
-    border-radius: var(--btn-radius);
-    background-color: var(--prime-dark-pink);
-    color: var(--prime-link-water-white);
-    border: none;
-    font-size: 17px;
-    flex: 1;
-    font-family: var(--btn-font-family);
-    font-weight: var(--btn-font-weight);
-    letter-spacing: var(--btn-letter-spacing);
+  padding: 16px 24.5px 15px 26.5px;
+  border-radius: var(--btn-radius);
+  background-color: var(--prime-dark-pink);
+  color: var(--prime-link-water-white);
+  border: none;
+  font-size: 17px;
+  flex: 1;
+  font-family: var(--btn-font-family);
+  font-weight: var(--btn-font-weight);
+  letter-spacing: var(--btn-letter-spacing);
 }
 .btn-prime:hover {
-    background-color: var(--sec-charm-pink-actives);
+  background-color: var(--sec-charm-pink-actives);
 }

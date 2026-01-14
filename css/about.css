@@ -1,7 +1,6 @@
 @import "../css/var.css";
 
 .about_wrapper {
-    padding-inline: 165px;
-    background-color: var(--background-light);
+  padding-inline: 165px;
+  background-color: var(--background-light);
 }
-

@@ -11,6 +11,7 @@ header {
 .hero-section {
   display: flex;
   /* display: inline-block; */
+  margin: 0;
 }
 .index-grid {
   display: flex;
@@ -30,12 +31,8 @@ header {
   align-items: center;
 }
 .container_cta-index {
-    margin-top: 24px;
+  margin-top: 24px;
 }
-.cta-footer-text{
-    margin-bottom: 152px;
-}
-.container_phone_mockup > img {
-  margin-left: 900px;
-  margin-top: 1000px;
+.cta-footer-text {
+  margin-bottom: 152px;
 }

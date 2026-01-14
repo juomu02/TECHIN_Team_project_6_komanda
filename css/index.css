@@ -1,9 +1,30 @@
 @import "../css/var.css";
 
 body {
-    padding-inline: 165px;
+  padding-inline: 165px;
+  width: 1440px;
 }
 
 header {
-text-align: center;
+  text-align: center;
+}
+
+.hero-section {
+  display: flex;
+  display: inline-block;
+}
+.index-grid {
+  display: flex;
+  display: block;
+  width: 37.917%;
+}
+.h1-lg {
+  font-size: var(--text-h1-lg-size);
+  line-height: var(--text-h1-lg-line);
+  letter-spacing: var(--text-h1-lg-letter-spacing);
+  color: var(--sec-san-juan-blue);
+  height: 243px;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }

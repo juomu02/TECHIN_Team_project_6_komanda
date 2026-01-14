@@ -1,6 +1,6 @@
 @import "../css/var.css";
 
-.index_wrapper {
+body {
     padding-inline: 165px;
     background-color: var(--background-light);
 }

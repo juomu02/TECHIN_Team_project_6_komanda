@@ -15,6 +15,7 @@ header {
 }
 
 /* =============HEAD=============== */
+
 .container_header {
   padding-top: 40px;
   display: flex;
@@ -59,7 +60,6 @@ header > img {
 
 .hero-section {
   display: flex;
-  /* display: inline-block; */
   margin: 0;
 }
 .index-grid {
@@ -67,17 +67,16 @@ header > img {
   display: block;
   width: 49.19%;
   margin-top: 149px;
-  /* margin-right: 208px; iki telefono yra 208, bet img turi padinga */
 }
 .h1-lg {
   font-size: var(--text-h1-lg-size);
   line-height: var(--text-h1-lg-line);
   letter-spacing: var(--text-h1-lg-letter-spacing);
   color: var(--sec-san-juan-blue);
-  /* height: 243px; */
   margin: 0;
   display: flex;
   align-items: center;
+  height: 243px;
 }
 .container_cta-index {
   margin-top: 24px;
@@ -89,7 +88,9 @@ header > img {
   letter-spacing: 0px;
   margin-bottom: 152px;
   margin-left: 27px;
+  margin-top: 16px;
   width: 225px;
+  line-height: 17px;
 }
 .contact-link {
   color: var(--sec-light-san-juan-blue);

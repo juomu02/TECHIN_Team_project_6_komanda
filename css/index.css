@@ -1,12 +1,115 @@
-@import "../css/var.css";
-
+@import "var.css";
+* {
+  box-sizing: border-box;
+}
 body {
   padding-inline: 165px;
-  max-width: 1440px;
+  background-color: var(--background-light);
+  background-color: #edf3f8;
+  min-width: 1440px;
+  max-width: 1441px;
 }
 
 header {
   text-align: center;
+}
+
+/* =============HEAD=============== */
+
+.container_header {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: var(--font-family-body);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: var(--sec-san-juan-blue);
+  opacity: 0.7;
+  text-decoration: none;
+}
+.nav-links a:not(:last-child) {
+  margin-right: 40px;
+}
+
+.logo-wrapper {
+  width: 200px;
+  text-align: left;
+}
+
+header > img {
+  position: absolute;
+  top: -172px;
+  left: 800px;
+  width: 780px;
+  height: 780px;
+  z-index: -1;
+}
+
+/* ============= HERO SECTION =============== */
+
+.hero-section {
+  display: flex;
+  margin: 0;
+}
+.index-grid {
+  display: flex;
+  display: block;
+  width: 49.19%;
+  margin-top: 149px;
+}
+.h1-lg {
+  font-size: var(--text-h1-lg-size);
+  line-height: var(--text-h1-lg-line);
+  letter-spacing: var(--text-h1-lg-letter-spacing);
+  color: var(--sec-san-juan-blue);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 243px;
+}
+.container_cta-index {
+  margin-top: 24px;
+}
+.cta-footer-text {
+    color: var(--sec-light-san-juan-blue);
+  text-align: left;
+  font-size: var(--text-body-size);
+  font-family: var(--font-family-body);
+  letter-spacing: 0px;
+  margin-bottom: 152px;
+  margin-left: 27px;
+  margin-top: 16px;
+  /*width: 225px;*/
+  line-height: 17px;
+}
+.contact-link {
+  color: var(--sec-light-san-juan-blue);
+  text-align: left;
+  font-size: var(--text-body-size);
+  font-family: var(--font-family-body);
+  letter-spacing: 0px;
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+}
+.container_phone-mockup {
+  margin-top: 74px;
+  margin-left: 209px;
+}
+.container_phone-mockup img {
+  width: 258px;
+  height: 499px;
+  object-fit: contain;
 }
 
 /*========== PARTNERS SECTION ==========*/
@@ -137,5 +240,4 @@ header {
   height: 24px;
   width: auto;
   filter: brightness(0) invert(1);
-  object-fit: contain;
 }

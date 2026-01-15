@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,12 +10,17 @@
       sizes="32x32"
       href="assets/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="css/index.css" />
+
     <title>Frontend Mentor | PayAPI Website Challenge</title>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
 
   <body>
     <header>
+      <img
+        src="assets/shared/desktop/bg-pattern-circle.svg"
+        alt="background circle"
+      />
       <div class="container_header">
         <div class="nav-left">
           <div class="logo-wrapper">
@@ -25,9 +30,9 @@
           </div>
 
           <nav class="nav-links">
-            <a href="pricing.html">Pricing</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="pages/pricing.html">Pricing</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/contact.html">Contact</a>
           </nav>
         </div>
 
@@ -39,11 +44,11 @@
     </header>
 
     <main>
-      <h1 class="h1-lg">Start building with our APIs for absolutely free.</h1>
-      <!--change-->
-
-      <section>
+      <section class="hero-section">
         <div class="index-grid">
+          <h1 class="h1-lg">
+            Start building with our APIs for absolutely free.
+          </h1>
           <div class="container_cta-index">
             <div class="cta-form">
               <input
@@ -54,22 +59,18 @@
               <button class="btn-prime">Schedule a Demo</button
               ><!--change-->
             </div>
-
             <p class="cta-footer-text">
               Have any questions?
               <a href="#" class="contact-link">Contact Us</a>
             </p>
-
-            <p></p>
           </div>
-
+          </div>
           <div class="container_phone-mockup">
             <img
-              src="assets/home/desktop/illustration-phone-mockup.svg"
+              src="assets/home/desktop/illustration-phone-mockup-removebg.png"
               alt="Illustration-phone-mockup"
             />
           </div>
-        </div>
       </section>
 
       <section class="partners">
@@ -229,7 +230,7 @@
     <footer>
       <div class="footer_nav-left">
         <div class="logo-wrapper">
-          <a href="index.html">
+          <a href="../index.html">
             <img src="assets/shared/desktop/logo.svg" alt="payapi logo" />
           </a>
         </div>
@@ -247,5 +248,8 @@
         <img src="assets/shared/desktop/linkedin.svg" alt="LinkedIn-logo" />
       </div>
     </footer>
+    </div>
+    
+
   </body>
 </html>

@@ -1,1 +1,6 @@
-@import "../css/contact.css";
+@import "../css/var.css";
+
+.contact_wrapper {
+  padding-inline: 165px;
+  background-color: var(--background-light);
+}

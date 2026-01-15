@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,17 +10,12 @@
       sizes="32x32"
       href="assets/favicon-32x32.png"
     />
-
-    <title>Frontend Mentor | PayAPI Website Challenge</title>
     <link rel="stylesheet" href="css/index.css" />
+    <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
 
   <body>
     <header>
-      <img
-        src="assets/shared/desktop/bg-pattern-circle.svg"
-        alt="background circle"
-      />
       <div class="container_header">
         <div class="nav-left">
           <div class="logo-wrapper">
@@ -30,9 +25,9 @@
           </div>
 
           <nav class="nav-links">
-            <a href="pages/pricing.html">Pricing</a>
-            <a href="pages/about.html">About</a>
-            <a href="pages/contact.html">Contact</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
           </nav>
         </div>
 
@@ -80,7 +75,7 @@
       <section class="partners">
         <div class="container_partners">
           <div class="partners-text">
-            <h2 class="h2">Who we work with</h2>
+            <h2 id="partners-heading" class="h2">Who we work with</h2>
             <!--change-->
             <p class="body">
               Today, millions of people around the world have successfully
@@ -95,15 +90,19 @@
           </div>
 
           <div class="sponsors-grid">
-            <img src="assets/shared/desktop/tesla.svg" alt="Tesla" />
-            <img src="assets/shared/desktop/microsoft.svg" alt="Microsoft" />
-            <img
-              src="assets/shared/desktop/hewlett-packard.svg"
-              alt="Hewlett Packard"
-            />
-            <img src="assets/shared/desktop/oracle.svg" alt="Oracle" />
-            <img src="assets/shared/desktop/google.svg" alt="Google" />
-            <img src="assets/shared/desktop/nvidia.svg" alt="Nvidia" />
+            <div class="sponsors-row">
+              <img src="assets/shared/desktop/tesla.svg" alt="Tesla" />
+              <img src="assets/shared/desktop/microsoft.svg" alt="Microsoft" />
+              <img
+                src="assets/shared/desktop/hewlett-packard.svg"
+                alt="Hewlett Packard"
+              />
+            </div>
+            <div class="sponsors-row">
+              <img src="assets/shared/desktop/oracle.svg" alt="Oracle" />
+              <img src="assets/shared/desktop/google.svg" alt="Google" />
+              <img src="assets/shared/desktop/nvidia.svg" alt="Nvidia" />
+            </div>
           </div>
         </div>
       </section>
@@ -230,15 +229,15 @@
     <footer>
       <div class="footer_nav-left">
         <div class="logo-wrapper">
-          <a href="../index.html">
+          <a href="index.html">
             <img src="assets/shared/desktop/logo.svg" alt="payapi logo" />
           </a>
         </div>
 
         <nav class="nav">
-          <a href="../pages/pricing.html">Pricing</a>
-          <a href="../pages/about.html">About</a>
-          <a href="../pages/contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
         </nav>
       </div>
 
@@ -248,8 +247,5 @@
         <img src="assets/shared/desktop/linkedin.svg" alt="LinkedIn-logo" />
       </div>
     </footer>
-    </div>
-    
-
   </body>
 </html>

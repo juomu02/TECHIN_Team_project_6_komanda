@@ -10,7 +10,8 @@ header {
   text-align: center;
 }
 
-.container_header {
+.container_header,
+.container_footer {
   padding-top: 40px;
   display: flex;
   flex-direction: row;
@@ -28,12 +29,19 @@ header {
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 0px;
-  color: var(--sec-san-juan-blue);
   opacity: 0.7;
   text-decoration: none;
 }
 .nav-links a:not(:last-child) {
   margin-right: 40px;
+}
+
+.textColorSanJuanBlue a {
+  color: var(--sec-san-juan-blue);
+}
+
+.textColorLinkWaterWhite a, .logoColorLinkWaterWhite>a>img {
+  color: var(--prime-link-water-white);
 }
 
 .logo-wrapper {

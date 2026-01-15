@@ -56,13 +56,13 @@ header > img {
 /*Konteineriai*/
 .features {
   padding: 0px;
-  margin-bottom: 107px;
+  margin-bottom: 105px;
 }
 .container_features {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  gap: 29px;
+  gap: 30px;
 }
 
 /*Features vieno iš elemento apipavidalinimas*/

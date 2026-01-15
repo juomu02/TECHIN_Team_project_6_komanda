@@ -1,1 +1,2 @@
-##- Placeholder aprašyti kaip paleisti programą testavimui
+##- Placeholder aprašyti kaip paleisti programą testavimui.
+

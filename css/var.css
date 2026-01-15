@@ -127,6 +127,7 @@
 /* Call to action: mygtukas*/
 .cta-form {
   display: flex;
+  justify-content: space-between;
   border-radius: var(--btn-radius);
   overflow: hidden;
   border: none;
@@ -157,8 +158,8 @@
   background-color: var(--prime-dark-pink);
   color: var(--prime-link-water-white);
   border: none;
-  font-size: 17px;
-  flex: 1;
+  font-size: 15px;
+  flex-grow: 0;
   font-family: var(--btn-font-family);
   font-weight: var(--btn-font-weight);
   letter-spacing: var(--btn-letter-spacing);

@@ -3,7 +3,7 @@
 body {
   padding-inline: 165px;
   background-color: var(--background-light);
-  background-color: #edf3f8;
+  background-color: black;
 }
 
 header {
@@ -32,6 +32,7 @@ header {
   opacity: 0.7;
   text-decoration: none;
 }
+
 .nav-links a:not(:last-child) {
   margin-right: 40px;
 }
@@ -40,7 +41,7 @@ header {
   color: var(--sec-san-juan-blue);
 }
 
-.textColorLinkWaterWhite a, .logoColorLinkWaterWhite>a>img {
+.textColorLinkWaterWhite a {
   color: var(--prime-link-water-white);
 }
 
@@ -56,4 +57,42 @@ header > img {
   width: 780px;
   height: 780px;
   z-index: -1;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social div:not(:last-child) {
+  margin-right: 24px;
+}
+
+.facebookLogo,
+.twitterLogo,
+.linkedinLogo,
+.payapiLogo {
+  display: inline-block;
+  background-color: var(--prime-link-water-white);
+}
+.payapiLogo {
+  mask: url(../assets/shared/desktop/logo.svg) no-repeat center;
+  height: 38px;
+  width: 135px;
+}
+.facebookLogo {
+  mask: url(../assets/shared/desktop/facebook.svg) no-repeat center;
+  height: 24px;
+  width: 24px;
+}
+.twitterLogo {
+  mask: url(../assets/shared/desktop/twitter.svg) no-repeat center;
+  height: 20px;
+  width: 24px;
+}
+.linkedinLogo {
+  mask: url(../assets/shared/desktop/linkedin.svg) no-repeat center;
+  height: 24px;
+  width: 24px;
 }

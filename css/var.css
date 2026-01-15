@@ -122,6 +122,7 @@
   line-height: var(--text-h2-line);
   color: var(--sec-san-juan-blue);
   text-align: left;
+  margin: 0px;
 }
 
 /* Call to action: mygtukas*/

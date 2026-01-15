@@ -4,6 +4,7 @@ body {
   padding-inline: 165px;
   background-color: var(--background-light);
   background-color: #edf3f8;
+  max-width: 1440px;
 }
 
 header {
@@ -48,4 +49,59 @@ header > img {
   width: 780px;
   height: 780px;
   z-index: -1;
+}
+
+
+/*BENEFITS SKILTIS*/
+/*Konteineriai*/
+.features {
+  padding: 0px;
+  margin-bottom: 107px;
+}
+.container_features {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 29px;
+}
+
+/*Features vieno iš elemento apipavidalinimas*/
+.features-item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-circle {
+  width: 106px;
+  height: 106px;
+  background-color: var(--sec-san-juan-blue);
+  border-radius: 50%;
+  margin-bottom: 34px;
+}
+.icon-circle img {
+  width: auto;
+  height: auto;
+}
+
+/*Tekstas*/
+.features-item .h3-sm {
+  font-family: var(--font-family-h3-sm);
+  color: var(--sec-san-juan-blue);
+  font-size: var(--text-h3-sm-size);
+  line-height: var(--text-h3-sm-line);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--text-h3-sm-letter-spacing);
+  margin-bottom: 18px;
+  margin-top: 0px;
+}
+.body {
+  font-family: var(--font-family-body);
+  color: var(--sec-light-san-juan-blue);
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: -0.12px;
+  margin: 0;
 }

@@ -1,21 +1,24 @@
 @import "../css/var.css";
 
-/*body {
-    padding-inline: 165px;
-}*/
+body {
+  padding-inline: 165px;
+  max-width: 1440px;
+}
 
 header {
   text-align: center;
 }
 
+/*========== PARTNERS SECTION ==========*/
+
 .partners {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1440px;
   gap: 24px;
   margin: 0 auto 150px auto;
   /*margin-left: 165px;*/
+  padding-inline: -165px;
   background-color: var(--sec-mirage-blue);
   text-align: center;
   background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
@@ -29,7 +32,7 @@ header {
   /*justify-content: center;*/
   /*align-items: center;*/
   gap: 48px;
-  padding: 84px 0 100px 0;
+  padding: 67px 0 100px 0;
 }
 
 .partners-text {

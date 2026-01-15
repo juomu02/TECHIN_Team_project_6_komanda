@@ -2,7 +2,7 @@ name: Always pass status check
  
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
  
 jobs:
   main-branch-check:

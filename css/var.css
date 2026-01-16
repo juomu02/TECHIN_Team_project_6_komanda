@@ -108,11 +108,13 @@
     font-size: var(--text-h1-large-size);
 }*/
 
-/* Call to action: bendrybės ir tekstas */
+/*============CALL TO ACTION============*/
+/* Call to action: bendrybės ir h2 tekstas */
 .container_cta {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 .cta h2 {
   letter-spacing: var(--text-h2-letter-spacing);
@@ -133,18 +135,22 @@
   border: none;
   width: 445px;
   background-color: var(--prime-link-water-white);
-  box-shadow: 0 10px 25px -5px #36536b4d;
+  box-shadow: 10px 10px 25px #36536B40;
+}
+.container_cta .cta-form {
+  margin-bottom: 20px;
 }
 .cta-input {
   padding: 16px 0px 15px 27px;
-  font-size: 17px;
+  flex: 1;
   border: none;
   text-align: left;
+  font-size: var(--text-body-size);
   font-family: var(--btn-font-family);
   font-weight: var(--btn-font-weight);
-  letter-spacing: var(--btn-letter-spacing);
-  outline: none;
+  letter-spacing: 0px;
   color: var(--sec-san-juan-blue);
+  outline: none;
 }
 .cta-input::placeholder {
   opacity: var(--prime-opacity-disabled);
@@ -153,16 +159,16 @@
 
 /* Call to action: "schedule a demo" mygtukas */
 .btn-prime {
-  padding: 16px 24.5px 15px 26.5px;
+  padding: 16px 25px 15px 26px;
   border-radius: var(--btn-radius);
   background-color: var(--prime-dark-pink);
   color: var(--prime-link-water-white);
-  border: none;
-  font-size: 17px;
-  flex: 1;
+  font-size: var(--text-body-size);
   font-family: var(--btn-font-family);
   font-weight: var(--btn-font-weight);
   letter-spacing: var(--btn-letter-spacing);
+  border: none;
+  min-width: 173px;
 }
 .btn-prime:hover {
   background-color: var(--sec-charm-pink-actives);

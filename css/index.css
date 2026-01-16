@@ -109,3 +109,37 @@ header > img {
   height: 499px;
   object-fit: contain;
 }
+
+/* ============= EASY TO IMPLEMENT =============== */
+
+.container_implementation {
+  display: flex;
+  margin: 150px 0 150px 0;
+}
+.implementation-content {
+  margin-left: 125px;
+}
+
+.implementation-content h2 {
+  /* font-family: var(--font-family-headings); */
+  font-size: var(--text-h2-size);
+  color: var(--sec-san-juan-blue);
+  line-height: var(--text-h2-line);
+  letter-spacing: var(--text-h2-letter-spacing);
+  flex-basis: 445px;
+  width: 445px;
+  margin: 66px 0 8px 0;
+  padding: 5px 0 5px 0;
+}
+.implementation-content .body {
+  font-family: var(--font-family-body);
+  color: var(--sec-san-juan-blue);
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+  flex-basis: 445px;
+  width: 445px;
+  height: 76px;
+  margin: 0;
+  text-align: left;
+  letter-spacing: -0.1px;
+}

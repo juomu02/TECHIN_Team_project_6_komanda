@@ -3,11 +3,12 @@
   box-sizing: border-box;
 }
 body {
-  padding-inline: 165px;
+  padding-left: 165px;
   background-color: var(--background-light);
   background-color: #edf3f8;
   min-width: 1440px;
-  max-width: 1441px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 header {
@@ -114,7 +115,7 @@ header > img {
 
 .container_implementation {
   display: flex;
-  margin: 150px 0 150px 0;
+  margin: 150px 0 0 0;
 }
 .implementation-content {
   margin-left: 125px;
@@ -145,3 +146,51 @@ header > img {
 
 /* ============= SIMPLE UI & UX =============== */
 
+.container_simple-UI {
+  display: flex;
+  margin: 140px 0 140px 0; /*in adobe total section calulation is incorrect. So adjusted to total height of circle*/
+}
+
+.UI-content h2 {
+  font-size: var(--text-h2-size);
+  color: var(--sec-san-juan-blue);
+  line-height: var(--text-h2-line);
+  letter-spacing: var(--text-h2-letter-spacing);
+  flex-basis: 445px;
+  width: 445px;
+  margin: 178px 0 8px 0;
+  padding: 5px 0 5px 0;
+}
+.UI-content .body {
+  font-family: var(--font-family-body);
+  color: var(--sec-san-juan-blue);
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+  flex-basis: 445px;
+  width: 445px;
+  height: 48px;
+  margin: 0;
+  text-align: left;
+  letter-spacing: -0.1px;
+}
+.UI-image {
+  margin-left: 98px;
+  width: 565px;
+  height: 499px;
+  object-fit: contain;
+}
+.simple-UI {
+  position: relative;
+  overflow: hidden;
+}
+.simple-UI-circle {
+  position: absolute;
+  width: 780px;
+  height: 780px;
+  border-radius: 50%;
+  background-color: #d9dee6;
+  top: 50%;
+  right: -390px;
+  transform: translateY(-50%);
+  z-index: -1;
+}

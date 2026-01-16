@@ -132,7 +132,7 @@ header > img {
   padding: 5px 0 5px 0;
 }
 .implementation-content .body {
-  font-family:var(--font-family-body);
+  font-family: var(--font-family-body);
   color: var(--sec-san-juan-blue);
   font-size: var(--text-body-size);
   line-height: var(--text-body-line);

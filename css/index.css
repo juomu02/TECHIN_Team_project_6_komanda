@@ -3,12 +3,11 @@
   box-sizing: border-box;
 }
 body {
-  padding-left: 165px;
+  padding-inline: 165px;
   background-color: var(--background-light);
   background-color: #edf3f8;
   min-width: 1440px;
   max-width: 1440px;
-  margin: 0 auto;
 }
 
 header {
@@ -71,6 +70,7 @@ header > img {
 }
 .h1-lg {
   font-size: var(--text-h1-lg-size);
+  font-family: var(--font-family-headings);
   line-height: var(--text-h1-lg-line);
   letter-spacing: var(--text-h1-lg-letter-spacing);
   color: var(--sec-san-juan-blue);
@@ -84,6 +84,7 @@ header > img {
 }
 .cta-footer-text {
   color: var(--sec-light-san-juan-blue);
+  font-family: var(--font-family-body);
   text-align: left;
   font-size: var(--text-body-size);
   letter-spacing: 0px;
@@ -92,9 +93,11 @@ header > img {
   margin-top: 16px;
   width: 225px;
   line-height: 17px;
+  letter-spacing: -0.05px;
 }
 .contact-link {
   color: var(--sec-light-san-juan-blue);
+  font-family: var(--font-family-body);
   text-align: left;
   font-size: var(--text-body-size);
   letter-spacing: 0px;
@@ -123,6 +126,7 @@ header > img {
 
 .implementation-content h2 {
   font-size: var(--text-h2-size);
+  font-family: var(--font-family-headings);
   color: var(--sec-san-juan-blue);
   line-height: var(--text-h2-line);
   letter-spacing: var(--text-h2-letter-spacing);
@@ -133,7 +137,7 @@ header > img {
 }
 .implementation-content .body {
   font-family: var(--font-family-body);
-  color: var(--sec-san-juan-blue);
+  color: var(--sec-light-san-juan-blue);
   font-size: var(--text-body-size);
   line-height: var(--text-body-line);
   flex-basis: 445px;
@@ -144,16 +148,21 @@ header > img {
   letter-spacing: -0.1px;
 }
 
-<<<<<<< HEAD
 /* ============= SIMPLE UI & UX =============== */
 
+.simple-UI {
+  margin-inline-end: -165px;
+}
 .container_simple-UI {
   display: flex;
   margin: 140px 0 140px 0; /*in adobe total section calulation is incorrect. So adjusted to total height of circle*/
 }
-
+.simple-UI .container_simple-UI {
+  padding-inline: 0;
+}
 .UI-content h2 {
   font-size: var(--text-h2-size);
+  font-family: var(--font-family-headings);
   color: var(--sec-san-juan-blue);
   line-height: var(--text-h2-line);
   letter-spacing: var(--text-h2-letter-spacing);
@@ -164,7 +173,7 @@ header > img {
 }
 .UI-content .body {
   font-family: var(--font-family-body);
-  color: var(--sec-san-juan-blue);
+  color: var(--sec-light-san-juan-blue);
   font-size: var(--text-body-size);
   line-height: var(--text-body-line);
   flex-basis: 445px;
@@ -195,7 +204,6 @@ header > img {
   transform: translateY(-50%);
   z-index: -1;
 }
-=======
 
 /*==============BENEFITS SKILTIS==============*/
 /*Konteineriai*/
@@ -253,4 +261,3 @@ header > img {
 .features-item:first-child {
   flex-basis: 352px;
 }
->>>>>>> master

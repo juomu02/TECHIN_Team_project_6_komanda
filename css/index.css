@@ -121,7 +121,6 @@ header > img {
 }
 
 .implementation-content h2 {
-  /* font-family: var(--font-family-headings); */
   font-size: var(--text-h2-size);
   color: var(--sec-san-juan-blue);
   line-height: var(--text-h2-line);
@@ -143,3 +142,6 @@ header > img {
   text-align: left;
   letter-spacing: -0.1px;
 }
+
+/* ============= SIMPLE UI & UX =============== */
+

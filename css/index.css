@@ -143,3 +143,61 @@ header > img {
   text-align: left;
   letter-spacing: -0.1px;
 }
+
+
+/*==============BENEFITS SKILTIS==============*/
+/*Konteineriai*/
+.features {
+  padding: 0px;
+  margin-bottom: 105px;
+}
+.container_features {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 29px;
+}
+
+/*Features vieno iš elemento apipavidalinimas*/
+.features-item {
+  flex: 1 1 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features-item .icon-circle {
+  width: 106px;
+  height: 106px;
+  background-color: var(--sec-san-juan-blue);
+  border-radius: 50%;
+  margin-bottom: 34px;
+}
+.features-item .icon-circle img {
+  width: auto;
+  height: auto;
+}
+
+/*Tekstas*/
+.features-item .h3-sm {
+  font-family: var(--font-family-h3-sm);
+  color: var(--sec-san-juan-blue);
+  font-size: var(--text-h3-sm-size);
+  line-height: var(--text-h3-sm-line);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--text-h3-sm-letter-spacing);
+  margin-bottom: 18px;
+  margin-top: 0px;
+}
+.features-item .body {
+  font-family: var(--font-family-body);
+  color: var(--sec-light-san-juan-blue);
+  font-size: var(--text-body-size);
+  line-height: 1.67; /*apskaiciavau toki is adobe*/
+  font-weight: var(--font-weight-normal);
+  letter-spacing: -0.43px; /*platesnis tekstas priverstų tekstą persikelti į kitą eilutę*/
+  margin: 0;
+}
+.features-item:first-child {
+  flex-basis: 352px;
+}

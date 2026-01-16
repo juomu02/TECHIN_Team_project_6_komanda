@@ -71,6 +71,7 @@ header > img {
 .h1-lg {
   font-size: var(--text-h1-lg-size);
   font-family: var(--font-family-headings);
+  font-weight: var(--font-weigth-normal);
   line-height: var(--text-h1-lg-line);
   letter-spacing: var(--text-h1-lg-letter-spacing);
   color: var(--sec-san-juan-blue);
@@ -127,6 +128,7 @@ header > img {
 .implementation-content h2 {
   font-size: var(--text-h2-size);
   font-family: var(--font-family-headings);
+  font-weight: var(--font-weigth-normal);
   color: var(--sec-san-juan-blue);
   line-height: var(--text-h2-line);
   letter-spacing: var(--text-h2-letter-spacing);
@@ -163,6 +165,7 @@ header > img {
 .UI-content h2 {
   font-size: var(--text-h2-size);
   font-family: var(--font-family-headings);
+  font-weight: var(--font-weigth-normal);
   color: var(--sec-san-juan-blue);
   line-height: var(--text-h2-line);
   letter-spacing: var(--text-h2-letter-spacing);

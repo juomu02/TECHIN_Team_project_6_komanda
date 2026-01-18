@@ -3,4 +3,109 @@
 .pricing_wrapper {
   padding-inline: 165px;
   background-color: var(--background-light);
+  box-sizing: border-box;
+  min-width: 1440px;
+  max-width: 1440px;
 }
+
+
+/* =============HEAD=============== */
+
+.container_header {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: var(--font-family-body);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: var(--sec-san-juan-blue);
+  opacity: 0.7;
+  text-decoration: none;
+}
+.nav-links a:not(:last-child) {
+  margin-right: 40px;
+}
+
+.logo-wrapper {
+  width: 200px;
+  text-align: left;
+}
+
+/* ============= PRICING =============== */
+
+.h1-sm {
+  font-size: var(--text-h1-sm-size);
+  line-height: var(--text-h1-sm-line);
+  letter-spacing: var(--text-h1-sm-letter-spacing);
+  color: var(--sec-san-juan-blue);
+  margin: 0;
+  display: flex;
+  flex-basis: 546px;
+  align-items: center;
+  height: 77px;
+  margin: 86px 0 60px 0;
+}
+
+.pricing_container {
+  display: flex;
+}
+.pricing-card {
+  flex-basis: 350px;
+  width: 350px;
+  margin-right: 30px;
+}
+.pricing-card:last-child {
+  margin-right: 0;
+}
+.h3-lg {
+  font-size: var(--text-h3-lg-size);
+  line-height: var(--text-h3-lg-line);
+  letter-spacing: var(--text-h3-lg-letter-spacing);
+  color: var(--prime-dark-pink);
+  margin: 0 0 5px 0;
+  padding: 2px 0 2px 0;
+}
+.pricing-card .body {
+  font-family: var(--font-family-body);
+  color: var(--sec-san-juan-blue);
+  font-size: var(--text-body-size);
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  margin: 0 0 30px 0;
+}
+.pricing .h1-sm {
+  font-size: var(--text-h1-sm-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--text-h1-sm-line);
+  letter-spacing: var(--text-h1-sm-letter-spacing);
+  color: var(--sec-san-juan-blue);
+  margin: 0 0 5px 0;
+  display: flex;
+  flex-basis: 350px;
+  align-items: center;
+  height: 77px;
+}
+.pricing-card_features {
+  border-top: 1px solid color-mix(in srgb, var(--background-dark-circle) 25%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--background-dark-circle) 25%, transparent);
+  margin: 0;
+}
+li::marker {
+  content: "✓ ";
+  color: #36536b;
+  font-size: 1.1em;
+}
+
+
+

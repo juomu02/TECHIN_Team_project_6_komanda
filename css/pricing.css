@@ -8,7 +8,6 @@
   max-width: 1440px;
 }
 
-
 /* =============HEAD=============== */
 
 .container_header {
@@ -46,6 +45,8 @@
 
 .h1-sm {
   font-size: var(--text-h1-sm-size);
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weight-normal);
   line-height: var(--text-h1-sm-line);
   letter-spacing: var(--text-h1-sm-letter-spacing);
   color: var(--sec-san-juan-blue);
@@ -56,20 +57,21 @@
   height: 77px;
   margin: 86px 0 60px 0;
 }
-
 .pricing_container {
   display: flex;
 }
 .pricing-card {
   flex-basis: 350px;
   width: 350px;
-  margin-right: 30px;
+  margin: 0 30px 105px 0;
 }
 .pricing-card:last-child {
   margin-right: 0;
 }
 .h3-lg {
   font-size: var(--text-h3-lg-size);
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weight-normal);
   line-height: var(--text-h3-lg-line);
   letter-spacing: var(--text-h3-lg-letter-spacing);
   color: var(--prime-dark-pink);
@@ -78,7 +80,7 @@
 }
 .pricing-card .body {
   font-family: var(--font-family-body);
-  color: var(--sec-san-juan-blue);
+  color: var(--sec-light-san-juan-blue);
   font-size: var(--text-body-size);
   line-height: 24px;
   letter-spacing: -0.3px;
@@ -86,7 +88,7 @@
 }
 .pricing .h1-sm {
   font-size: var(--text-h1-sm-size);
-  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-headings);
   line-height: var(--text-h1-sm-line);
   letter-spacing: var(--text-h1-sm-letter-spacing);
   color: var(--sec-san-juan-blue);
@@ -97,15 +99,53 @@
   height: 77px;
 }
 .pricing-card_features {
-  border-top: 1px solid color-mix(in srgb, var(--background-dark-circle) 25%, transparent);
-  border-bottom: 1px solid color-mix(in srgb, var(--background-dark-circle) 25%, transparent);
-  margin: 0;
+  border-top: 1px solid
+    color-mix(in srgb, var(--background-dark-circle) 25%, transparent);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--background-dark-circle) 25%, transparent);
+  margin: 0 0 30px 0;
 }
-li::marker {
-  content: "✓ ";
-  color: #36536b;
-  font-size: 1.1em;
+ul {
+  padding: 25px 0 13px 0;
 }
-
-
-
+.active::marker {
+  content: "\2714";
+  font-size: 14px;
+  color: var(--prime-dark-pink);
+}
+.inactive::marker {
+  content: none;
+}
+.active {
+  font-size: var(--text-body2-size);
+  font-family: var(--font-family-body);
+  color: var(--sec-san-juan-blue);
+  margin-left: 11px; /*align marker to the left of the card*/
+  padding: 0 0 15px 24px;
+  width: 87px;
+}
+.inactive {
+  font-size: var(--text-body2-size);
+  font-family: var(--font-family-body);
+  color: color-mix(in srgb, var(--background-dark-circle) 50%, transparent);
+  margin-left: 11px; /*align marker to the left of the card*/
+  padding: 0 0 15px 24px;
+  width: 87px;
+}
+.btn-sec-dk {
+  padding: 16px 25px 15px 26px;
+  border-radius: var(--btn-radius);
+  background-color: var(--background-light);
+  color: var(--sec-san-juan-blue);
+  font-size: var(--text-body-size);
+  font-family: var(--btn-font-family);
+  font-weight: var(--btn-font-weight);
+  letter-spacing: var(--btn-letter-spacing);
+  border: 1px solid var(--sec-san-juan-blue);
+  min-width: 168px;
+}
+.btn-sec-dk:hover{
+  background-color: var(--sec-san-juan-blue);
+  color: var(--prime-link-water-white);
+  cursor: pointer;
+}

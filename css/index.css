@@ -3,13 +3,17 @@
   box-sizing: border-box;
 }
 body {
-  padding-inline: 165px;
   background-color: var(--background-light);
   background-color: #edf3f8;
   min-width: 1440px;
   max-width: 1440px;
+  margin: 0;
 }
-
+.index_wrapper {
+  position: relative;
+  overflow-x: hidden;
+  padding-inline: 165px;
+}
 header {
   text-align: center;
 }
@@ -18,10 +22,22 @@ header {
 
 .container_header,
 .container_footer {
-  padding-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.container_footer {
+  height: 100px;
+  text-align: center;
+  padding-inline: 165px;
+}
+
+footer {
+  margin-inline: -165px;
+  background-color: var(--sec-mirage-blue);
+  position: relative;
+  overflow: hidden;
 }
 
 .nav-left {
@@ -63,6 +79,15 @@ header > img {
   width: 780px;
   height: 780px;
   z-index: -1;
+}
+
+footer > img {
+  position: absolute;
+  bottom: -544px;
+  left: 1050px;
+  width: 780px;
+  height: 780px;
+  z-index: 1;
 }
 
 .social {

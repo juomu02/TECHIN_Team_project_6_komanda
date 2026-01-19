@@ -11,7 +11,9 @@
   overflow: hidden;
   z-index: 1;
 }
-
+body{
+  margin:0;
+}
 /* =============HEAD=============== */
 
 .container_header {

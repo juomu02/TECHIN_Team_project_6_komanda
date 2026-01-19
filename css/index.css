@@ -5,7 +5,6 @@
 body {
   padding-inline: 165px;
   background-color: var(--background-light);
-  background-color: #edf3f8;
   min-width: 1440px;
   max-width: 1441px;
 }
@@ -121,7 +120,7 @@ header > img {
 }
 
 .implementation-content h2 {
-  /* font-family: var(--font-family-headings); */
+  /* Samily: var(--font-family-headings); */
   font-size: var(--text-h2-size);
   color: var(--sec-san-juan-blue);
   line-height: var(--text-h2-line);

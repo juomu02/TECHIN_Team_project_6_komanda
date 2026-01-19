@@ -1,14 +1,20 @@
 @import "var.css";
-
+* {
+  box-sizing: border-box;
+}
 body {
   padding-inline: 165px;
   background-color: var(--background-light);
-  background-color: black;
+  background-color: #edf3f8;
+  min-width: 1440px;
+  max-width: 1440px;
 }
 
 header {
   text-align: center;
 }
+
+/* =============HEAD=============== */
 
 .container_header,
 .container_footer {
@@ -95,4 +101,212 @@ header > img {
   mask: url(../assets/shared/desktop/linkedin.svg) no-repeat center;
   height: 24px;
   width: 24px;
+}
+/* ============= HERO SECTION =============== */
+
+.hero-section {
+  display: flex;
+  margin: 0;
+}
+.index-grid {
+  display: flex;
+  display: block;
+  width: 49.19%;
+  margin-top: 149px;
+}
+.h1-lg {
+  font-size: var(--text-h1-lg-size);
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weigth-normal);
+  line-height: var(--text-h1-lg-line);
+  letter-spacing: var(--text-h1-lg-letter-spacing);
+  color: var(--sec-san-juan-blue);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 243px;
+}
+.container_cta-index {
+  margin-top: 24px;
+}
+.cta-footer-text {
+  color: var(--sec-light-san-juan-blue);
+  font-family: var(--font-family-body);
+  text-align: left;
+  font-size: var(--text-body-size);
+  letter-spacing: 0px;
+  margin-bottom: 152px;
+  margin-left: 27px;
+  margin-top: 16px;
+  width: 225px;
+  line-height: 17px;
+  letter-spacing: -0.05px;
+}
+.contact-link {
+  color: var(--sec-light-san-juan-blue);
+  font-family: var(--font-family-body);
+  text-align: left;
+  font-size: var(--text-body-size);
+  letter-spacing: 0px;
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+}
+.container_phone-mockup {
+  margin-top: 74px;
+  margin-left: 209px;
+}
+.container_phone-mockup img {
+  width: 258px;
+  height: 499px;
+  object-fit: contain;
+}
+
+/* ============= EASY TO IMPLEMENT =============== */
+
+.container_implementation {
+  display: flex;
+  margin: 150px 0 0 0;
+}
+.implementation-content {
+  margin-left: 125px;
+}
+
+.implementation-content h2 {
+  font-size: var(--text-h2-size);
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weigth-normal);
+  color: var(--sec-san-juan-blue);
+  line-height: var(--text-h2-line);
+  letter-spacing: var(--text-h2-letter-spacing);
+  flex-basis: 445px;
+  width: 445px;
+  margin: 66px 0 8px 0;
+  padding: 5px 0 5px 0;
+}
+.implementation-content .body {
+  font-family: var(--font-family-body);
+  color: var(--sec-light-san-juan-blue);
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+  flex-basis: 445px;
+  width: 445px;
+  height: 76px;
+  margin: 0;
+  text-align: left;
+  letter-spacing: -0.1px;
+}
+
+/* ============= SIMPLE UI & UX =============== */
+
+.simple-UI {
+  margin-inline-end: -165px;
+}
+.container_simple-UI {
+  display: flex;
+  margin: 140px 0 140px 0; /*in adobe total section calulation is incorrect. So adjusted to total height of circle*/
+}
+.simple-UI .container_simple-UI {
+  padding-inline: 0;
+}
+.UI-content h2 {
+  font-size: var(--text-h2-size);
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weigth-normal);
+  color: var(--sec-san-juan-blue);
+  line-height: var(--text-h2-line);
+  letter-spacing: var(--text-h2-letter-spacing);
+  flex-basis: 445px;
+  width: 445px;
+  margin: 178px 0 8px 0;
+  padding: 5px 0 5px 0;
+}
+.UI-content .body {
+  font-family: var(--font-family-body);
+  color: var(--sec-light-san-juan-blue);
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+  flex-basis: 445px;
+  width: 445px;
+  height: 48px;
+  margin: 0;
+  text-align: left;
+  letter-spacing: -0.1px;
+}
+.UI-image {
+  margin-left: 95px;
+  width: 565px;
+  height: 499px;
+  object-fit: contain;
+}
+.simple-UI {
+  position: relative;
+  overflow: hidden;
+}
+.simple-UI-circle {
+  position: absolute;
+  width: 780px;
+  height: 780px;
+  border-radius: 50%;
+  background-color: #d9dee6;
+  top: 50%;
+  right: -390px;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+/*==============BENEFITS SKILTIS==============*/
+/*Konteineriai*/
+.features {
+  padding: 0px;
+  margin-bottom: 105px;
+}
+.container_features {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 29px;
+}
+
+/*Features vieno iš elemento apipavidalinimas*/
+.features-item {
+  flex: 1 1 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features-item .icon-circle {
+  width: 106px;
+  height: 106px;
+  background-color: var(--sec-san-juan-blue);
+  border-radius: 50%;
+  margin-bottom: 34px;
+}
+.features-item .icon-circle img {
+  width: auto;
+  height: auto;
+}
+
+/*Tekstas*/
+.features-item .h3-sm {
+  font-family: var(--font-family-h3-sm);
+  color: var(--sec-san-juan-blue);
+  font-size: var(--text-h3-sm-size);
+  line-height: var(--text-h3-sm-line);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--text-h3-sm-letter-spacing);
+  margin-bottom: 18px;
+  margin-top: 0px;
+}
+.features-item .body {
+  font-family: var(--font-family-body);
+  color: var(--sec-light-san-juan-blue);
+  font-size: var(--text-body-size);
+  line-height: 1.67; /*apskaiciavau toki is adobe*/
+  font-weight: var(--font-weight-normal);
+  letter-spacing: -0.43px; /*platesnis tekstas priverstų tekstą persikelti į kitą eilutę*/
+  margin: 0;
+}
+.features-item:first-child {
+  flex-basis: 352px;
 }

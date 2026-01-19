@@ -2,5 +2,26 @@
 
 .about_wrapper {
   padding-inline: 165px;
+  position: relative;
+  overflow: hidden;
+}
+body {
   background-color: var(--background-light);
+  background-color: #edf3f8;
+  min-width: 1440px;
+  max-width: 1440px;
+  margin: 0;
+}
+
+/* =============HEAD=============== */
+
+.header-circle {
+  position: absolute;
+  width: 780px;
+  height: 780px;
+  border-radius: 50%;
+  background-color: #d9dee6;
+  top: -527px;
+  left: 800px;
+  z-index: -1;
 }

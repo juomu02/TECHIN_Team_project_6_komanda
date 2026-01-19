@@ -1,7 +1,5 @@
 @import "var.css";
-* {
-  box-sizing: border-box;
-}
+
 body {
   background-color: var(--background-light);
   background-color: #edf3f8;
@@ -14,65 +12,10 @@ body {
   overflow-x: hidden;
   padding-inline: 165px;
 }
-header {
-  text-align: center;
-}
 
 /* =============HEAD=============== */
 
-.container_header,
-.container_footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.container_footer {
-  height: 100px;
-  text-align: center;
-  padding-inline: 165px;
-}
-
-footer {
-  margin-inline: -165px;
-  background-color: var(--sec-mirage-blue);
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-left {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.nav-links a {
-  font-family: var(--font-family-body);
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 0px;
-  opacity: 0.7;
-  text-decoration: none;
-}
-
-.nav-links a:not(:last-child) {
-  margin-right: 40px;
-}
-
-.textColorSanJuanBlue a {
-  color: var(--sec-san-juan-blue);
-}
-
-.textColorLinkWaterWhite a {
-  color: var(--prime-link-water-white);
-}
-
-.logo-wrapper {
-  width: 200px;
-  text-align: left;
-}
-
-header > img {
+.header-circle {
   position: absolute;
   top: -172px;
   left: 800px;
@@ -81,52 +24,6 @@ header > img {
   z-index: -1;
 }
 
-footer > img {
-  position: absolute;
-  bottom: -544px;
-  left: 1050px;
-  width: 780px;
-  height: 780px;
-  z-index: 1;
-}
-
-.social {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.social div:not(:last-child) {
-  margin-right: 24px;
-}
-
-.facebookLogo,
-.twitterLogo,
-.linkedinLogo,
-.payapiLogo {
-  display: inline-block;
-  background-color: var(--prime-link-water-white);
-}
-.payapiLogo {
-  mask: url(../assets/shared/desktop/logo.svg) no-repeat center;
-  height: 38px;
-  width: 135px;
-}
-.facebookLogo {
-  mask: url(../assets/shared/desktop/facebook.svg) no-repeat center;
-  height: 24px;
-  width: 24px;
-}
-.twitterLogo {
-  mask: url(../assets/shared/desktop/twitter.svg) no-repeat center;
-  height: 20px;
-  width: 24px;
-}
-.linkedinLogo {
-  mask: url(../assets/shared/desktop/linkedin.svg) no-repeat center;
-  height: 24px;
-  width: 24px;
-}
 /* ============= HERO SECTION =============== */
 
 .hero-section {

@@ -3,36 +3,87 @@
 .contact_wrapper {
   padding-inline: 165px;
   background-color: var(--background-light);
+  box-sizing: border-box;
   min-width: 1440px;
-  max-width: 1441px;
+  max-width: 1440px;
+  /* Circle */
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
+
+/* =============HEAD=============== */
+
+.container_header {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: var(--font-family-body);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: var(--sec-san-juan-blue);
+  opacity: 0.7;
+  text-decoration: none;
+}
+.nav-links a:not(:last-child) {
+  margin-right: 40px;
+}
+
+.logo-wrapper {
+  width: 200px;
+  text-align: left;
+}
+/* Circle by AJ */
+.header-circle {
+  position: absolute;
+  width: 780px;
+  height: 780px;
+  border-radius: 50%;
+  background-color: #d9dee6;
+  top: -527px;
+  left: 800px;
+  z-index: -1;
+}
+
+/*============PAGE TITLE============*/
 
 .contact_wrapper .h1-sm {
-font-size: var(--text-h1-sm-size);
-font-family: var(--font-family-headings);
-letter-spacing: var(--text-h1-sm-letter-spacing);
-line-height: var(--text-h1-sm-line);
-font-weight: var(--font-weight-normal);
-color: var(--sec-san-juan-blue);
-display: flex;
-align-items: center;
-max-width: 730px;
-margin: 0px 0px 21px;
+  font-size: var(--text-h1-sm-size);
+  font-family: var(--font-family-headings);
+  letter-spacing: var(--text-h1-sm-letter-spacing);
+  line-height: var(--text-h1-sm-line);
+  font-weight: var(--font-weight-normal);
+  color: var(--sec-san-juan-blue);
+  display: flex;
+  align-items: center;
+  max-width: 730px;
+  margin: 80px 0px 23px;
 }
 
-/*==============FORM==============*/
+/*=============HELP REQUEST FORM=============*/
 /*Containers*/
 .submit_and_sponsors {
   display: flex;
 }
- .contact-form_container {
+.contact-form_container {
   margin-bottom: 100px;
   width: 445px;
- }
+}
 
- /*Forms input and labels*/
+/*Forms input and labels*/
 .form-group input,
-.form-group textarea  {
+.form-group textarea {
   font-size: var(--text-body-size);
   font-family: var(--font-family-body);
   line-height: var(--text-body-size-small);
@@ -47,6 +98,7 @@ margin: 0px 0px 21px;
   resize: none;
   padding-left: 20px;
   width: 425px;
+  height: 20px;
 }
 .form-group textarea {
   height: 67px;
@@ -56,11 +108,11 @@ margin: 0px 0px 21px;
 .form-group input::placeholder,
 .form-group textarea::placeholder {
   opacity: 50%;
-} 
+}
 .form-group input:hover,
 .form-group textarea:hover {
-border-bottom: 1px solid rgba(54, 83, 107, 1);
-} 
+  border-bottom: 1px solid rgba(54, 83, 107, 1);
+}
 
 /*Checkbox*/
 .checkbox-group {

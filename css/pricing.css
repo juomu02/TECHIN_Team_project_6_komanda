@@ -122,30 +122,24 @@
 }
 ul {
   padding: 25px 0 13px 0;
+  list-style: none;
 }
-.active::marker {
-  content: "\2714";
-  font-size: 14px;
-  color: var(--prime-dark-pink);
-}
-.inactive::marker {
-  content: none;
+.pricing-card_features li img {
+  margin-right: 24px;
+  width: 12px;
+  height: 8px;
 }
 .active {
   font-size: var(--text-body2-size);
   font-family: var(--font-family-body);
   color: var(--sec-san-juan-blue);
-  margin-left: 11px; /*align marker to the left of the card*/
-  padding: 0 0 15px 24px;
-  width: 87px;
+  padding: 0 0 15px 0;
 }
 .inactive {
   font-size: var(--text-body2-size);
   font-family: var(--font-family-body);
   color: color-mix(in srgb, var(--background-dark-circle) 50%, transparent);
-  margin-left: 11px; /*align marker to the left of the card*/
-  padding: 0 0 15px 24px;
-  width: 87px;
+  padding: 0 0 15px 36px;
 }
 .btn-sec-dk {
   padding: 16px 25px 15px 26px;
@@ -159,9 +153,8 @@ ul {
   border: 1px solid var(--sec-san-juan-blue);
   min-width: 168px;
 }
-.btn-sec-dk:hover{
+.btn-sec-dk:hover {
   background-color: var(--sec-san-juan-blue);
   color: var(--prime-link-water-white);
-  cursor: pointer;
   font-weight: var(--font-weight-bold);
 }

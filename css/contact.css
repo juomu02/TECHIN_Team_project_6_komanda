@@ -17,76 +17,91 @@ color: var(--sec-san-juan-blue);
 display: flex;
 align-items: center;
 max-width: 730px;
-margin-bottom: 75px;
+margin: 0px 0px 21px;
 }
 
+/*==============FORM==============*/
+/*Containers*/
 .submit_and_sponsors {
   display: flex;
-
 }
  .contact-form_container {
   margin-bottom: 100px;
   width: 445px;
  }
 
-
+ /*Forms input and labels*/
 .form-group input,
-.form-group textarea,
-.checkbox-group label  {
+.form-group textarea  {
   font-size: var(--text-body-size);
   font-family: var(--font-family-body);
-  line-height: 1.67;
+  line-height: var(--text-body-size-small);
   font-weight: var(--font-weight-normal);
   color: var(--sec-san-juan-blue);
-  letter-spacing: var(--text-body-letter-spacing);
-  width: 445px;
-}
-
-.form-group input,
-.form-group textarea {
   background-color: var(--background-light);
+  letter-spacing: var(--text-body-letter-spacing);
   border: none;
-  border-bottom: 1px solid var(--sec-san-juan-blue);
+  border-bottom: 1px solid rgba(54, 83, 107, 0.5);
   outline: none;
   padding: 22px 0px 24px;
   resize: none;
-  opacity: 50%;
-  cursor: pointer;
+  padding-left: 20px;
+  width: 425px;
 }
-
 .form-group textarea {
   height: 67px;
 }
 
+/*Placeholders and hovers*/
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  opacity: 50%;
+} 
+.form-group input:hover,
+.form-group textarea:hover {
+border-bottom: 1px solid rgba(54, 83, 107, 1);
+} 
+
+/*Checkbox*/
 .checkbox-group {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin: 24px 0px 29px;
 }
-
 .checkbox-group input[type="checkbox"] {
-  accent-color: var(--prime-dark-pink);
+  opacity: 25%;
   width: 24px;
   height: 24px;
-  margin: 13px 24px 8px 0px;
-  cursor: pointer;
+  margin: 13px 26px 8px 0px;
 }
-
+.checkbox-group input[type="checkbox"]:checked {
+  accent-color: var(--prime-dark-pink);
+  opacity: 100%;
+}
 .checkbox-group label {
-  min-width: 395px;
-  letter-spacing: -0.27px;
+  font-size: var(--text-body-size);
+  font-family: var(--font-family-body);
+  line-height: var(--text-body-line-small);
+  font-weight: var(--font-weight-normal);
+  color: var(--sec-san-juan-blue);
+  letter-spacing: var(--text-body-letter-spacing);
+  width: 395px;
 }
 
+/*Form button*/
 .btn-submit {
   padding: 16px 49px 15px 51px;
   border-radius: var(--btn-radius);
-  background-color: var(--sec-san-juan-blue);
-  color: var(--prime-link-water-white);
+  background-color: inherit;
+  color: var(--sec-san-juan-blue);
   font-size: var(--text-body-size);
   font-family: var(--btn-font-family);
   font-weight: var(--btn-font-weight);
   letter-spacing: var(--btn-letter-spacing);
-  border: none;
-  min-width: 152px;
-  cursor: pointer;
+  border: 1px solid var(--sec-san-juan-blue);
+  width: 152px;
+}
+.btn-submit:hover {
+  color: var(--prime-link-water-white);
+  background-color: var(--sec-san-juan-blue);
 }

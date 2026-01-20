@@ -11,40 +11,12 @@
   overflow: hidden;
   z-index: 1;
 }
+body {
+  margin: 0;
+}
 
 /* =============HEAD=============== */
 
-.container_header {
-  padding-top: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.nav-left {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.nav-links a {
-  font-family: var(--font-family-body);
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 0px;
-  color: var(--sec-san-juan-blue);
-  opacity: 0.7;
-  text-decoration: none;
-}
-.nav-links a:not(:last-child) {
-  margin-right: 40px;
-}
-
-.logo-wrapper {
-  width: 200px;
-  text-align: left;
-}
-/* Circle by AJ */
 .header-circle {
   position: absolute;
   width: 780px;

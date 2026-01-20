@@ -2,14 +2,28 @@
 
 .about_wrapper {
   padding-inline: 165px;
-  background-color: var(--background-light);
-  box-sizing: border-box;
-  min-width: 1440px;
-  max-width: 1440px;
-  /* Circle */
   position: relative;
   overflow: hidden;
-  z-index: 1;
+}
+body {
+  background-color: var(--background-light);
+  background-color: #edf3f8;
+  min-width: 1440px;
+  max-width: 1440px;
+  margin: 0;
+}
+
+/* =============HEAD=============== */
+
+.header-circle {
+  position: absolute;
+  width: 780px;
+  height: 780px;
+  border-radius: 50%;
+  background-color: #d9dee6;
+  top: -527px;
+  left: 800px;
+  z-index: -1;
 }
 
 /* =============HEAD=============== */

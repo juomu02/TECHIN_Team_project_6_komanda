@@ -131,3 +131,30 @@ body {
   color: var(--prime-link-water-white);
   background-color: var(--sec-san-juan-blue);
 }
+
+/*============SPONSORS============*/
+
+.container_sponsors {
+  width: 541px;
+  margin: 151px 0px 266px 124px;
+}
+
+.container_sponsors h4 {
+  font-size: var(--text-h4-size);
+  font-family: var(--font-family-headings);
+  letter-spacing: var(--text-h4-letter-spacing);
+  line-height: var(--text-h4-line);
+  font-weight: var(--font-weight-thin);
+  color: var(--sec-san-juan-blue);
+  opacity: 75%;
+  margin: 0 0 32px;
+  width: 445px;
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 541px;
+  height: 104px;
+}

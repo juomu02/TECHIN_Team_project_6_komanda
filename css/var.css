@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /*----- GLOBAL STYLES -----*/
-
+* {
+  box-sizing: border-box;
+}
 :root {
   /* COLORS */
   --prime-dark-pink: #ba4270;
@@ -107,9 +109,39 @@
   --mq-mob: (max-width: 375px);
 }
 
-/*h1 {
-    font-size: var(--text-h1-large-size);
-}*/
+/* =============HEAD=============== */
+
+header {
+  text-align: center;
+}
+.container_header {
+  padding-top: 40px;
+}
+
+/* =============HEAD & FOOTER=============== */
+
+.container_header,
+.container_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-links a {
+  font-family: var(--font-family-body);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  opacity: 0.7;
+  text-decoration: none;
+}
+.nav-links a:not(:last-child) {
+  margin-right: 40px;
+}
 
 /*============CALL TO ACTION============*/
 /* Call to action: bendrybės ir h2 tekstas */
@@ -133,12 +165,13 @@
 /* Call to action: mygtukas*/
 .cta-form {
   display: flex;
+  justify-content: space-between;
   border-radius: var(--btn-radius);
   overflow: hidden;
   border: none;
   width: 445px;
   background-color: var(--prime-link-water-white);
-  box-shadow: 10px 10px 25px #36536B40;
+  box-shadow: 10px 10px 25px #36536b40;
 }
 .container_cta .cta-form {
   margin-bottom: 20px;
@@ -175,4 +208,70 @@
 }
 .btn-prime:hover {
   background-color: var(--sec-charm-pink-actives);
+}
+/* =============FOOTER=============== */
+
+.container_footer {
+  height: 100px;
+  text-align: center;
+  padding-inline: 165px;
+}
+footer {
+  margin-inline: -165px;
+  background-color: var(--sec-mirage-blue);
+  position: relative;
+  overflow: hidden;
+}
+.textColorSanJuanBlue a {
+  color: var(--sec-san-juan-blue);
+}
+.textColorLinkWaterWhite a {
+  color: var(--prime-link-water-white);
+}
+.logo-wrapper {
+  width: 200px;
+  text-align: left;
+}
+footer > img {
+  position: absolute;
+  bottom: -544px;
+  left: 1050px;
+  width: 780px;
+  height: 780px;
+  z-index: 1;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.social div:not(:last-child) {
+  margin-right: 24px;
+}
+.facebookLogo,
+.twitterLogo,
+.linkedinLogo,
+.payapiLogo {
+  display: inline-block;
+  background-color: var(--prime-link-water-white);
+}
+.payapiLogo {
+  mask: url(../assets/shared/desktop/logo.svg) no-repeat center;
+  height: 38px;
+  width: 135px;
+}
+.facebookLogo {
+  mask: url(../assets/shared/desktop/facebook.svg) no-repeat center;
+  height: 24px;
+  width: 24px;
+}
+.twitterLogo {
+  mask: url(../assets/shared/desktop/twitter.svg) no-repeat center;
+  height: 20px;
+  width: 24px;
+}
+.linkedinLogo {
+  mask: url(../assets/shared/desktop/linkedin.svg) no-repeat center;
+  height: 24px;
+  width: 24px;
 }

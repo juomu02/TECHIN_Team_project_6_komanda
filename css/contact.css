@@ -154,7 +154,12 @@ body {
 .sponsors-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  align-content: space-between;
   width: 541px;
   height: 104px;
+  row-gap: auto;
+}
+
+.sponsors-grid img:nth-child(4) {
+  fill: #36536b;
 }

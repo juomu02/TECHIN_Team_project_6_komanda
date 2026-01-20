@@ -71,10 +71,9 @@ body {
   margin: 0;
   display: flex;
   flex-basis: 730px;
-  width: 650px;
-  height: 189px;
+  width: 58.559%;
   align-items: center;
-  margin: 80px 0 53px 95px;
+  margin: 90px 0 65px 95px; /*does not match adobe, but match design*/
 }
 .container_about-us {
   margin-bottom: 44px; /*additional margin on top of body up to picture*/
@@ -91,15 +90,14 @@ body {
   color: var(--sec-san-juan-blue);
   width: 255px;
   margin: 8px 30px 0 95px;
-  /* text-align: left; */
 }
 .container_about-us-article .body {
   width: 57.21%;
-  height: 104px;
   font-family: var(--font-family-body);
   color: var(--sec-light-san-juan-blue);
   font-size: var(--text-body-size);
   line-height: var(--text-body-line);
-  margin: 0 0 64px 0;
+  margin: 0 0 56px 0; /*smaller then adobe requirment as font does not match*/
   font-weight: 100;
 }
+

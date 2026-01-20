@@ -4,6 +4,7 @@
   padding-inline: 165px;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 body {
   background-color: var(--background-light);
@@ -13,7 +14,7 @@ body {
   margin: 0;
 }
 
-/* =============HEAD=============== */
+/* ============= HEAD =============== */
 
 .header-circle {
   position: absolute;
@@ -24,4 +25,25 @@ body {
   top: -527px;
   left: 800px;
   z-index: -1;
+}
+
+/* ============= TRUST SIGNALS =============== */
+
+.team-photo {
+  margin-inline: -165px;
+  margin-bottom: 72px;
+}
+
+.stats-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.stat {
+  flex: 1;
+  border-top: 1px solid
+    color-mix(in srgb, var(--background-dark-circle) 25%, transparent);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--background-dark-circle) 25%, transparent);
+  margin: 0 0 30px 0;
 }

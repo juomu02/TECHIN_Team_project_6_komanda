@@ -73,10 +73,10 @@ body {
   flex-basis: 730px;
   width: 58.559%;
   align-items: center;
-  margin: 90px 0 65px 95px; /*does not match adobe, but match design*/
+  margin: 90px 0 65px 95px; /*does not match adobe, but match design spacing*/
 }
 .container_about-us {
-  margin-bottom: 44px; /*additional margin on top of body up to picture*/
+  margin-bottom: 44px; /*additional margin on top of body for picture aligment*/
 }
 .container_about-us-article {
   display: flex;
@@ -88,7 +88,7 @@ body {
   line-height: var(--text-h3-lg-line);
   letter-spacing: var(--text-h3-lg-letter-spacing);
   color: var(--sec-san-juan-blue);
-  width: 255px;
+  width: 22.974%;
   margin: 8px 30px 0 95px;
 }
 .container_about-us-article .body {
@@ -97,7 +97,7 @@ body {
   color: var(--sec-light-san-juan-blue);
   font-size: var(--text-body-size);
   line-height: var(--text-body-line);
-  margin: 0 0 56px 0; /*smaller then adobe requirment as font does not match*/
+  margin: 0 0 56px 0; /*does not match adobe, but match design spacing*/
   font-weight: 100;
 }
 

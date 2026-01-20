@@ -2,7 +2,6 @@
 
 body {
   background-color: var(--background-light);
-  background-color: #edf3f8;
   min-width: 1440px;
   max-width: 1440px;
   margin: 0;
@@ -176,8 +175,8 @@ body {
   z-index: -1;
 }
 
-/*==============BENEFITS SKILTIS==============*/
-/*Konteineriai*/
+/*==============BENEFITS SECTION==============*/
+/*Containers*/
 .features {
   padding: 0px;
   margin-bottom: 105px;
@@ -189,7 +188,7 @@ body {
   gap: 29px;
 }
 
-/*Features vieno iš elemento apipavidalinimas*/
+/*Features items*/
 .features-item {
   flex: 1 1 350px;
   text-align: center;
@@ -209,7 +208,7 @@ body {
   height: auto;
 }
 
-/*Tekstas*/
+/*Text*/
 .features-item .h3-sm {
   font-family: var(--font-family-h3-sm);
   color: var(--sec-san-juan-blue);
@@ -224,9 +223,9 @@ body {
   font-family: var(--font-family-body);
   color: var(--sec-light-san-juan-blue);
   font-size: var(--text-body-size);
-  line-height: 1.67; /*apskaiciavau toki is adobe*/
+  line-height: var(--text-body-line-small);
   font-weight: var(--font-weight-normal);
-  letter-spacing: -0.43px; /*platesnis tekstas priverstų tekstą persikelti į kitą eilutę*/
+  letter-spacing: var(--text-body-letter-spacing);
   margin: 0;
 }
 .features-item:first-child {

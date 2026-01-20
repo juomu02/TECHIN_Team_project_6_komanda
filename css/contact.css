@@ -24,4 +24,110 @@ body {
   top: -527px;
   left: 800px;
   z-index: -1;
+  box-sizing: border-box;
+  min-width: 1440px;
+  max-width: 1440px;
+  margin: 0;
+}
+
+/*============PAGE TITLE============*/
+
+.contact_wrapper .h1-sm {
+  font-size: var(--text-h1-sm-size);
+  font-family: var(--font-family-headings);
+  letter-spacing: var(--text-h1-sm-letter-spacing);
+  line-height: var(--text-h1-sm-line);
+  font-weight: var(--font-weight-thin);
+  color: var(--sec-san-juan-blue);
+  display: flex;
+  align-items: center;
+  max-width: 730px;
+  margin: 80px 0px 23px;
+}
+
+/*=============HELP REQUEST FORM=============*/
+/*Containers*/
+.submit_and_sponsors {
+  display: flex;
+}
+.contact-form_container {
+  margin-bottom: 100px;
+  width: 445px;
+}
+
+/*Forms input and labels*/
+.form-group input,
+.form-group textarea {
+  font-size: var(--text-body-size);
+  font-family: var(--font-family-body);
+  line-height: var(--text-body-size-small);
+  font-weight: var(--font-weight-thin);
+  color: var(--sec-san-juan-blue);
+  background-color: var(--background-light);
+  letter-spacing: var(--text-body-letter-spacing);
+  border: none;
+  border-bottom: 1px solid rgba(54, 83, 107, 0.5);
+  outline: none;
+  padding: 22px 0px 24px;
+  resize: none;
+  padding-left: 20px;
+  width: 425px;
+  height: 67px;
+}
+.form-group textarea {
+  height: 114px;
+}
+
+/*Placeholders and hovers*/
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  opacity: 50%;
+}
+.form-group input:hover,
+.form-group textarea:hover {
+  border-bottom: 1px solid rgba(54, 83, 107, 1);
+}
+
+/*Checkbox*/
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin: 24px 0px 29px;
+}
+.checkbox-group input[type="checkbox"] {
+  opacity: 25%;
+  width: 24px;
+  height: 24px;
+  margin: 13px 26px 8px 0px;
+}
+.checkbox-group input[type="checkbox"]:checked {
+  accent-color: var(--prime-dark-pink);
+  opacity: 100%;
+}
+.checkbox-group label {
+  font-size: var(--text-body-size);
+  font-family: var(--font-family-body);
+  line-height: var(--text-body-line-small);
+  font-weight: var(--font-weight-thin);
+  color: var(--sec-san-juan-blue);
+  letter-spacing: var(--text-body-letter-spacing);
+  width: 395px;
+}
+
+/*Form button*/
+.btn-submit {
+  padding: 16px 49px 15px 51px;
+  border-radius: var(--btn-radius);
+  background-color: inherit;
+  color: var(--sec-san-juan-blue);
+  font-size: var(--text-body-size);
+  font-family: var(--btn-font-family);
+  font-weight: var(--btn-font-weight);
+  letter-spacing: var(--btn-letter-spacing);
+  border: 1px solid var(--sec-san-juan-blue);
+  width: 152px;
+}
+.btn-submit:hover {
+  color: var(--prime-link-water-white);
+  background-color: var(--sec-san-juan-blue);
 }

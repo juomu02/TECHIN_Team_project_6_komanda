@@ -51,11 +51,14 @@
 
   --text-body-size: 15px;
   --text-body-line: 1.87;
+  --text-body-line-small: 25px;
+  --text-body-letter-spacing: -0.12px;
 
   --text-body2-size: 16px;
   --text-body2-opacity: 0.7;
 
   /* FONT WEIGHT */
+  --font-weight-thin: 300;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
 

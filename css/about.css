@@ -58,17 +58,6 @@ body {
   width: 200px;
   text-align: left;
 }
-/* Circle by AJ */
-.header-circle {
-  position: absolute;
-  width: 780px;
-  height: 780px;
-  border-radius: 50%;
-  background-color: #d9dee6;
-  top: -527px;
-  left: 800px;
-  z-index: -1;
-}
 
 /* ============= FIRST PARAGRAPH =============== */
 
@@ -86,4 +75,31 @@ body {
   height: 189px;
   align-items: center;
   margin: 80px 0 53px 95px;
+}
+.container_about-us {
+  margin-bottom: 44px; /*additional margin on top of body up to picture*/
+}
+.container_about-us-article {
+  display: flex;
+}
+.h3-lg {
+  font-size: var(--text-h3-lg-size);
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--text-h3-lg-line);
+  letter-spacing: var(--text-h3-lg-letter-spacing);
+  color: var(--sec-san-juan-blue);
+  width: 255px;
+  margin: 8px 30px 0 95px;
+  /* text-align: left; */
+}
+.container_about-us-article .body {
+  width: 57.21%;
+  height: 104px;
+  font-family: var(--font-family-body);
+  color: var(--sec-light-san-juan-blue);
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+  margin: 0 0 64px 0;
+  font-weight: 100;
 }

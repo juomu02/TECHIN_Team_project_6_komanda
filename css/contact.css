@@ -138,7 +138,6 @@ body {
   width: 541px;
   margin: 151px 0px 266px 124px;
 }
-
 .container_sponsors h4 {
   font-size: var(--text-h4-size);
   font-family: var(--font-family-headings);
@@ -151,15 +150,23 @@ body {
   width: 445px;
 }
 
+/*Grid*/
 .sponsors-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-content: space-between;
   width: 541px;
   height: 104px;
-  row-gap: auto;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
 }
-
+.sponsors-grid img:nth-child(1),
 .sponsors-grid img:nth-child(4) {
-  fill: #36536b;
+  justify-self: start;
+}
+.sponsors-grid img:nth-child(3),
+.sponsors-grid img:nth-child(6) {
+  justify-self: end;
 }

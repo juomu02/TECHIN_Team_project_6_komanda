@@ -63,7 +63,7 @@ body {
   text-align: left;
 }
 
-.h1-sm {
+.stat .h1-sm {
   font-size: var(--text-h1-sm-size);
   font-family: var(--font-family-headings);
   font-weight: var(--font-weight-normal);
@@ -75,9 +75,6 @@ body {
   height: 77px;
   border-bottom: 1px solid
     color-mix(in srgb, var(--background-dark-circle) 25%, transparent);
-}
-
-.stat .h1-sm {
   color: var(--prime-dark-pink);
 }
 

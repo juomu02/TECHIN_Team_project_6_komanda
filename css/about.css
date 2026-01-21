@@ -28,8 +28,13 @@ body {
 }
 
 /* ============= TRUST SIGNALS =============== */
-
 .team-photo {
+  margin: 0;
+  padding: 0;
+  height: 0px;
+}
+.team-photo img {
+  display: block;
   margin-inline: -165px;
   margin-bottom: 72px;
 }
@@ -43,7 +48,39 @@ body {
   flex: 1;
   border-top: 1px solid
     color-mix(in srgb, var(--background-dark-circle) 25%, transparent);
+  margin: 0;
+}
+
+.body2 {
+  font-family: var(--font-family-body);
+  color: var(--sec-san-juan-blue);
+  /* font-size: var(--text-body2-size); */
+  font-size: 15px;
+  opacity: var(--text-body2-opacity);
+  letter-spacing: 0px;
+  line-height: 28px;
+  font-weight: 200;
+  text-align:left;
+}
+
+.h1-sm {
+  font-size: var(--text-h1-sm-size);
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--text-h1-sm-line);
+  letter-spacing: var(--text-h1-sm-letter-spacing);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 77px;
   border-bottom: 1px solid
     color-mix(in srgb, var(--background-dark-circle) 25%, transparent);
-  margin: 0 0 30px 0;
+}
+
+.stat .h1-sm {
+  color: var(--prime-dark-pink);
+}
+
+.stats {
+  margin-bottom: 70px;
 }

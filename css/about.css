@@ -63,7 +63,7 @@ body {
   text-align: left;
 }
 
-.stat .h1-sm {
+.stat > h1 {
   font-size: var(--text-h1-sm-size);
   font-family: var(--font-family-headings);
   font-weight: var(--font-weight-normal);

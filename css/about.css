@@ -25,3 +25,46 @@ body {
   left: 800px;
   z-index: -1;
 }
+
+/* ============= FIRST PARAGRAPH =============== */
+
+.h1-sm {
+  font-size: var(--text-h1-sm-size);
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--text-h1-sm-line);
+  letter-spacing: var(--text-h1-sm-letter-spacing);
+  color: var(--sec-san-juan-blue);
+  margin: 0;
+  display: flex;
+  flex-basis: 730px;
+  width: 58.559%;
+  align-items: center;
+  margin: 90px 0 65px 95px; /*does not match adobe, but match design spacing*/
+}
+.container_about-us {
+  margin-bottom: 44px; /*additional margin on top of body for picture aligment*/
+}
+.container_about-us-article {
+  display: flex;
+}
+.h3-lg {
+  font-size: var(--text-h3-lg-size);
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--text-h3-lg-line);
+  letter-spacing: var(--text-h3-lg-letter-spacing);
+  color: var(--sec-san-juan-blue);
+  width: 22.974%;
+  margin: 8px 30px 0 95px;
+}
+.container_about-us-article .body {
+  width: 57.21%;
+  font-family: var(--font-family-body);
+  color: var(--sec-light-san-juan-blue);
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+  margin: 0 0 56px 0; /*does not match adobe, but match design spacing*/
+  font-weight: 100;
+}
+

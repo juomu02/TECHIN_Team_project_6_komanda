@@ -71,13 +71,15 @@ body {
   padding: 22px 0px 24px;
   resize: none;
   padding-left: 20px;
-  width: 425px;
+  width: 445px;
   height: 67px;
 }
 .form-group textarea {
-  height: 114px;
+  height: 113px;
 }
-
+.form-group:nth-child(5) {
+  height: 113px;
+}
 /*Placeholders and hovers*/
 .form-group input::placeholder,
 .form-group textarea::placeholder {
@@ -95,12 +97,15 @@ body {
   margin: 24px 0px 29px;
 }
 .checkbox-group input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--sec-san-juan-blue);
   opacity: 25%;
   width: 24px;
   height: 24px;
-  margin: 13px 26px 8px 0px;
+  margin: 0;
 }
 .checkbox-group input[type="checkbox"]:checked {
+  appearance: revert;
   accent-color: var(--prime-dark-pink);
   opacity: 100%;
 }
@@ -112,6 +117,7 @@ body {
   color: var(--sec-san-juan-blue);
   letter-spacing: var(--text-body-letter-spacing);
   width: 395px;
+  margin-left: 26px;
 }
 
 /*Form button*/

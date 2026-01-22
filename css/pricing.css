@@ -40,7 +40,7 @@ body {
   display: flex;
   flex-basis: 546px;
   align-items: center;
-  margin: 89px 0 71px 0;
+  margin: 91px 0 70px 0;
 }
 .pricing_container {
   display: flex;
@@ -60,16 +60,16 @@ body {
   line-height: var(--text-h3-lg-line);
   letter-spacing: var(--text-h3-lg-letter-spacing);
   color: var(--prime-dark-pink);
-  margin: 0 0 5px 0;
+  margin: 0 0 4px 0;
   padding: 2px 0 2px 0;
 }
 .pricing-card .body {
   font-family: var(--font-family-body);
   color: var(--sec-light-san-juan-blue);
   font-size: var(--text-body-size);
-  line-height: 24px;
+  line-height: 26px;
   letter-spacing: -0.3px;
-  margin: 0 0 30px 0;
+  margin: 0 0 28px 0;
 }
 .pricing .h1-sm {
   font-size: var(--text-h1-sm-size);
@@ -77,12 +77,11 @@ body {
   line-height: var(--text-h1-sm-line);
   letter-spacing: var(--text-h1-sm-letter-spacing);
   color: var(--sec-san-juan-blue);
-  margin: 0 0 5px 0;
+  margin: 0 0 4px 0;
   display: flex;
   flex-basis: 350px;
   align-items: center;
   padding: 10px 0 11px 0;
-  /* height: 77px; */
 }
 .pricing-card_features {
   border-top: 1px solid
@@ -92,7 +91,7 @@ body {
   margin: 0 0 24px 0;
 }
 ul {
-  padding: 26px 0 13px 0;
+  padding: 27px 0 13px 0;
   list-style: none;
 }
 .pricing-card_features li img {

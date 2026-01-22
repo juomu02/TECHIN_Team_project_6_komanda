@@ -20,14 +20,9 @@ body {
   width: 780px;
   height: 780px;
   border-radius: 50%;
-  background-color: #d9dee6;
   top: -527px;
   left: 800px;
   z-index: -1;
-  box-sizing: border-box;
-  min-width: 1440px;
-  max-width: 1440px;
-  margin: 0;
 }
 
 /*============PAGE TITLE============*/

@@ -79,9 +79,7 @@ body {
 }
 
 /* ============= EASY TO IMPLEMENT =============== */
-.partners {
-  height: 472px; /*TESTAVIMUI-SKIRTA*/
-}
+
 .container_implementation {
   display: flex;
   margin: 150px 0 0 0;

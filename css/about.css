@@ -126,37 +126,6 @@ body {
 
 /* ============= SECOND PARAGRAPH =============== */
 
-/*.container_about-us-article:last-of-type {
-  margin-top: 25px;
-}*/
-/*.container_about-us:last-of-type
-  .container_about-us-article:nth-child(2) {
-  margin-top: 40px;
-}*/
-
-/*.container_about-us .body:nth-child(2) {
-  margin-top: 20px;
-}*/
-
-/*.container_about-us article:nth-child(2) .body {
-  margin-top: 25px;
-}*/
-/*.about-us:nth-of-type(2) .container_about-us article:nth-child(2) .body {
-
-  margin-top: 25px;
-
-}*/
-
-/*.container_about-us-article .body_people {
-  width: 57.21%;
-  font-family: var(--font-family-body);
-  color: var(--sec-light-san-juan-blue);
-  font-size: var(--text-body-size);
-  line-height: var(--text-body-line);
-  margin: 20px 0 45px 0; /*does not match adobe, but match design spacing*/
-  /*font-weight: 100;
-}*/
-
 .container_about-us-article-people {
   display: flex;
   margin-top: 28px;

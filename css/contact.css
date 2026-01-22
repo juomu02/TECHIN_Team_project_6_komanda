@@ -91,7 +91,7 @@ body {
 .checkbox-group {
   display: flex;
   align-items: center;
-  margin: 23px 0px 24px;
+  margin: 23px 0px 24px 1px;
 }
 .checkbox-group input[type="checkbox"] {
   appearance: none;
@@ -112,8 +112,7 @@ body {
   line-height: var(--text-body-line-small);
   font-weight: var(--font-weight-thin);
   color: var(--sec-san-juan-blue);
-  letter-spacing: var(--text-body-letter-spacing);
-  width: 395px;
+  letter-spacing: -0.3px;
   margin-left: 25px;
 }
 
@@ -170,7 +169,13 @@ body {
 .sponsors-grid img:nth-child(4) {
   justify-self: start;
 }
+.sponsors-grid img:nth-child(2){
+  margin-left: -9px;
+}
 .sponsors-grid img:nth-child(3),
 .sponsors-grid img:nth-child(6) {
   justify-self: end;
+}
+.sponsors-grid img:nth-child(5){
+  margin-left: -7px;
 }

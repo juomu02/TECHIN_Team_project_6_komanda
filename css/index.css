@@ -111,10 +111,9 @@ body {
   line-height: var(--text-body-line);
   flex-basis: 445px;
   width: 445px;
-  height: 76px;
-  margin: 0;
   text-align: left;
   letter-spacing: -0.1px;
+  margin: -3px 0 0 0;
 }
 
 /* ============= SIMPLE UI & UX =============== */
@@ -138,7 +137,7 @@ body {
   letter-spacing: var(--text-h2-letter-spacing);
   flex-basis: 445px;
   width: 445px;
-  margin: 178px 0 8px 0;
+  margin: 195px 0 3px 0;
   padding: 5px 0 5px 0;
 }
 .UI-content .body {
@@ -148,15 +147,14 @@ body {
   line-height: var(--text-body-line);
   flex-basis: 445px;
   width: 445px;
-  height: 48px;
   margin: 0;
   text-align: left;
   letter-spacing: -0.1px;
 }
 .UI-image {
-  margin-left: 95px;
+  margin: 6px 0 0 95px;
   width: 565px;
-  height: 499px;
+  height: 500px;
   object-fit: contain;
 }
 .simple-UI {
@@ -168,7 +166,6 @@ body {
   width: 780px;
   height: 780px;
   border-radius: 50%;
-  background-color: #d9dee6;
   top: 50%;
   right: -390px;
   transform: translateY(-50%);

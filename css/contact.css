@@ -37,7 +37,7 @@ body {
   display: flex;
   align-items: center;
   max-width: 730px;
-  margin: 91px 0px 33px;
+  margin: 92px 0px 30px;
 }
 
 /*=============HELP REQUEST FORM=============*/
@@ -46,7 +46,7 @@ body {
   display: flex;
 }
 .contact-form_container {
-  margin-bottom: 100px;
+  margin-bottom: 96px;
   width: 445px;
 }
 
@@ -63,12 +63,17 @@ body {
   border: none;
   border-bottom: 1px solid rgba(54, 83, 107, 0.5);
   outline: none;
-  padding: 24px 0px 24px 20px;
+  padding: 23px 0px 21px;
+  resize: none;
+  padding-left: 20px;
   width: 445px;
+  height: 66px;
 }
 .form-group textarea {
   height: 113px;
+  padding-top: 25px;
 }
+
 .form-group:nth-child(5) {
   height: 113px;
 }
@@ -86,7 +91,7 @@ body {
 .checkbox-group {
   display: flex;
   align-items: center;
-  margin: 24px 0px 29px;
+  margin: 23px 0px 24px;
 }
 .checkbox-group input[type="checkbox"] {
   appearance: none;
@@ -109,7 +114,7 @@ body {
   color: var(--sec-san-juan-blue);
   letter-spacing: var(--text-body-letter-spacing);
   width: 395px;
-  margin-left: 26px;
+  margin-left: 25px;
 }
 
 /*Form button*/
@@ -124,6 +129,7 @@ body {
   letter-spacing: var(--btn-letter-spacing);
   border: 1px solid var(--sec-san-juan-blue);
   width: 152px;
+  margin-left: 2px;
 }
 .btn-submit:hover {
   color: var(--prime-link-water-white);
@@ -134,7 +140,7 @@ body {
 
 .container_sponsors {
   width: 541px;
-  margin: 151px 0px 266px 124px;
+  margin: 154px 0px 262px 124px;
 }
 .container_sponsors h4 {
   font-size: var(--text-h4-size);

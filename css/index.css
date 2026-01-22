@@ -123,7 +123,7 @@ body {
 }
 .container_simple-UI {
   display: flex;
-  margin: 140px 0 140px 0; /*in adobe total section calulation is incorrect. So adjusted to total height of circle*/
+  margin: 140px 0 143px 0; /*in adobe total section calulation is incorrect. So adjusted to total height of circle*/
 }
 .simple-UI .container_simple-UI {
   padding-inline: 0;
@@ -176,18 +176,18 @@ body {
 /*Containers*/
 .features {
   padding: 0px;
-  margin-bottom: 105px;
+  margin-bottom: 101px;
 }
 .container_features {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  gap: 29px;
+
 }
 
 /*Features items*/
 .features-item {
-  flex: 1 1 350px;
+  flex-basis: 352px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -198,7 +198,7 @@ body {
   height: 106px;
   background-color: var(--sec-san-juan-blue);
   border-radius: 50%;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 }
 .features-item .icon-circle img {
   width: auto;
@@ -213,18 +213,25 @@ body {
   line-height: var(--text-h3-sm-line);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--text-h3-sm-letter-spacing);
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   margin-top: 0px;
 }
 .features-item .body {
   font-family: var(--font-family-body);
-  color: var(--sec-light-san-juan-blue);
+  color: var(--sec-san-juan-blue);
   font-size: var(--text-body-size);
   line-height: var(--text-body-line-small);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-thin);
   letter-spacing: var(--text-body-letter-spacing);
   margin: 0;
+  opacity: 70%;
 }
-.features-item:first-child {
+/*.features-item:first-child {
   flex-basis: 352px;
+}*/
+/*for pixel perfect*/
+.features-item:first-child .icon-circle {
+margin-right: 16px;
+margin-left: 0px;
 }
+

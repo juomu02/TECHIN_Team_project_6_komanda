@@ -118,6 +118,10 @@ header {
   padding-top: 40px;
 }
 
+.nav-right > button.btn-prime {
+  box-shadow: 10px 10px 25px #36536b40;
+}
+
 /* =============HEAD & FOOTER=============== */
 
 .container_header,

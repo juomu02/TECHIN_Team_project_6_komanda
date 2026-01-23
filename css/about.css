@@ -123,3 +123,20 @@ body {
 .stats {
   margin-bottom: 70px;
 }
+
+/* ============= SECOND PARAGRAPH =============== */
+
+.container_about-us-article-people {
+  display: flex;
+  margin-top: 28px;
+}
+
+.container_about-us-article-people .body {
+  width: 57.21%;
+  font-family: var(--font-family-body);
+  color: var(--sec-light-san-juan-blue);
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+  margin: 0 0 58px 0; /*does not match adobe, but match design spacing*/
+  font-weight: 100;
+}

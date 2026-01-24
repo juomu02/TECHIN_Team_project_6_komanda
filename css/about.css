@@ -6,13 +6,6 @@
   overflow: hidden;
   box-sizing: border-box;
 }
-body {
-  background-color: var(--background-light);
-  background-color: #edf3f8;
-  min-width: 1440px;
-  max-width: 1440px;
-  margin: 0;
-}
 
 /* ============= HEAD =============== */
 

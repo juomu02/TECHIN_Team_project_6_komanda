@@ -218,14 +218,12 @@ body {
   color: var(--sec-san-juan-blue);
   font-size: var(--text-body-size);
   line-height: var(--text-body-line-small);
-  font-weight: var(--font-weight-thin);
-  letter-spacing: var(--text-body-letter-spacing);
+  font-weight: var(--font-weigth-normal);
+  letter-spacing: -0.50px;
   margin: 0;
   opacity: 70%;
 }
-/*.features-item:first-child {
-  flex-basis: 352px;
-}*/
+
 /*for pixel perfect*/
 .features-item:first-child .icon-circle {
   margin-right: 16px;

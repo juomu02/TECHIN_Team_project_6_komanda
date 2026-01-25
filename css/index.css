@@ -90,20 +90,18 @@ body {
   align-items: center;
   width: 1440px;
   margin: 0 0 150px auto;
-  padding-inline: -165px;
+  margin-inline: -165px;
   background-color: var(--sec-mirage-blue);
   text-align: center;
   background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
-  background-position: left -190px top -375px;
+  background-position: left -235px top -355px;
 }
 
 .container_partners {
   display: flex;
   flex-direction: row;
-  /*justify-content: center;*/
-  /*align-items: center;*/
-  gap: 48px;
+  gap: 131px;
   padding: 67px 0 100px 0;
 }
 
@@ -121,7 +119,6 @@ body {
   font-weight: var(--font-weight-normal);
   color: var(--prime-link-water-white);
   font-family: var(--font-family-headings);
-  /*margin-left: 165px;*/
   margin-bottom: 8px;
 }
 
@@ -132,7 +129,6 @@ body {
   color: var(--prime-link-water-white);
   font-family: var(--font-family-body);
   margin-bottom: 34px;
-  /*margin-left: 165px;*/
 }
 
 .btn-sec-lt {
@@ -148,7 +144,6 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease,
     border-color 0.3s ease, transform 0.3s ease;
-  /*margin-left: 165px;*/
 }
 
 .btn-sec-lt:hover,
@@ -168,7 +163,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .sponsors-row {
@@ -179,9 +174,12 @@ body {
 }
 
 .sponsors-row img {
-  height: 24px;
   width: auto;
   filter: brightness(0) invert(1);
+}
+
+.sponsors-tesla {
+    height: 16px;
 }
 
 /* ============= EASY TO IMPLEMENT =============== */

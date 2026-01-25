@@ -21,7 +21,6 @@ body {
   width: 780px;
   height: 780px;
   border-radius: 50%;
-  background-color: #d9dee6;
   top: -527px;
   left: 800px;
   z-index: -1;
@@ -41,10 +40,10 @@ body {
   flex-basis: 730px;
   width: 58.559%;
   align-items: center;
-  margin: 90px 0 65px 95px; /*does not match adobe, but match design spacing*/
+  margin: 90px 0 61px 95px; /*does not match adobe, but match design spacing*/
 }
 .container_about-us {
-  margin-bottom: 44px; /*additional margin on top of body for picture aligment*/
+  margin-bottom: 45px; /*additional margin on top of body for picture aligment*/
 }
 .container_about-us-article {
   display: flex;
@@ -57,7 +56,7 @@ body {
   letter-spacing: var(--text-h3-lg-letter-spacing);
   color: var(--sec-san-juan-blue);
   width: 22.974%;
-  margin: 8px 30px 0 95px;
+  margin: 12px 30px 0 95px;
 }
 .container_about-us-article .body {
   width: 57.21%;

@@ -73,13 +73,9 @@ body {
   font-weight: var(--font-weight-bold);
 }
 .container_phone-mockup {
-  margin-top: 74px;
-  margin-left: 209px;
-}
-.container_phone-mockup img {
-  width: 258px;
-  height: 499px;
-  object-fit: contain;
+  margin-top: 19px;
+  margin-left: 160px;
+  margin-inline-end: -8px;
 }
 
 /*========== PARTNERS SECTION ==========*/
@@ -201,7 +197,7 @@ body {
   letter-spacing: var(--text-h2-letter-spacing);
   flex-basis: 445px;
   width: 445px;
-  margin: 66px 0 8px 0;
+  margin: 12px 0 8px -105px;
   padding: 5px 0 5px 0;
 }
 .implementation-content .body {
@@ -213,7 +209,10 @@ body {
   width: 445px;
   text-align: left;
   letter-spacing: -0.1px;
-  margin: -3px 0 0 0;
+  margin: -3px 0 0 -105px;
+}
+.implementation-image {
+  margin: -109px 0 0 -55px;
 }
 
 /* ============= SIMPLE UI & UX =============== */
@@ -237,7 +236,7 @@ body {
   letter-spacing: var(--text-h2-letter-spacing);
   flex-basis: 445px;
   width: 445px;
-  margin: 195px 0 3px 0;
+  margin: 89px 0 3px 0;
   padding: 5px 0 5px 0;
 }
 .UI-content .body {
@@ -252,10 +251,9 @@ body {
   letter-spacing: -0.1px;
 }
 .UI-image {
-  margin: 6px 0 0 95px;
-  width: 565px;
-  height: 500px;
-  object-fit: contain;
+  margin-top: -154px;
+  margin-bottom: -106px;
+  margin-inline-start: 42px;
 }
 .simple-UI {
   position: relative;
@@ -282,7 +280,6 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-
 }
 
 /*Features items*/
@@ -321,17 +318,14 @@ body {
   color: var(--sec-san-juan-blue);
   font-size: var(--text-body-size);
   line-height: var(--text-body-line-small);
-  font-weight: var(--font-weight-thin);
-  letter-spacing: var(--text-body-letter-spacing);
+  font-weight: var(--font-weigth-normal);
+  letter-spacing: -0.50px;
   margin: 0;
   opacity: 70%;
 }
-/*.features-item:first-child {
-  flex-basis: 352px;
-}*/
+
 /*for pixel perfect*/
 .features-item:first-child .icon-circle {
-margin-right: 16px;
-margin-left: 0px;
+  margin-right: 16px;
+  margin-left: 0px;
 }
-

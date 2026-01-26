@@ -94,6 +94,11 @@
   height: 24px;
   margin: 0;
 }
+.checkbox-background {
+  background-color: #36536b25;
+  width: 24px;
+  height: 24px;
+}
 .checkbox-group input[type="checkbox"]:checked {
   appearance: revert;
   accent-color: var(--prime-dark-pink);

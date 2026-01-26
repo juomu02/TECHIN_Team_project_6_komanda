@@ -50,7 +50,7 @@
   text-align: left;
   font-size: var(--text-body-size);
   letter-spacing: 0px;
-  margin-bottom: 152px;
+  margin-bottom: 150px;
   margin-left: 27px;
   margin-top: 16px;
   width: 225px;
@@ -70,7 +70,7 @@
   margin-top: 19px;
   margin-left: 160px;
   margin-inline-end: -8px;
-  margin-bottom: -35px;
+  margin-bottom: -540px;
 }
 
 /*========== PARTNERS SECTION ==========*/
@@ -92,7 +92,7 @@
   display: flex;
   flex-direction: row;
   gap: 131px;
-  padding: 67px 0 100px 0;
+  padding: 70px 0 100px 0;
 }
 
 .partners-text {
@@ -118,7 +118,7 @@
   font-weight: var(--font-weight-normal);
   color: var(--prime-link-water-white);
   font-family: var(--font-family-body);
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
 .btn-sec-lt {
@@ -179,7 +179,7 @@
 
 .container_implementation {
   display: flex;
-  margin: 200px 0 0 0;
+  margin: 203px 0 0 0;
 }
 .implementation-content {
   margin-left: 125px;

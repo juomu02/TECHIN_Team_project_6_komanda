@@ -70,6 +70,7 @@
   margin-top: 19px;
   margin-left: 160px;
   margin-inline-end: -8px;
+  margin-bottom: -35px;
 }
 
 /*========== PARTNERS SECTION ==========*/
@@ -79,7 +80,6 @@
   flex-direction: column;
   align-items: center;
   width: 1440px;
-  margin: 0 0 150px auto;
   margin-inline: -165px;
   background-color: var(--sec-mirage-blue);
   text-align: center;
@@ -176,7 +176,7 @@
 
 .container_implementation {
   display: flex;
-  margin: 150px 0 0 0;
+  margin: 200px 0 0 0;
 }
 .implementation-content {
   margin-left: 125px;

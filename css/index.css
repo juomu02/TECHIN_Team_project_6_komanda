@@ -153,7 +153,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 120px;
+  margin-top: 115px;
 }
 
 .sponsors-row {
@@ -169,7 +169,10 @@
 }
 
 .sponsors-tesla {
-    height: 16px;
+    height: 17px;
+}
+.sponsors-microsoft {
+    margin-left: 5px;
 }
 
 /* ============= EASY TO IMPLEMENT =============== */

@@ -1,11 +1,5 @@
 @import "var.css";
 
-body {
-  background-color: var(--background-light);
-  min-width: 1440px;
-  max-width: 1440px;
-  margin: 0;
-}
 .index_wrapper {
   position: relative;
   overflow-x: hidden;
@@ -219,6 +213,8 @@ body {
 
 .simple-UI {
   margin-inline-end: -165px;
+  position: relative;
+  overflow: visible;
 }
 .container_simple-UI {
   display: flex;
@@ -255,16 +251,13 @@ body {
   margin-bottom: -106px;
   margin-inline-start: 42px;
 }
-.simple-UI {
-  position: relative;
-  overflow: hidden;
-}
+
 .simple-UI-circle {
   position: absolute;
   width: 780px;
   height: 780px;
   border-radius: 50%;
-  top: 50%;
+  top: 37.5%;
   right: -390px;
   transform: translateY(-50%);
   z-index: -1;

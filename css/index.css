@@ -35,13 +35,12 @@
   line-height: var(--text-h1-lg-line);
   letter-spacing: var(--text-h1-lg-letter-spacing);
   color: var(--sec-san-juan-blue);
-  margin: 0;
+  margin: 12px auto;
   display: flex;
   align-items: center;
-  height: 243px;
 }
 .container_cta-index {
-  margin-top: 24px;
+  margin-top: 38px;
 }
 .cta-footer-text {
   color: var(--sec-light-san-juan-blue);
@@ -83,7 +82,7 @@
     flex-direction: column-reverse;
   }
   .container_phone-mockup {
-    margin: 0 auto -61px;
+    margin: 0 auto;
     transform: translate(15px, 14px);
   }
   .container_phone-mockup > img {
@@ -98,14 +97,14 @@
     line-height: var(--text-h2-line);
     letter-spacing: var(--text-h2-letter-spacing);
     width: 64.8%;
-    margin: 0 auto -44px;
+    margin: 4px auto 66px;
     text-align: left;
   }
   .container_cta-index{
     margin: 0 auto;
   }
   .cta-form {
-    margin: 0 auto 18px;
+    margin: -44px auto 18px;
   }
 
   .cta-footer-text {

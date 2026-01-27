@@ -141,13 +141,14 @@ header {
   flex-direction: row;
   align-items: center;
 }
-.nav-links ul {
+.nav-links ul,
+.social ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.nav-links a {
+.nav-links li > a {
   font-family: var(--font-family-body);
   font-size: 15px;
   font-weight: bold;
@@ -155,7 +156,7 @@ header {
   opacity: 0.7;
   text-decoration: none;
 }
-.nav-links a:not(:last-child) {
+.nav-links li:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -255,21 +256,25 @@ footer > img {
   width: 780px;
   height: 780px;
   z-index: 1;
+  pointer-events: none;
 }
 .social {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-align: center;
 }
-.social div:not(:last-child) {
+.social li:not(:last-child) {
   margin-right: 24px;
 }
 .facebookLogo,
 .twitterLogo,
 .linkedinLogo,
 .payapiLogo {
-  display: inline-block;
+  display: block;
   background-color: var(--prime-link-water-white);
+  mask-size: contain;
+  mask-repeat: no-repeat;
 }
 .payapiLogo {
   mask: url(../assets/shared/desktop/logo.svg) no-repeat center;
@@ -283,7 +288,7 @@ footer > img {
 }
 .twitterLogo {
   mask: url(../assets/shared/desktop/twitter.svg) no-repeat center;
-  height: 20px;
+  height: 24px;
   width: 24px;
 }
 .linkedinLogo {

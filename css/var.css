@@ -6,7 +6,7 @@
 }
 body {
   background-color: var(--background-light);
-  min-width: 1440px;
+  /* min-width: 1440px; */
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -111,7 +111,7 @@ body {
   --chbx-opacity-disabled: 0.05;
 
   /* MEDIA QUERIES */
-  --mq-tab: (max-width: 1439px);
+  --mq-tab: (max-width: 768px);
   --mq-mob: (max-width: 375px);
 }
 

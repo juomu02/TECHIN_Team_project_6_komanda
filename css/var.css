@@ -161,6 +161,9 @@ header {
 .nav-links a:not(:last-child) {
   margin-right: 40px;
 }
+.nav-links a:hover {
+opacity: 1;
+}
 
 /*============CALL TO ACTION============*/
 /* Call to action: bendrybės ir h2 tekstas */
@@ -258,13 +261,14 @@ footer > img {
   width: 780px;
   height: 780px;
   z-index: 1;
+  pointer-events: none;
 }
 .social {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.social div:not(:last-child) {
+.social a:not(:last-child) {
   margin-right: 24px;
 }
 .facebookLogo,
@@ -294,6 +298,12 @@ footer > img {
   height: 24px;
   width: 24px;
 }
+.social a:hover .facebookLogo,
+.social a:hover .twitterLogo,
+.social a:hover .linkedinLogo {
+  background-color: var(--prime-bg-hover);
+}
+
 
 /* FOR TABLET MEDIA QUARIES */
 @media (max-width: 768px) {

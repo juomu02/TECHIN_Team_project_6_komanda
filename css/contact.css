@@ -34,6 +34,14 @@
     left: 505px;
   }
 }
+@media (max-width: 768px) {
+  .header-circle {
+    top: -605px;
+    left: 84px;
+    width: 785px;
+    height: 745px;
+  }
+}
 /*============PAGE TITLE============*/
 
 .contact_wrapper .h1-sm {

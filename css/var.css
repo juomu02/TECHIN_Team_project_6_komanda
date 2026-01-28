@@ -128,18 +128,16 @@ header {
 .hamburgerMenuButton {
   display: none;
   text-align: right;
+  margin-bottom: 4px;
 }
 @media (max-width: 768px) {
   .hamburgerMenuButton {
     display: inline-block;
-    margin-bottom: 3px;
   }
 }
-
 .container_header {
   padding-top: 40px;
 }
-
 .nav-right > button.btn-prime {
   box-shadow: 10px 10px 25px #36536b40;
 }

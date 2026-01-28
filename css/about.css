@@ -3,7 +3,6 @@
 .about_wrapper {
   padding-inline: 165px;
   position: relative;
-  /*overflow: hidden;*/
   overflow-x: visible;
   overflow-y: hidden;
 }
@@ -61,7 +60,6 @@
   margin: 0 0 56px 0; /*does not match adobe, but match design spacing*/
   font-weight: 100;
 }
-
 
 /* ============= TRUST SIGNALS =============== */
 .team-photo {
@@ -141,7 +139,8 @@
   left: 259.5px;
 }
 
-.team-photo, .stats {
+.team-photo,
+.stats {
   position: relative;
   z-index: 1;
 }

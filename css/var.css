@@ -209,7 +209,7 @@ header {
 }
 .cta-input::placeholder {
   opacity: var(--prime-opacity-disabled);
-  color: var(--sec-light-san-juan-blue);
+  color: var(--sec-san-juan-blue);
 }
 
 /* Call to action: "schedule a demo" mygtukas */
@@ -227,6 +227,64 @@ header {
 }
 .btn-prime:hover {
   background-color: var(--sec-charm-pink-actives);
+}
+
+/* FOR TABLET MEDIA QUARIES */
+@media (min-width: 768px) and (max-width: 1439px) {
+.container_cta {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+.container_cta h2 {
+  align-self: center;
+  margin-bottom: 29px;
+}
+}
+
+/* FOR MOBILE MEDIA QUARIES */ 
+@media (max-width: 767px) {
+.cta {
+  display: flex;
+  justify-content: center;
+}
+.container_cta {
+width: 327px;
+margin: 0 0 80px 0;
+}
+.container_cta h2 {
+  margin: 0 auto 22px;
+  text-align: center;
+  font-size: var(--text-h3-lg-size);
+  line-height: var(--text-h3-lg-line);
+  letter-spacing: var(--text-h3-lg-letter-spacing);
+}
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-light);
+  box-shadow: none;
+  overflow: visible;
+  width: 327px;
+}
+.cta-input {
+  padding: 16px 158px 15px 27px;
+  border-radius: var(--btn-radius);
+  background-color: var(--prime-link-water-white);
+  box-shadow: 10px 10px 25px #36536B40;
+}
+.container_cta .cta-form {
+  margin-bottom: 0px;
+}
+
+/* Call to action: "schedule a demo" button */
+.btn-prime {
+  padding: 16px 46px 15px 50px;
+  width: 327px;
+  margin-top: 16px;
+}
 }
 /* =============FOOTER=============== */
 
@@ -294,75 +352,4 @@ footer > img {
   height: 24px;
   width: 24px;
 }
-
-/* FOR TABLET MEDIA QUARIES */
-@media (max-width: 768px) {
-/*============CALL TO ACTION============*/
-.container_cta {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-items: center;
-  text-align: center;
-}
-.container_cta h2 {
-  align-self: center;
-  margin-bottom: 29px;
-}
-
-
-
-
-}
-
-
-/* FOR MOBILE */ 
-@media (max-width: 375px) {
-/*============CALL TO ACTION============*/
-.cta {
-  display: flex;
-  justify-content: center;
-}
-.container_cta {
-width: 327px;
-margin: 0 0 80px 0;
-}
-.container_cta h2 {
-  margin: 0 auto 22px;
-  text-align: center;
-  font-size: var(--text-h3-lg-size);
-  line-height: var(--text-h3-lg-line);
-  letter-spacing: var(--text-h3-lg-letter-spacing);
-}
-.cta-form {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--background-light);
-  box-shadow: none;
-  overflow: visible;
-  width: 327px;
-}
-.cta-input {
-  padding: 16px 158px 15px 27px;
-  border-radius: var(--btn-radius);
-  background-color: var(--prime-link-water-white);
-  box-shadow: 10px 10px 25px #36536B40;
-}
-.container_cta .cta-form {
-  margin-bottom: 0px;
-}
-
-/* Call to action: "schedule a demo" button */
-.btn-prime {
-  padding: 16px 46px 15px 50px;
-  width: 327px;
-  margin-top: 16px;
-}
-
-
-
-
-
-}
-
 

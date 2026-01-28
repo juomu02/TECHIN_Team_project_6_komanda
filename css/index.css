@@ -5,6 +5,18 @@
   overflow-x: hidden;
   padding-inline: 165px;
 }
+/* FOR TABLET MEDIA QUARIES */
+@media (min-width: 768px) and (max-width: 1439px) {
+  .index_wrapper {
+    padding-inline: 97px;
+  }
+}
+/* FOR MOBILE */
+@media (max-width: 767px) {
+  .index_wrapper {
+    padding-inline: 24px;
+  }
+}
 
 /* =============HEAD=============== */
 
@@ -326,22 +338,43 @@
   margin-left: 0px;
 }
 
-/* FOR TABLET MEDIA QUARIES */
-@media (max-width: 768px) {
-.index_wrapper {
-  padding-inline: 162px 161px;
+/*============BENEFITS SECTION=========*/
+/* FOR TABLET MEDIA QUARIES */ 
+@media (max-width: 1440px) {
+  .container_features {
+    padding-inline: -58px -60px;
+  }
+.features {
+  margin-bottom: 111px;
+}
+
+.features-item {
+  flex-basis: 227px;
+}
+.features-item .icon-circle {
+  width: 88px;
+  height: 88px;
+  margin-bottom: 34px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.features-item .icon-circle img {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.features-item .h3-sm {
+  margin-bottom: 18px;
+  margin-top: 0px;
+}
+
+}
+
+/* FOR MOBILE MEDIA QUARIES */
+@media (max-width: 767px) {
+
 }
 
 
-}
-
-
-/* FOR MOBILE */ 
-@media (max-width: 375px) {
-.index_wrapper {
-  padding-inline: 24px;
-}
-
-
-
-}

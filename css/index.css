@@ -36,7 +36,6 @@
   margin: 0;
 }
 .index-grid {
-  display: flex;
   display: block;
   width: 49.19%;
   margin-top: 149px;
@@ -48,13 +47,12 @@
   line-height: var(--text-h1-lg-line);
   letter-spacing: var(--text-h1-lg-letter-spacing);
   color: var(--sec-san-juan-blue);
-  margin: 0;
+  margin: 12px auto;
   display: flex;
   align-items: center;
-  height: 243px;
 }
 .container_cta-index {
-  margin-top: 24px;
+  margin-top: 38px;
 }
 .cta-footer-text {
   color: var(--sec-light-san-juan-blue);
@@ -83,6 +81,79 @@
   margin-left: 160px;
   margin-inline-end: -8px;
   margin-bottom: -35px;
+}
+
+/* ==== HERO SECTION MEDIA ==== */
+
+@media (max-width: 768px) {
+  body .index_wrapper {
+    padding-inline: 0;
+    margin: 0 auto;
+  }
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .container_phone-mockup {
+    margin: 0 auto;
+    transform: translate(15px, 14px);
+  }
+  .container_phone-mockup > img {
+    height: 398px;
+  }
+  .index-grid {
+    width: 100%;
+    margin: 0;
+  }
+  .h1-lg {
+    font-size: var(--text-h2-size);
+    line-height: var(--text-h2-line);
+    letter-spacing: var(--text-h2-letter-spacing);
+    width: 64.8%;
+    margin: 4px auto 66px;
+    text-align: center;
+  }
+  .container_cta-index {
+    margin: 0 auto;
+  }
+  .cta-form {
+    margin: -44px auto 18px;
+  }
+
+  .cta-footer-text {
+    margin: 0 auto 100px;
+  }
+}
+@media (max-width: 375px) {
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .container_phone-mockup {
+    margin: 0 auto;
+    transform: translate(12px, 7px);
+  }
+  .container_phone-mockup > img {
+    height: 315px;
+  }
+  .index-grid {
+    width: 100%;
+    margin: 0;
+  }
+  .h1-lg {
+    font-size: var(--text-h3-lg-size);
+    letter-spacing: var(--text-h3-lg-letter-spacing);
+    width: 87%;
+    margin: -15px auto 57px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .cta-form {
+    margin: -38px auto 25px;
+  }
+  .cta-footer-text {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 80px;
+  }
 }
 
 /*========== PARTNERS SECTION ==========*/
@@ -144,8 +215,11 @@
   font-weight: var(--btn-font-weight);
   letter-spacing: var(--btn-letter-spacing);
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease,
-    border-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .btn-sec-lt:hover,
@@ -181,10 +255,10 @@
 }
 
 .sponsors-tesla {
-    height: 17px;
+  height: 17px;
 }
 .sponsors-microsoft {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 /* ============= EASY TO IMPLEMENT =============== */
@@ -327,7 +401,7 @@
   font-size: var(--text-body-size);
   line-height: var(--text-body-line-small);
   font-weight: var(--font-weigth-normal);
-  letter-spacing: -0.50px;
+  letter-spacing: -0.5px;
   margin: 0;
   opacity: 70%;
 }

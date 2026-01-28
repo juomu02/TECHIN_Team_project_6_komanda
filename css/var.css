@@ -307,7 +307,7 @@ footer > img {
 }
 .container_cta h2 {
   align-self: center;
-  margin-bottom: 24px;
+  margin-bottom: 29px;
 }
 
 
@@ -328,7 +328,7 @@ width: 327px;
 margin: 0 0 80px 0;
 }
 .container_cta h2 {
-  margin: 0 auto 21px;
+  margin: 0 auto 22px;
   text-align: center;
   font-size: var(--text-h3-lg-size);
   line-height: var(--text-h3-lg-line);

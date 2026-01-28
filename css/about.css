@@ -10,7 +10,11 @@
     padding-inline: 97px;
   }
 }
-
+@media (max-width: 768px) {
+  .about_wrapper {
+    padding-inline: 24px;
+  }
+}
 /* ============= HEAD =============== */
 
 .header-circle {

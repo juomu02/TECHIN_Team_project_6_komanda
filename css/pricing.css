@@ -11,7 +11,11 @@
     padding-inline: 97px;
   }
 }
-
+@media (max-width: 768px) {
+  .pricing_wrapper {
+    padding-inline: 24px;
+  }
+}
 /* =============HEAD=============== */
 
 .header-circle {

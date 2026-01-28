@@ -6,7 +6,7 @@
 }
 body {
   background-color: var(--background-light);
-  min-width: 1440px;
+  /* min-width: 1440px; */
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -111,14 +111,19 @@ body {
   --chbx-opacity-disabled: 0.05;
 
   /* MEDIA QUERIES */
-  --mq-tab: (max-width: 1439px);
-  --mq-mob: (max-width: 375px);
+  --mq-tab: 1439px;
+  --mq-mob: 375px;
 }
 
 /* =============HEAD=============== */
 
 header {
   text-align: center;
+}
+@media (min-width: 769px) and (max-width: 1439px) {
+  header {
+    margin-inline: -57px;
+  }
 }
 .container_header {
   padding-top: 40px;

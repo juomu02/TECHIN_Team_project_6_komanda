@@ -5,6 +5,11 @@
   position: relative;
   overflow: hidden;
 }
+@media (min-width: 769px) and (max-width: 1439px) {
+  .about_wrapper {
+    padding-inline: 97px;
+  }
+}
 
 /* ============= HEAD =============== */
 
@@ -59,7 +64,6 @@
   margin: 0 0 56px 0; /*does not match adobe, but match design spacing*/
   font-weight: 100;
 }
-
 
 /* ============= TRUST SIGNALS =============== */
 .team-photo {

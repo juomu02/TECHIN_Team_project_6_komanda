@@ -6,6 +6,11 @@
   overflow: hidden;
   z-index: 1;
 }
+@media (min-width: 769px) and (max-width: 1439px) {
+  .pricing_wrapper {
+    padding-inline: 97px;
+  }
+}
 
 /* =============HEAD=============== */
 

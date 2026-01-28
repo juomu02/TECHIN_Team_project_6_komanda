@@ -5,6 +5,11 @@
   overflow-x: hidden;
   padding-inline: 165px;
 }
+@media (min-width: 769px) and (max-width: 1439px) {
+  .index_wrapper {
+    padding-inline: 97px;
+  }
+}
 
 /* =============HEAD=============== */
 
@@ -132,8 +137,11 @@
   font-weight: var(--btn-font-weight);
   letter-spacing: var(--btn-letter-spacing);
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease,
-    border-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .btn-sec-lt:hover,
@@ -169,10 +177,10 @@
 }
 
 .sponsors-tesla {
-    height: 17px;
+  height: 17px;
 }
 .sponsors-microsoft {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 /* ============= EASY TO IMPLEMENT =============== */
@@ -315,7 +323,7 @@
   font-size: var(--text-body-size);
   line-height: var(--text-body-line-small);
   font-weight: var(--font-weigth-normal);
-  letter-spacing: -0.50px;
+  letter-spacing: -0.5px;
   margin: 0;
   opacity: 70%;
 }

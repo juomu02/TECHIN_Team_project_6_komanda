@@ -117,26 +117,18 @@ body {
   --bp-desktop: 1440px;
 }
 
-/* =============HEAD=============== */
+/* ============= HEAD =============== */
 
 header {
   text-align: center;
 }
-@media (min-width: 769px) and (max-width: 1439px) {
-  header {
-    margin-inline: -57px;
-  }
-}
+
 .hamburgerMenuButton {
   display: none;
   text-align: right;
   margin-bottom: 4px;
 }
-@media (max-width: 768px) {
-  .hamburgerMenuButton {
-    display: inline-block;
-  }
-}
+
 .container_header {
   padding-top: 40px;
 }
@@ -144,7 +136,18 @@ header {
   box-shadow: 10px 10px 25px #36536b40;
 }
 
-/* =============HEAD & FOOTER=============== */
+/* ============= HEAD MEDIA =============== */
+@media (min-width: 769px) and (max-width: 1439px) {
+  header {
+    margin-inline: -57px;
+  }
+}
+@media (max-width: 768px) {
+  .hamburgerMenuButton {
+    display: inline-block;
+  }
+}
+/* ============= HEAD & FOOTER =============== */
 
 .container_header,
 .container_footer {
@@ -153,11 +156,6 @@ header {
   align-items: center;
   justify-content: flex-start;
 }
-@media (max-width: 768px) {
-  .container_header {
-    justify-content: space-between;
-  }
-}
 .nav {
   flex: 1 1 100%;
   display: flex;
@@ -165,12 +163,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-}
-
 .logo-wrapper {
   min-width: 200px;
   text-align: left;
@@ -203,6 +195,15 @@ header {
   opacity: 1;
 }
 
+/* ============= HEAD & FOOTER MEDIA =============== */
+@media (max-width: 768px) {
+  .container_header {
+    justify-content: space-between;
+  }
+  .nav {
+    display: none;
+  }
+}
 /*============CALL TO ACTION============*/
 /* Call to action: bendrybės ir h2 tekstas */
 .container_cta {

@@ -5,18 +5,20 @@
   overflow-x: hidden;
   padding-inline: 165px;
 }
-@media (min-width: 769px) and (max-width: 1439px) {
+/* FOR TABLET MEDIA QUARIES */
+@media (min-width: 768px) and (max-width: 1439px) {
   .index_wrapper {
     padding-inline: 97px;
   }
 }
-@media (max-width: 768px) {
+/* FOR MOBILE */
+@media (max-width: 767px) {
   .index_wrapper {
     padding-inline: 24px;
   }
 }
 
-/* =============HEAD=============== */
+/* ============= HEAD =============== */
 
 .header-circle {
   position: absolute;
@@ -27,7 +29,9 @@
   z-index: -1;
 }
 
-@media (min-width: 769px) and (max-width: 1439px) {
+/* ============= HEAD MEDIA=============== */
+
+@media (min-width: 768px) and (max-width: 1439px) {
   .header-circle {
     top: -663px;
     left: -91px;
@@ -35,7 +39,7 @@
     height: 949px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header-circle {
     top: -550px;
     left: -202px;
@@ -98,7 +102,7 @@
 
 /* ==== HERO SECTION MEDIA ==== */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   body .index_wrapper {
     padding-inline: 0;
     margin: 0 auto;
@@ -136,7 +140,7 @@
     margin: 0 auto 100px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .hero-section {
     flex-direction: column-reverse;
   }
@@ -423,18 +427,4 @@
 .features-item:first-child .icon-circle {
   margin-right: 16px;
   margin-left: 0px;
-}
-
-/* FOR TABLET MEDIA QUARIES */
-@media (max-width: 768px) {
-  .index_wrapper {
-    padding-inline: 162px 161px;
-  }
-}
-
-/* FOR MOBILE */
-@media (max-width: 375px) {
-  .index_wrapper {
-    padding-inline: 24px;
-  }
 }

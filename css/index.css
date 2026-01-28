@@ -27,6 +27,15 @@
   z-index: -1;
 }
 
+@media (min-width: 769px) and (max-width: 1439px) {
+  .header-circle {
+    top: -663px;
+    left: -91px;
+    width: 949px;
+    height: 949px;
+  }
+}
+
 /* ============= HERO SECTION =============== */
 
 .hero-section {

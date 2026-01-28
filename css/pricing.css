@@ -22,10 +22,17 @@
   position: absolute;
   width: 780px;
   height: 780px;
-  border-radius: 50%;
   top: -527px;
   left: 800px;
   z-index: -1;
+}
+@media (min-width: 769px) and (max-width: 1439px) {
+  .header-circle {
+    width: 780px;
+    height: 780px;
+    top: -464px;
+    left: 505px;
+  }
 }
 
 /* ============= PRICING =============== */

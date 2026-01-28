@@ -26,7 +26,14 @@
   left: 800px;
   z-index: -1;
 }
-
+@media (min-width: 769px) and (max-width: 1439px) {
+  .header-circle {
+    width: 780px;
+    height: 780px;
+    top: -464px;
+    left: 505px;
+  }
+}
 /*============PAGE TITLE============*/
 
 .contact_wrapper .h1-sm {

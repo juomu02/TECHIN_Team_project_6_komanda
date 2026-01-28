@@ -232,7 +232,7 @@ opacity: 1;
   background-color: var(--sec-charm-pink-actives);
 }
 
-/* FOR TABLET MEDIA QUARIES */
+/*==========CALL TO ACTION FOR TABLET=========*/ 
 @media (min-width: 768px) and (max-width: 1439px) {
 .container_cta {
   display: grid;
@@ -247,18 +247,22 @@ opacity: 1;
 }
 }
 
-/* FOR MOBILE MEDIA QUARIES */ 
+/*==========CALL TO ACTION FOR MOBILE=========*/ 
 @media (max-width: 767px) {
 .cta {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .container_cta {
+flex-direction: column;
 width: 327px;
 margin: 0 0 80px 0;
 }
 .container_cta h2 {
-  margin: 0 auto 22px;
+  margin-bottom: 22px;
+  margin-top: 0px;
   text-align: center;
   font-size: var(--text-h3-lg-size);
   line-height: var(--text-h3-lg-line);

@@ -11,7 +11,7 @@
     padding-inline: 97px;
   }
 }
-/* FOR MOBILE */
+/* FOR MOBILE MEDIA QUARIES */
 @media (max-width: 767px) {
   .index_wrapper {
     padding-inline: 24px;
@@ -115,7 +115,7 @@
   .container_cta-index {
     margin: 0 auto;
   }
-  .cta-form {
+  .container_cta-index .cta-form {
     margin: -44px auto 18px;
   }
 
@@ -146,7 +146,7 @@
     text-align: center;
     line-height: 35px;
   }
-  .cta-form {
+  .container_cta-index .cta-form {
     margin: -38px auto 25px;
   }
   .cta-footer-text {
@@ -405,6 +405,9 @@
   margin: 0;
   opacity: 70%;
 }
+.tablet-break {
+  display: inline; 
+}
 
 /*for pixel perfect*/
 .features-item:first-child .icon-circle {
@@ -412,43 +415,69 @@
   margin-left: 0px;
 }
 
-/*============BENEFITS SECTION=========*/
-/* FOR TABLET MEDIA QUARIES */ 
+/*=========BENEFITS FOR TABLET=========*/ 
 @media (max-width: 1440px) {
-  .container_features {
-    padding-inline: -58px -60px;
-  }
-.features {
-  margin-bottom: 111px;
-}
 
+.features {
+  margin-bottom: 113px;
+  margin-inline: -60px -55px;
+}
 .features-item {
-  flex-basis: 227px;
+  flex-basis: 223px;
+  letter-spacing: var(--text-body-letter-spacing);
 }
 .features-item .icon-circle {
   width: 88px;
   height: 88px;
   margin-bottom: 34px;
-  border-radius: 50%;
-  overflow: hidden;
+  margin-left: 2px;
 }
 .features-item .icon-circle img {
-  width: auto;
-  height: auto;
-  border-radius: 50%;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.features-item .h3-sm {
+  margin: 0px auto 14px;
+
+}
+/*for pixel perfect*/
+.features-item:first-child .icon-circle {
+  margin-right: 0px;
+  margin-left: 3px;
+}
+.tablet-break {
+    display: block; 
+  }
+}
+/*=========BENEFITS FOR TABLET=========*/ 
+@media (max-width: 767px) {
+.features {
+  padding: 0px;
+  margin-bottom: 101px;
+}
+.container_features {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.features-item {
+  width: 328px;
+}
+.features-item .icon-circle {
+  margin-bottom: 34px;
 }
 
 .features-item .h3-sm {
-  margin-bottom: 18px;
-  margin-top: 0px;
+  margin: 0px auto 16px;
 }
-
+.features-item .body {
+  letter-spacing: var(--text-body-letter-spacing);
 }
-
-/* FOR MOBILE MEDIA QUARIES */
-@media (max-width: 767px) {
-
+.tablet-break {
+  display: inline; 
+}
 }
 
 

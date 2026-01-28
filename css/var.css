@@ -304,7 +304,7 @@ footer > img {
   align-items: center;
   text-align: center;
 }
-.social li:not(:last-child) {
+.social a:not(:last-child) {
   margin-right: 24px;
 }
 .facebookLogo,

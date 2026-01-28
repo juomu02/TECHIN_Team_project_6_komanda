@@ -406,7 +406,7 @@
   opacity: 70%;
 }
 .tablet-break {
-  display: inline; 
+  display: inline;
 }
 
 /*for pixel perfect*/
@@ -415,69 +415,68 @@
   margin-left: 0px;
 }
 
-/*=========BENEFITS FOR TABLET=========*/ 
+/*=========BENEFITS FOR TABLET=========*/
 @media (max-width: 1440px) {
+  .features {
+    margin-bottom: 112px;
+    margin-inline: -60px -55px;
+  }
 
-.features {
-  margin-bottom: 113px;
-  margin-inline: -60px -55px;
-}
-.features-item {
-  flex-basis: 223px;
-  letter-spacing: var(--text-body-letter-spacing);
-}
-.features-item .icon-circle {
-  width: 88px;
-  height: 88px;
-  margin-bottom: 34px;
-  margin-left: 2px;
-}
-.features-item .icon-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.features-item .h3-sm {
-  margin: 0px auto 14px;
-
-}
-/*for pixel perfect*/
-.features-item:first-child .icon-circle {
-  margin-right: 0px;
-  margin-left: 3px;
-}
-.tablet-break {
-    display: block; 
+  .features-item {
+    flex-basis: 223px;
+    letter-spacing: var(--text-body-letter-spacing);
+  }
+  .features-item .icon-circle {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 33px;
+      margin-left: 2px;
+  }
+  .features-item .icon-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .features-item .h3-sm {
+    margin: 0px auto 14px;
+  }
+  /*for pixel perfect*/
+  .features-item:first-child .icon-circle {
+    margin-right: 0px;
+    margin-left: 3px;
+  }
+  .tablet-break {
+    display: block;
   }
 }
-/*=========BENEFITS FOR TABLET=========*/ 
+/*=========BENEFITS FOR MOBILE=========*/
 @media (max-width: 767px) {
-.features {
-  padding: 0px;
-  margin-bottom: 101px;
+  .features {
+    padding: 0px;
+    margin: 0 0 86px;
+  }
+  .container_features {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .features-item {
+    width: 328px;
+    margin: 0 auto;
+  }
+  .features-item .icon-circle {
+    margin-bottom: 32px;
+    width: 106px;
+    height: 106px;
+  }
+  .features-item:first-child .icon-circle {
+    margin-bottom: 35px;
+  }
+  .features-item .h3-sm {
+    margin: 0px auto 14px;
+  }
+  .tablet-break {
+    display: inline;
+  }
 }
-.container_features {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.features-item {
-  width: 328px;
-}
-.features-item .icon-circle {
-  margin-bottom: 34px;
-}
-
-.features-item .h3-sm {
-  margin: 0px auto 16px;
-}
-.features-item .body {
-  letter-spacing: var(--text-body-letter-spacing);
-}
-.tablet-break {
-  display: inline; 
-}
-}
-
-

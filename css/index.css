@@ -265,7 +265,7 @@
   letter-spacing: var(--text-h2-letter-spacing);
   padding: 5px 0 5px 0;
   margin: 0 auto;
-  transform: translate(0px, 12px);
+  transform: translate(0px, 14px);
   
 }
 .implementation-content .body {
@@ -276,6 +276,7 @@
   text-align: left;
   letter-spacing: -0.15px;
   width: 84%;
+  margin-top: 18px;
 }
 .implementation-image {
   margin: -109px 20px 0 -55px;

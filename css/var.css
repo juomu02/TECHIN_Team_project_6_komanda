@@ -336,26 +336,27 @@ margin: 0 0 80px 0;
   flex-direction: column;
   background-color: var(--background-light);
   box-shadow: none;
+  overflow: visible;
   width: 327px;
 }
 .cta-input {
   padding: 16px 158px 15px 27px;
   border-radius: var(--btn-radius);
-  width: 327px;
   background-color: var(--prime-link-water-white);
   box-shadow: 10px 10px 25px #36536B40;
-  overflow: hidden;
 }
 .container_cta .cta-form {
   margin-bottom: 0px;
 }
 
-/* Call to action: "schedule a demo" mygtukas */
+/* Call to action: "schedule a demo" button */
 .btn-prime {
   padding: 16px 46px 15px 50px;
   width: 327px;
   margin-top: 16px;
 }
+
+
 
 
 

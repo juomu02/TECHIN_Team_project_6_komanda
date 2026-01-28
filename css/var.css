@@ -110,9 +110,12 @@ body {
   --chbx-opacity-normal: 0.25;
   --chbx-opacity-disabled: 0.05;
 
-  /* MEDIA QUERIES */
-  --mq-tab: (max-width: 1439px);
-  --mq-mob: (max-width: 375px);
+  /* MEDIA QUERIES - Breakpoints */
+  
+  --bp-mobile: 375px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1440px;
+
 }
 
 /* =============HEAD=============== */

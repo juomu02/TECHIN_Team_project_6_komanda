@@ -325,3 +325,23 @@
   margin-right: 16px;
   margin-left: 0px;
 }
+
+/* FOR TABLET MEDIA QUARIES */
+@media (max-width: 768px) {
+.index_wrapper {
+  padding-inline: 162px 161px;
+}
+
+
+}
+
+
+/* FOR MOBILE */ 
+@media (max-width: 375px) {
+.index_wrapper {
+  padding-inline: 24px;
+}
+
+
+
+}

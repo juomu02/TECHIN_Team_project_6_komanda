@@ -177,8 +177,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1440px;
-  margin-inline: -165px;
+  /*width: 1440px;*/
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 165px;
+  /*margin-inline: -165px;*/
   background-color: var(--sec-mirage-blue);
   text-align: center;
   background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
@@ -191,6 +195,9 @@
   flex-direction: row;
   gap: 131px;
   padding: 70px 0 100px 0;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 .partners-text {
@@ -275,6 +282,52 @@
 .sponsors-microsoft {
   margin-left: 5px;
 }
+
+/*========== PARTNERS SECTION MEDIA ==========*/
+/* FOR TABLET */
+@media (min-width: 768px) and (max-width: 1439px) {
+.container_partners {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .partners-text {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    align-self: center;
+  }
+
+  .sponsors-grid {
+    margin-top: 0;
+  }
+}
+
+
+/* FOR MOBILE */
+@media (max-width: 767px) {
+ .partners {
+    padding-inline: 24px;
+    background-position: center top -200px;
+  }
+
+  .sponsors-grid,
+  .sponsors-row {
+    width: 100%;
+  }
+
+  .sponsors-row {
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .partners-text button {
+    margin: 0 auto;
+  }
+}
+
 
 /* ============= EASY TO IMPLEMENT =============== */
 

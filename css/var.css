@@ -123,7 +123,8 @@ header {
   text-align: center;
 }
 
-.hamburgerMenuButton {
+.hamburgerMenuOpen,
+.hamburgerMenuClosed {
   display: none;
   text-align: right;
   margin-bottom: 4px;
@@ -143,7 +144,7 @@ header {
   }
 }
 @media (max-width: 767px) {
-  .hamburgerMenuButton {
+  .hamburgerMenuClosed {
     display: inline-block;
   }
 }
@@ -204,9 +205,6 @@ header {
   .container_footer {
     flex-direction: column;
   }
-  .nav-header {
-    display: none;
-  }
   .nav-links ul {
     flex-direction: column;
   }
@@ -222,6 +220,72 @@ header {
     margin-top: 40px;
     margin-bottom: 40px;
   }
+
+  /*FOR BURGER MENU*/
+   .hamburgerMenuClosed {
+    display: block;
+  }
+  .hamburgerMenuOpen {
+    display: none;
+  }
+  body.menu-active .hamburgerMenuClosed {
+    display: none;
+  }
+  body.menu-active .hamburgerMenuOpen {
+    display: block;
+  }
+.nav-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0px;
+  height: 700px;
+  padding-bottom: 400px;
+  width: 0; 
+  position: absolute; 
+  z-index: 1; 
+  top: 0;
+  right: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  background-color: var(--sec-mirage-blue); /* Black*/
+  padding-top: 49px; 
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+.hamburgerMenuOpen {
+  align-self: flex-end;
+  padding-right: 26px;
+  padding-bottom: 20px;
+}
+.nav-left {
+  border-top: 2px solid #FBFCFE15;
+  padding-top: 42px;
+}
+.nav-left {
+  width: 249px;
+  display: grid;
+  place-items: center;
+}
+.nav-left .nav-links ul > li {
+  margin: 0px;
+}
+.nav-links ul > li > a {
+  display: block;
+  margin-bottom: 32px;
+  transition: 0.3s;
+  font-size: 20px;
+  color: var(--prime-link-water-white);
+  font-weight: var(--font-weight-bold);
+  opacity: 70%;
+  line-height: 24px;
+}
+
+.nav-right button {
+  width: 252px;
+  padding: 16px 36px 15px 38px;
+  margin-top: 0px;
+}
+
 }
 /*============CALL TO ACTION============*/
 /* Call to action: bendrybės ir h2 tekstas */
@@ -452,62 +516,3 @@ footer > img {
   }
 }
 
-/* FOR TABLET MEDIA QUARIES */
-@media (max-width: 767px) {
-  /*============CALL TO ACTION============*/
-  .container_cta {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-  }
-  .container_cta h2 {
-    align-self: center;
-    margin-bottom: 24px;
-  }
-}
-
-/* FOR MOBILE */
-@media (max-width: 767px) {
-  /*============CALL TO ACTION============*/
-  .cta {
-    display: flex;
-    justify-content: center;
-  }
-  .container_cta {
-    width: 327px;
-    margin: 0 0 80px 0;
-  }
-  .container_cta h2 {
-    margin: 0 auto 21px;
-    text-align: center;
-    font-size: var(--text-h3-lg-size);
-    line-height: var(--text-h3-lg-line);
-    letter-spacing: var(--text-h3-lg-letter-spacing);
-  }
-  .cta-form {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background-light);
-    box-shadow: none;
-    overflow: visible;
-    width: 327px;
-  }
-  .cta-input {
-    padding: 16px 158px 15px 27px;
-    border-radius: var(--btn-radius);
-    background-color: var(--prime-link-water-white);
-    box-shadow: 10px 10px 25px #36536b40;
-  }
-  .container_cta .cta-form {
-    margin-bottom: 0px;
-  }
-
-  /* Call to action: "schedule a demo" button */
-  .btn-prime {
-    padding: 16px 46px 15px 50px;
-    width: 327px;
-    margin-top: 16px;
-  }
-}

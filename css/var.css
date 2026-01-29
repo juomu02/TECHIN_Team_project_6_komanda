@@ -156,7 +156,8 @@ header {
   align-items: center;
   justify-content: flex-start;
 }
-.nav {
+.nav-header,
+.nav-footer {
   flex: 1 1 100%;
   display: flex;
   flex-direction: row;
@@ -200,8 +201,26 @@ header {
   .container_header {
     justify-content: space-between;
   }
-  .nav {
+  .container_footer {
+    flex-direction: column;
+  }
+  .nav-header {
     display: none;
+  }
+  .nav-links ul {
+    flex-direction: column;
+  }
+  .nav-footer {
+    flex-direction: column;
+  }
+  .nav-links li:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 26px;
+  }
+  .container_footer .logo-wrapper .payapiLogo {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 /*============CALL TO ACTION============*/
@@ -270,7 +289,7 @@ header {
 .btn-prime:hover {
   background-color: var(--sec-charm-pink-actives);
 }
-/* =============FOOTER=============== */
+/* ============= FOOTER =============== */
 
 .container_footer {
   height: 100px;
@@ -292,7 +311,8 @@ footer {
 footer > img {
   position: absolute;
   bottom: -544px;
-  left: 1050px;
+  /* left: 1050px; */
+  right: -390px;
   width: 780px;
   height: 780px;
   z-index: 1;
@@ -340,6 +360,35 @@ footer > img {
 .social a:hover .twitterLogo,
 .social a:hover .linkedinLogo {
   background-color: var(--prime-bg-hover);
+}
+
+/* ============= FOOTER MEDIA =============== */
+@media (min-width: 768px) and (max-width: 1439px) {
+  footer {
+    margin-inline: -97px;
+  }
+  .container_footer {
+    padding-inline: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    margin-inline: -24px;
+  }
+  .container_footer {
+    height: auto;
+    padding-inline: 24px;
+  }
+  .social {
+    margin-bottom: 55px;
+    margin-top: 38px;
+  }
+  footer > img {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 604px);
+  }
 }
 
 /* FOR TABLET MEDIA QUARIES */

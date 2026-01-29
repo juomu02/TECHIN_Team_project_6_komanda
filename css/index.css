@@ -34,7 +34,8 @@
 @media (min-width: 768px) and (max-width: 1439px) {
   .header-circle {
     top: -663px;
-    left: -91px;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 949px;
     height: 949px;
   }
@@ -42,7 +43,8 @@
 @media (max-width: 767px) {
   .header-circle {
     top: -550px;
-    left: -202px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
 

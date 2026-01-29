@@ -117,39 +117,70 @@ body {
   --bp-desktop: 1440px;
 }
 
-/* =============HEAD=============== */
+/* ============= HEAD =============== */
 
 header {
   text-align: center;
 }
+
+.hamburgerMenuButton {
+  display: none;
+  text-align: right;
+  margin-bottom: 4px;
+}
+
 .container_header {
   padding-top: 40px;
 }
-
 .nav-right > button.btn-prime {
   box-shadow: 10px 10px 25px #36536b40;
 }
 
-/* =============HEAD & FOOTER=============== */
+/* ============= HEAD MEDIA =============== */
+@media (min-width: 768px) and (max-width: 1439px) {
+  header {
+    margin-inline: -57px;
+  }
+}
+@media (max-width: 767px) {
+  .hamburgerMenuButton {
+    display: inline-block;
+  }
+}
+/* ============= HEAD & FOOTER =============== */
 
 .container_header,
 .container_footer {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nav {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.logo-wrapper {
+  min-width: 200px;
+  text-align: left;
+  display: inline-block;
 }
 .nav-left {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.nav-links ul {
+.nav-links ul,
+.social ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.nav-links a {
+.nav-links li > a {
   font-family: var(--font-family-body);
   font-size: 15px;
   font-weight: bold;
@@ -157,13 +188,22 @@ header {
   opacity: 0.7;
   text-decoration: none;
 }
-.nav-links a:not(:last-child) {
+.nav-links li:not(:last-child) {
   margin-right: 40px;
 }
 .nav-links a:hover {
   opacity: 1;
 }
 
+/* ============= HEAD & FOOTER MEDIA =============== */
+@media (max-width: 767px) {
+  .container_header {
+    justify-content: space-between;
+  }
+  .nav {
+    display: none;
+  }
+}
 /*============CALL TO ACTION============*/
 /* Call to action: bendrybės ir h2 tekstas */
 .container_cta {
@@ -311,10 +351,6 @@ footer {
 .textColorLinkWaterWhite a {
   color: var(--prime-link-water-white);
 }
-.logo-wrapper {
-  width: 200px;
-  text-align: left;
-}
 footer > img {
   position: absolute;
   bottom: -544px;
@@ -328,6 +364,7 @@ footer > img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-align: center;
 }
 .social a:not(:last-child) {
   margin-right: 24px;
@@ -336,8 +373,10 @@ footer > img {
 .twitterLogo,
 .linkedinLogo,
 .payapiLogo {
-  display: inline-block;
+  display: block;
   background-color: var(--prime-link-water-white);
+  mask-size: contain;
+  mask-repeat: no-repeat;
 }
 .payapiLogo {
   mask: url(../assets/shared/desktop/logo.svg) no-repeat center;
@@ -351,7 +390,7 @@ footer > img {
 }
 .twitterLogo {
   mask: url(../assets/shared/desktop/twitter.svg) no-repeat center;
-  height: 20px;
+  height: 24px;
   width: 24px;
 }
 .linkedinLogo {

@@ -137,12 +137,12 @@ header {
 }
 
 /* ============= HEAD MEDIA =============== */
-@media (min-width: 769px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   header {
     margin-inline: -57px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hamburgerMenuButton {
     display: inline-block;
   }
@@ -196,7 +196,7 @@ header {
 }
 
 /* ============= HEAD & FOOTER MEDIA =============== */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container_header {
     justify-content: space-between;
   }
@@ -343,7 +343,7 @@ footer > img {
 }
 
 /* FOR TABLET MEDIA QUARIES */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /*============CALL TO ACTION============*/
   .container_cta {
     display: grid;
@@ -359,7 +359,7 @@ footer > img {
 }
 
 /* FOR MOBILE */
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   /*============CALL TO ACTION============*/
   .cta {
     display: flex;

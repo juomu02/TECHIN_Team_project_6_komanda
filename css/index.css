@@ -104,7 +104,6 @@
 
 @media (min-width: 768px) and (max-width: 1439px) {
   body .index_wrapper {
-    padding-inline: 0;
     margin: 0 auto;
   }
   .hero-section {
@@ -125,7 +124,6 @@
     font-size: var(--text-h2-size);
     line-height: var(--text-h2-line);
     letter-spacing: var(--text-h2-letter-spacing);
-    width: 64.8%;
     margin: 4px auto 66px;
     text-align: center;
   }

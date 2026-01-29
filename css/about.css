@@ -6,7 +6,16 @@
   overflow-x: visible;
   overflow-y: hidden;
 }
-
+@media (min-width: 768px) and (max-width: 1439px) {
+  .about_wrapper {
+    padding-inline: 97px;
+  }
+}
+@media (max-width: 767px) {
+  .about_wrapper {
+    padding-inline: 24px;
+  }
+}
 /* ============= HEAD =============== */
 
 .header-circle {
@@ -18,7 +27,22 @@
   left: 800px;
   z-index: -1;
 }
-
+@media (min-width: 768px) and (max-width: 1439px) {
+  .header-circle {
+    width: 780px;
+    height: 780px;
+    top: -464px;
+    left: 505px;
+  }
+}
+@media (max-width: 767px) {
+  .header-circle {
+    top: -605px;
+    left: 84px;
+    width: 785px;
+    height: 745px;
+  }
+}
 /* ============= FIRST PARAGRAPH =============== */
 
 .h1-sm {

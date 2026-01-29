@@ -247,7 +247,7 @@ header {
 }
 
 /*==========CALL TO ACTION FOR MOBILE=========*/
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .cta {
     display: flex;
     justify-content: center;

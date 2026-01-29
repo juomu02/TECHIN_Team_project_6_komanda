@@ -14,7 +14,7 @@ hamburgerOpen.addEventListener("click", () => {
   document.body.classList.remove("menu-active");
 });
 
-// Desktop resize handler - paslepia burger ikoną ir uždaro menu
+// Desktop resize handler 
 window.addEventListener("resize", () => {
   if (window.innerWidth > 768) {
     nav.style.width = "0";             // uždaryti menu

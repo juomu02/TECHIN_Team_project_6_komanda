@@ -222,7 +222,7 @@ header {
   }
 
   /*FOR BURGER MENU*/
-   .hamburgerMenuClosed {
+  .hamburgerMenuClosed {
     display: block;
   }
   .hamburgerMenuOpen {
@@ -234,58 +234,57 @@ header {
   body.menu-active .hamburgerMenuOpen {
     display: block;
   }
-.nav-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 0px;
-  height: 700px;
-  padding-bottom: 400px;
-  width: 0; 
-  position: absolute; 
-  z-index: 1; 
-  top: 0;
-  right: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  background-color: var(--sec-mirage-blue); /* Black*/
-  padding-top: 49px; 
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-}
+  .nav-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0px;
+    height: 700px;
+    padding-bottom: 400px;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    background-color: var(--sec-mirage-blue); /* Black*/
+    padding-top: 49px;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
 
-.hamburgerMenuOpen {
-  align-self: flex-end;
-  padding-right: 26px;
-  padding-bottom: 20px;
-}
-.nav-left {
-  border-top: 2px solid #FBFCFE15;
-  padding-top: 42px;
-}
-.nav-left {
-  width: 249px;
-  display: grid;
-  place-items: center;
-}
-.nav-left .nav-links ul > li {
-  margin: 0px;
-}
-.nav-links ul > li > a {
-  display: block;
-  margin-bottom: 32px;
-  transition: 0.3s;
-  font-size: 20px;
-  color: var(--prime-link-water-white);
-  font-weight: var(--font-weight-bold);
-  opacity: 70%;
-  line-height: 24px;
-}
+  .hamburgerMenuOpen {
+    align-self: flex-end;
+    padding-right: 26px;
+    padding-bottom: 20px;
+  }
+  .nav-left {
+    border-top: 2px solid #fbfcfe15;
+    padding-top: 42px;
+  }
+  .nav-left {
+    width: 249px;
+    display: grid;
+    place-items: center;
+  }
+  .nav-left .nav-links ul > li {
+    margin: 0px;
+  }
+  .nav-links ul > li > a {
+    display: block;
+    margin-bottom: 32px;
+    transition: 0.3s;
+    font-size: 20px;
+    color: var(--prime-link-water-white);
+    font-weight: var(--font-weight-bold);
+    opacity: 70%;
+    line-height: 24px;
+  }
 
-.nav-right button {
-  width: 252px;
-  padding: 16px 36px 15px 38px;
-  margin-top: 0px;
-}
-
+  .nav-right button {
+    width: 252px;
+    padding: 16px 36px 15px 38px;
+    margin-top: 0px;
+  }
 }
 /*============CALL TO ACTION============*/
 /* Call to action: bendrybės ir h2 tekstas */
@@ -515,4 +514,3 @@ footer > img {
     transform: translate(-50%, 604px);
   }
 }
-

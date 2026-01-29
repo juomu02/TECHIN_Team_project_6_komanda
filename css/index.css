@@ -101,7 +101,9 @@
 }
 
 /* ==== HERO SECTION MEDIA ==== */
+
 /* TABLET */
+
 @media (min-width: 768px) and (max-width: 1439px) {
   body .index_wrapper {
     margin: 0 auto;
@@ -138,7 +140,9 @@
     margin: 0 auto 100px;
   }
 }
+
 /* MOBILE */
+
 @media (max-width: 767px) {
   .hero-section {
     flex-direction: column-reverse;
@@ -309,11 +313,10 @@
 }
 
 /* ==== EASY TO IMPLEMENT MEDIA ==== */
+
 /* TABLET */
+
 @media (min-width: 768px) and (max-width: 1439px) {
-  .partners {
-    height: 615px;
-  }
   .container_implementation {
     flex-direction: column;
     align-items: center;
@@ -338,15 +341,33 @@
     width: 98%;
   }
 }
+
 /* MOBILE */
+
 @media (max-width: 767px) {
-  .partners {
-    height: 670px;
+  .container_implementation {
+    margin: 147px auto 80px;
+    flex-direction: column;
   }
   .implementation-image > img {
-    height: 320px;
+    height: 326px;
   }
- 
+  .implementation-image {
+    transform: translate(15px, 0px);
+  }
+  .implementation-content h2 {
+    margin: 0 auto -28px;
+    font-size: 36px;
+    transform: translate(0px, -35px);
+    text-align: center;
+  }
+  .implementation-content .body {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-weight: var(--font-weight-thin);
+    letter-spacing: -0.27px;
+  }
 }
 /* ============= SIMPLE UI & UX =============== */
 

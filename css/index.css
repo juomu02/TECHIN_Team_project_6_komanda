@@ -102,6 +102,8 @@
 
 /* ==== HERO SECTION MEDIA ==== */
 
+/* TABLET */
+
 @media (min-width: 768px) and (max-width: 1439px) {
   body .index_wrapper {
     margin: 0 auto;
@@ -126,6 +128,8 @@
     letter-spacing: var(--text-h2-letter-spacing);
     margin: 4px auto 66px;
     text-align: center;
+    max-width: 600px;
+    transform: translate(-3px, 0px);
   }
   .container_cta-index {
     margin: 0 auto;
@@ -138,13 +142,16 @@
     margin: 0 auto 100px;
   }
 }
+
+/* MOBILE */
+
 @media (max-width: 767px) {
   .hero-section {
     flex-direction: column-reverse;
   }
   .container_phone-mockup {
     margin: 0 auto;
-    transform: translate(12px, 7px);
+    transform: translate(12px, 2px);
   }
   .container_phone-mockup > img {
     height: 315px;
@@ -156,10 +163,11 @@
   .h1-lg {
     font-size: var(--text-h3-lg-size);
     letter-spacing: var(--text-h3-lg-letter-spacing);
-    width: 87%;
-    margin: -15px auto 57px;
+    margin: -20px auto 58px;
     text-align: center;
     line-height: 35px;
+    max-width: 450px;
+    transform: translate(-2px, 0px);
   }
   .container_cta-index .cta-form {
     margin: -38px auto 25px;
@@ -282,9 +290,6 @@
   display: flex;
   margin: 203px 0 0 0;
 }
-.implementation-content {
-  margin-left: 125px;
-}
 
 .implementation-content h2 {
   font-size: var(--text-h2-size);
@@ -293,26 +298,86 @@
   color: var(--sec-san-juan-blue);
   line-height: var(--text-h2-line);
   letter-spacing: var(--text-h2-letter-spacing);
-  flex-basis: 445px;
-  width: 445px;
-  margin: 12px 0 8px -105px;
   padding: 5px 0 5px 0;
+  margin: 0 auto;
+  transform: translate(0px, 14px);
 }
 .implementation-content .body {
   font-family: var(--font-family-body);
   color: var(--sec-light-san-juan-blue);
   font-size: var(--text-body-size);
   line-height: var(--text-body-line);
-  flex-basis: 445px;
-  width: 445px;
   text-align: left;
-  letter-spacing: -0.1px;
-  margin: -3px 0 0 -105px;
+  letter-spacing: -0.15px;
+  width: 84%;
+  margin-top: 18px;
 }
 .implementation-image {
-  margin: -109px 0 0 -55px;
+  margin: -107px 20px 0 -55px;
 }
 
+/* ==== EASY TO IMPLEMENT MEDIA ==== */
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .container_implementation {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .implementation-image {
+    margin: 0 auto;
+    transform: translate(22px, 49px);
+  }
+  .implementation-image > img {
+    height: 390px;
+  }
+  .implementation-content h2 {
+    width: 80%;
+    margin: 0 auto 12px;
+    transform: translate(0px, 8px);
+    text-align: center;
+  }
+  .implementation-content .body {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    font-weight: var(--font-weight-thin);
+    letter-spacing: -0.27px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .container_implementation {
+    margin: 147px auto 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .implementation-image > img {
+    height: 326px;
+  }
+  .implementation-image {
+    transform: translate(56px, 0px);
+  }
+  .implementation-content h2 {
+    margin: 0 auto -28px;
+    font-size: var(--text-h3-med-size);
+    transform: translate(0px, -35px);
+    text-align: center;
+  }
+  .implementation-content .body {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-weight: var(--font-weight-thin);
+    letter-spacing: -0.27px;
+    max-width: 450px;
+  }
+}
 /* ============= SIMPLE UI & UX =============== */
 
 .simple-UI {
@@ -365,6 +430,80 @@
   right: -390px;
   transform: translateY(-50%);
   z-index: -1;
+}
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .simple-UI-circle {
+    display: none;
+    margin: 0 auto;
+    position: unset;
+  }
+  .simple-UI {
+    margin: 68px auto 102px;
+  }
+  .UI-image {
+    margin: 0 auto;
+    height: 423px;
+    transform: translate(15px, 0px);
+  }
+  .container_simple-UI {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .UI-content h2 {
+    margin: -17px auto 5px;
+    text-align: center;
+  }
+  .UI-content .body {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    font-weight: var(--font-weight-thin);
+    letter-spacing: -0.27px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .simple-UI-circle {
+    display: none;
+    margin: 0 auto;
+    position: unset;
+  }
+  .simple-UI {
+    margin: -30px auto 82px;
+  }
+  .UI-image {
+    margin: 0 auto;
+    height: 383px;
+    transform: translate(14px, 1px);
+  }
+  .container_simple-UI {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .UI-content h2 {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-size: var(--text-h3-med-size);
+    transform: translate(-2px, -14px);
+  }
+  .UI-content .body {
+    margin: 0 auto;
+    text-align: center;
+    width: 71%;
+    max-width: 600px;
+    font-weight: var(--font-weight-thin);
+    letter-spacing: -0.27px;
+  }
 }
 
 /*==============BENEFITS SECTION==============*/
@@ -471,7 +610,6 @@
   .features {
     padding: 0px;
     margin: 0 0 86px;
-
   }
   .container_features {
     margin: 0 auto;
@@ -479,12 +617,11 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 50px;
-
   }
   .features-item {
     flex-basis: auto;
     width: 328px;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
   .features-item .icon-circle {
     margin-bottom: 32px;
@@ -493,8 +630,8 @@
   }
   .features-item:first-child .icon-circle {
     margin-bottom: 34px;
-       margin-left: 1px;
-       margin-right: 0px;
+    margin-left: 1px;
+    margin-right: 0px;
   }
   .features-item .h3-sm {
     margin: 0px auto 14px;

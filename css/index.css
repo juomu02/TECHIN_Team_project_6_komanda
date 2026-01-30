@@ -105,6 +105,8 @@
 
 /* ==== HERO SECTION MEDIA ==== */
 
+/* TABLET */
+
 @media (min-width: 768px) and (max-width: 1439px) {
   body .index_wrapper {
     margin: 0 auto;
@@ -141,13 +143,16 @@
     margin: 0 auto 100px;
   }
 }
+
+/* MOBILE */
+
 @media (max-width: 767px) {
   .hero-section {
     flex-direction: column-reverse;
   }
   .container_phone-mockup {
     margin: 0 auto;
-    transform: translate(12px, 7px);
+    transform: translate(12px, 2px);
   }
   .container_phone-mockup > img {
     height: 315px;
@@ -159,8 +164,7 @@
   .h1-lg {
     font-size: var(--text-h3-lg-size);
     letter-spacing: var(--text-h3-lg-letter-spacing);
-    width: 87%;
-    margin: -15px auto 57px;
+    margin: -20px auto 58px;
     text-align: center;
     line-height: 35px;
   }
@@ -285,9 +289,6 @@
   display: flex;
   margin: 203px 0 0 0;
 }
-.implementation-content {
-  margin-left: 125px;
-}
 
 .implementation-content h2 {
   font-size: var(--text-h2-size);
@@ -296,26 +297,81 @@
   color: var(--sec-san-juan-blue);
   line-height: var(--text-h2-line);
   letter-spacing: var(--text-h2-letter-spacing);
-  flex-basis: 445px;
-  width: 445px;
-  margin: 12px 0 8px -105px;
   padding: 5px 0 5px 0;
+  margin: 0 auto;
+  transform: translate(0px, 14px);
 }
 .implementation-content .body {
   font-family: var(--font-family-body);
   color: var(--sec-light-san-juan-blue);
   font-size: var(--text-body-size);
   line-height: var(--text-body-line);
-  flex-basis: 445px;
-  width: 445px;
   text-align: left;
-  letter-spacing: -0.1px;
-  margin: -3px 0 0 -105px;
+  letter-spacing: -0.15px;
+  width: 84%;
+  margin-top: 18px;
 }
 .implementation-image {
-  margin: -109px 0 0 -55px;
+  margin: -107px 20px 0 -55px;
 }
 
+/* ==== EASY TO IMPLEMENT MEDIA ==== */
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .container_implementation {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .implementation-image {
+    margin: 0 auto;
+    transform: translate(22px, 49px);
+  }
+  .implementation-image > img {
+    height: 390px;
+  }
+  .implementation-content h2 {
+    width: 80%;
+    margin: 0 auto 12px;
+    transform: translate(0px, 8px);
+    text-align: center;
+  }
+  .implementation-content .body {
+    margin: 0 auto;
+    text-align: center;
+    width: 98%;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .container_implementation {
+    margin: 147px auto 80px;
+    flex-direction: column;
+  }
+  .implementation-image > img {
+    height: 326px;
+  }
+  .implementation-image {
+    transform: translate(15px, 0px);
+  }
+  .implementation-content h2 {
+    margin: 0 auto -28px;
+    font-size: 36px;
+    transform: translate(0px, -35px);
+    text-align: center;
+  }
+  .implementation-content .body {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-weight: var(--font-weight-thin);
+    letter-spacing: -0.27px;
+  }
+}
 /* ============= SIMPLE UI & UX =============== */
 
 .simple-UI {

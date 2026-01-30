@@ -47,6 +47,10 @@ body {
   --text-h3-lg-line: 1.25;
   --text-h3-lg-letter-spacing: -0.25px;
 
+  --text-h3-med-size: 36px;
+  --text-h3-med-line: 1;
+  --text-h3-med-letter-spacing: -0.28px;
+
   --text-h3-sm-size: 18px;
   --text-h3-sm-line: 1.39;
   --text-h3-sm-letter-spacing: -0.14px;

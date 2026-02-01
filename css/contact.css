@@ -42,8 +42,8 @@
     height: 745px;
   }
 }
-/*============PAGE TITLE============*/
 
+/*============PAGE TITLE============*/
 .contact_wrapper .h1-sm {
   font-size: var(--text-h1-sm-size);
   font-family: var(--font-family-headings);
@@ -55,6 +55,30 @@
   align-items: center;
   max-width: 730px;
   margin: 92px 0px 30px;
+}
+
+/*============PAGE TITLE MEDIA QUARIES============*/
+@media (min-width: 768px) and (max-width: 1439px) {
+  .contact_wrapper .h1-sm {
+    font-size: var(--text-h2-size);
+    line-height: var(--text-h2-line);
+    letter-spacing: var(--text-h2-letter-spacing);
+    text-align: center;
+    max-width: 540px;
+    margin: 86px auto 28px;
+    padding-right: 9px;
+  }
+}
+@media (max-width: 767px) {
+  .contact_wrapper .h1-sm {
+    text-align: center;
+    max-width: 320px;
+    font-size: var(--text-h3-lg-size);
+    letter-spacing: var(--text-h3-lg-letter-spacing);
+    line-height: 37px;
+    margin: 50px auto 16px;
+    padding-right: 5px;
+  }
 }
 
 /*=============HELP REQUEST FORM=============*/
@@ -80,9 +104,8 @@
   border: none;
   border-bottom: 1px solid rgba(54, 83, 107, 0.5);
   outline: none;
-  padding: 23px 0px 21px;
+  padding: 23px 0px 21px 20px;
   resize: none;
-  padding-left: 20px;
   width: 445px;
   height: 66px;
 }
@@ -159,15 +182,42 @@
 
 /*=============HELP REQUEST FORM TABLET=============*/
 @media (min-width: 768px) and (max-width: 1439px) {
-
+  .submit_and_sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form_container {
+    margin-bottom: 71px;
+    width: 445px;
+  }
+  .btn-submit {
+    height: 48px;
+    margin-left: 0px;
+  }
 }
 /*=============HELP REQUEST FORM MOBILE=============*/
 @media (max-width: 767px) {
-
+  .submit_and_sponsors {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form_container {
+    margin: 0 auto 87px;
+    width: 327px;
+  }
+  .form-group input,
+  .form-group textarea {
+    padding: 24px 0px 22px 20px;
+    width: 327px;
+  }
+  .btn-submit {
+    height: 48px;
+    margin-left: 0px;
+  }
 }
 
 /*============SPONSORS============*/
-
 .container_sponsors {
   width: 541px;
   margin: 154px 0px 262px 124px;

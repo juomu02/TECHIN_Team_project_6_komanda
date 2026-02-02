@@ -219,9 +219,6 @@ header {
   }
   .nav-links li:not(:last-child) {
     margin-right: 0px;
-    margin-bottom: 26px;
-  }
-  footer .nav-links li:not(:last-child) {
     margin-bottom: 30px;
   }
   .container_footer .logo-wrapper .payapiLogo {

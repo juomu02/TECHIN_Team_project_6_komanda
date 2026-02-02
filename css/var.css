@@ -242,7 +242,7 @@ header {
     flex-direction: column;
     align-items: center;
     row-gap: 0px;
-    height: 100%;
+    height: 100vh;
     padding-bottom: 400px;
     width: 0;
     position:fixed;

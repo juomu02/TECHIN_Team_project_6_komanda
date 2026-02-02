@@ -224,7 +224,7 @@ header {
     margin-bottom: 40px;
   }
 
-  /*FOR BURGER MENU*/
+  /*==============FOR BURGER MENU==============*/
   .hamburgerMenuClosed {
     display: block;
   }
@@ -243,9 +243,9 @@ header {
     align-items: center;
     row-gap: 0px;
     height: 100vh;
-    padding-bottom: 400px;
     width: 0;
-    position:fixed;
+    position: fixed;
+    justify-content: flex-start;
     z-index: 1;
     top: 0;
     right: 0;
@@ -253,8 +253,8 @@ header {
     background-color: var(--sec-mirage-blue); 
     padding-top: 49px;
     transition: 0.3s; 
+    flex-grow: 0;
   }
-
   .hamburgerMenuOpen {
     align-self: flex-end;
     padding-right: 26px;

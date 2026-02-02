@@ -193,19 +193,35 @@ main > .h1-sm {
     border: none;
   }
   .stat .h1-sm {
-  display:block;
+    display: block;
     text-align: center;
     border-bottom: none;
     height: auto;
     line-height: 72px;
   }
   .stat .body2:first-child {
-    margin-top: 14px;}
+    margin-top: 14px;
+  }
   .stat .body2 {
     margin-bottom: 18px;
   }
 }
 
+@media (min-width: 768px) and (max-width: 1439px) {
+  .team-photo img {
+    margin-inline: -97px;
+    margin-bottom: 64px;
+  }
+  .stats-grid {
+    gap: 10px;
+  }
+  .trust-circle {
+    display: none;
+  }
+  .stats {
+    margin-inline: -57px;
+  }
+}
 /* ============= SECOND PARAGRAPH =============== */
 
 .container_about-us-article-people {

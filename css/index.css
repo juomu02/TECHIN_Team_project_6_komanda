@@ -14,7 +14,7 @@
 /* FOR MOBILE */
 @media (max-width: 767px) {
   .index_wrapper {
-    padding-inline: 24px;
+    padding-inline: 24px 23px;
   }
 }
 

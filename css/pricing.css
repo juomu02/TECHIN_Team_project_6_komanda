@@ -13,7 +13,7 @@
 }
 @media (max-width: 767px) {
   .pricing_wrapper {
-    padding-inline: 24px;
+    padding-inline: 24px 23px;
   }
 }
 /* ============= HEAD =============== */
@@ -147,4 +147,95 @@ ul {
   background-color: var(--sec-san-juan-blue);
   color: var(--prime-link-water-white);
   font-weight: var(--font-weight-bold);
+}
+
+/* ==== PRICING MEDIA ==== */
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .pricing {
+    margin-inline: -97px;
+    padding-inline: 39px 40px;
+  }
+  .h1-sm {
+    justify-content: center;
+    font-size: var(--text-h2-size);
+    margin: 90px 0 65px 0;
+  }
+  .pricing-card {
+    margin: 0 auto 110px;
+    align-items: center;
+  }
+  .pricing-card:first-child .h3-lg {
+    transform: translate(-3px, 0px);
+  }
+  .pricing-card:nth-child(3) .h3-lg {
+    transform: translate(3px, 0px);
+  }
+  .h3-lg {
+    font-size: var(--text-h4-size);
+    letter-spacing: var(--text-h4-letter-spacing);
+    text-align: center;
+    margin: 0 auto 15px;
+  }
+  .pricing-card .body {
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+  }
+  .pricing .h1-sm {
+    font-size: var(--text-h2-size);
+    margin: 27px auto 23px;
+    padding: 0 auto;
+  }
+  .pricing-card_features {
+    width: 95%;
+    padding-left: 49px;
+  }
+  .pricing-card .btn-sec-dk {
+    margin-left: 29px;
+  }
+  .pricing-card:nth-child(3) .btn-sec-dk {
+    margin-left: 35px;
+  }
+}
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .h1-sm {
+    justify-content: center;
+    font-size: var(--text-h3-lg-size);
+    margin: 52px 0 52px 0;
+  }
+  .pricing_container {
+    flex-direction: column;
+  }
+  .h3-lg {
+    font-size: var(--text-h4-size);
+    letter-spacing: var(--text-h4-letter-spacing);
+    text-align: center;
+    margin: 0 auto 5px;
+    transform: translate(-11px, 0px);
+  }
+  .pricing-card .body {
+    margin: 0;
+    text-align: center;
+    width: 95%;
+  }
+  .pricing .h1-sm {
+    font-size: var(--text-h1-sm-size);
+    margin: 28px auto 5px;
+    padding: 0 auto;
+    transform: translate(-11px, 0px);
+  }
+  .pricing-card_features {
+    width: 94%;
+    padding-left: 98px;
+  }
+  .pricing-card .btn-sec-dk {
+    display: block;
+    margin: 0 auto -45px;
+    transform: translate(-10px, 0px);
+  }
 }

@@ -46,6 +46,10 @@ body {
   --text-h3-lg-line: 1.25;
   --text-h3-lg-letter-spacing: -0.25px;
 
+  --text-h3-med-size: 36px;
+  --text-h3-med-line: 1;
+  --text-h3-med-letter-spacing: -0.28px;
+
   --text-h3-sm-size: 18px;
   --text-h3-sm-line: 1.39;
   --text-h3-sm-letter-spacing: -0.14px;
@@ -212,7 +216,7 @@ header {
   }
   .nav-links li:not(:last-child) {
     margin-right: 0px;
-    margin-bottom: 26px;
+    margin-bottom: 30px;
   }
   .container_footer .logo-wrapper .payapiLogo {
     margin: auto;
@@ -505,7 +509,7 @@ footer > img {
   }
   .social {
     margin-bottom: 55px;
-    margin-top: 38px;
+    margin-top: 40px;
   }
   footer > img {
     bottom: 0;
@@ -513,3 +517,5 @@ footer > img {
     transform: translate(-50%, 604px);
   }
 }
+
+

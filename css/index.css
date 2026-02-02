@@ -131,6 +131,8 @@
     letter-spacing: var(--text-h2-letter-spacing);
     margin: 4px auto 66px;
     text-align: center;
+    max-width: 600px;
+    transform: translate(-3px, 0px);
   }
   .container_cta-index {
     margin: 0 auto;
@@ -167,6 +169,8 @@
     margin: -20px auto 58px;
     text-align: center;
     line-height: 35px;
+    max-width: 450px;
+    transform: translate(-2px, 0px);
   }
   .container_cta-index .cta-form {
     margin: -38px auto 25px;
@@ -341,7 +345,10 @@
   .implementation-content .body {
     margin: 0 auto;
     text-align: center;
-    width: 98%;
+    width: 100%;
+    max-width: 600px;
+    font-weight: var(--font-weight-thin);
+    letter-spacing: -0.27px;
   }
 }
 
@@ -351,16 +358,17 @@
   .container_implementation {
     margin: 147px auto 80px;
     flex-direction: column;
+    align-items: center;
   }
   .implementation-image > img {
     height: 326px;
   }
   .implementation-image {
-    transform: translate(15px, 0px);
+    transform: translate(56px, 0px);
   }
   .implementation-content h2 {
     margin: 0 auto -28px;
-    font-size: 36px;
+    font-size: var(--text-h3-med-size);
     transform: translate(0px, -35px);
     text-align: center;
   }
@@ -370,6 +378,7 @@
     text-align: center;
     font-weight: var(--font-weight-thin);
     letter-spacing: -0.27px;
+    max-width: 450px;
   }
 }
 /* ============= SIMPLE UI & UX =============== */
@@ -424,6 +433,80 @@
   right: -390px;
   transform: translateY(-50%);
   z-index: -1;
+}
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .simple-UI-circle {
+    display: none;
+    margin: 0 auto;
+    position: unset;
+  }
+  .simple-UI {
+    margin: 68px auto 102px;
+  }
+  .UI-image {
+    margin: 0 auto;
+    height: 423px;
+    transform: translate(15px, 0px);
+  }
+  .container_simple-UI {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .UI-content h2 {
+    margin: -17px auto 5px;
+    text-align: center;
+  }
+  .UI-content .body {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    font-weight: var(--font-weight-thin);
+    letter-spacing: -0.27px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .simple-UI-circle {
+    display: none;
+    margin: 0 auto;
+    position: unset;
+  }
+  .simple-UI {
+    margin: -30px auto 82px;
+  }
+  .UI-image {
+    margin: 0 auto;
+    height: 383px;
+    transform: translate(14px, 1px);
+  }
+  .container_simple-UI {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .UI-content h2 {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-size: var(--text-h3-med-size);
+    transform: translate(-2px, -14px);
+  }
+  .UI-content .body {
+    margin: 0 auto;
+    text-align: center;
+    width: 71%;
+    max-width: 600px;
+    font-weight: var(--font-weight-thin);
+    letter-spacing: -0.27px;
+  }
 }
 
 /*==============BENEFITS SECTION==============*/
@@ -530,7 +613,6 @@
   .features {
     padding: 0px;
     margin: 0 0 86px;
-
   }
   .container_features {
     margin: 0 auto;
@@ -538,12 +620,11 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 50px;
-
   }
   .features-item {
     flex-basis: auto;
     width: 328px;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
   .features-item .icon-circle {
     margin-bottom: 32px;
@@ -552,8 +633,8 @@
   }
   .features-item:first-child .icon-circle {
     margin-bottom: 34px;
-       margin-left: 1px;
-       margin-right: 0px;
+    margin-left: 1px;
+    margin-right: 0px;
   }
   .features-item .h3-sm {
     margin: 0px auto 14px;

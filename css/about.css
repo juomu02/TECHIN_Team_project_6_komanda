@@ -3,7 +3,8 @@
 .about_wrapper {
   padding-inline: 165px;
   position: relative;
-  overflow: hidden;
+  overflow-x: visible;
+  overflow-y: hidden;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .about_wrapper {
@@ -137,6 +138,35 @@
 
 .stats {
   margin-bottom: 70px;
+}
+
+.trust-circle-wrapper {
+  position: absolute;
+  top: 620.5px;
+  left: 0;
+
+  width: 260px;
+  height: 780px;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.trust-circle {
+  width: 780px;
+  height: 780px;
+
+  transform: scaleX(-1);
+  transform-origin: left top;
+
+  position: relative;
+  left: 259.5px;
+}
+
+.team-photo,
+.stats {
+  position: relative;
+  z-index: 1;
 }
 
 /* ============= SECOND PARAGRAPH =============== */

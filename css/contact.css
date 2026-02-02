@@ -262,69 +262,68 @@
 }
 
 /*=============SPONSORS FORM TABLET=============*/
-@media (min-width: 768px) and (max-width: 1439px) { 
-.container_sponsors {
-  margin: 0 auto 111px;
-}
-.container_sponsors h4 {
-  text-align: center;
-  margin: 0 auto 32px;
-}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .container_sponsors {
+    margin: 0 auto 111px;
+  }
+  .container_sponsors h4 {
+    text-align: center;
+    margin: 0 auto 32px;
+  }
 }
 
 /*=============SPONSORS FORM MOBILE=============*/
 @media (max-width: 767.98px) {
-.container_sponsors {
-  width: 327px;
-  margin: 0 auto 84px;
-}
-.container_sponsors h4 {
-  margin: 0 auto 25px;
-  width: 327px;
-  text-align: center;
-  padding-right: 5px;
-}
+  .container_sponsors {
+    width: 327px;
+    margin: 0 auto 84px;
+  }
+  .container_sponsors h4 {
+    margin: 0 auto 25px;
+    width: 327px;
+    text-align: center;
+    padding-right: 5px;
+  }
 
-/*Grid*/
-.sponsors-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 280px;
-  height: 154px;
-  align-items: center;
-  justify-items: center;
-}
+  .sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 280px;
+    height: 154px;
+    align-items: center;
+    justify-items: center;
+  }
 
-.sponsors-grid img:nth-child(1) {
-  width: 106px;
-  height: 14px;
-  margin-left: 2px;
+  .sponsors-grid img:nth-child(1) {
+    width: 106px;
+    height: 14px;
+    margin-left: 2px;
+  }
+  .sponsors-grid img:nth-child(2) {
+    width: 119px;
+    height: 26px;
+    justify-self: end;
+    margin-right: 2px;
+  }
+  .sponsors-grid img:nth-child(3) {
+    width: 115px;
+    height: 22px;
+    justify-self: start;
+  }
+  .sponsors-grid img:nth-child(4) {
+    width: 108px;
+    height: 14px;
+    justify-self: end;
+  }
+  .sponsors-grid img:nth-child(5) {
+    width: 79px;
+    height: 27px;
+    justify-self: start;
+    margin-left: 8px;
+  }
+  .sponsors-grid img:nth-child(6) {
+    width: 113px;
+    height: 21px;
+    margin-right: 9px;
+  }
 }
-.sponsors-grid img:nth-child(2) {
-  width: 119px;
-  height: 26px;
-  justify-self: end;
-  margin-right: 2px;
-}
-.sponsors-grid img:nth-child(3) {
-width: 115px;
-height: 22px;
-justify-self: start;
-}
-.sponsors-grid img:nth-child(4) {
-  width: 108px;
-  height: 14px;
-  justify-self: end;
-}
-.sponsors-grid img:nth-child(5) {
-  width: 79px;
-  height: 27px;
-  justify-self: start;
-  margin-left: 8px;
-}
-.sponsors-grid img:nth-child(6) {
-  width: 113px;
-  height: 21px;
-  margin-right: 9px;
-}
-

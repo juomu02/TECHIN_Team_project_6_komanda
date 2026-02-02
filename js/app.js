@@ -7,7 +7,7 @@ const navLinks = document.querySelector(".nav-links");
 if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
 
   const defaultZ = {
-    circle: "1",  
+    circle: "-1",  
     background: "2", 
     links: "3",
     burger: "4"

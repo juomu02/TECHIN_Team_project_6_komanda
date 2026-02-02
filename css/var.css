@@ -252,7 +252,7 @@ header {
     overflow-x: hidden; 
     background-color: var(--sec-mirage-blue); 
     padding-top: 49px;
-    transition: 0.5s; 
+    transition: 0.3s; 
   }
 
   .hamburgerMenuOpen {

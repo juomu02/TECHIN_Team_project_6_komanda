@@ -167,10 +167,10 @@ ul {
     margin: 0 auto 110px;
     align-items: center;
   }
-  .pricing-card:first-child .h3-lg {
+  .pricing-card:first-child .h3-lg, .pricing-card:first-child .h1-sm  {
     transform: translate(-3px, 0px);
   }
-  .pricing-card:nth-child(3) .h3-lg {
+  .pricing-card:nth-child(3) .h3-lg, .pricing-card:nth-child(3) .h1-sm {
     transform: translate(3px, 0px);
   }
   .h3-lg {

@@ -242,14 +242,14 @@ header {
     flex-direction: column;
     align-items: center;
     row-gap: 0px;
-    height: 700px;
+    height: 100%;
     padding-bottom: 400px;
     width: 0;
     position:fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    overflow-x: hidden; 
+    overflow: hidden; 
     background-color: var(--sec-mirage-blue); 
     padding-top: 49px;
     transition: 0.3s; 
@@ -260,19 +260,19 @@ header {
     padding-right: 26px;
     padding-bottom: 20px;
   }
-  .nav-left {
+  header .nav-left {
     border-top: 2px solid #fbfcfe15;
     padding-top: 42px;
   }
-  .nav-left {
+  header .nav-left {
     width: 249px;
     display: grid;
     place-items: center;
   }
-  .nav-left .nav-links ul > li {
+  header .nav-left .nav-links ul > li {
     margin: 0px;
   }
-  .nav-links ul > li > a {
+  header .nav-links ul > li > a {
     display: block;
     margin-bottom: 32px;
     transition: 0.3s;

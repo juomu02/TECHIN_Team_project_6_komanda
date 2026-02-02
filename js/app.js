@@ -10,11 +10,11 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
     circle: "-1",  
     background: "2", 
     links: "3",
-    burger: "4"
+    burger: "4",
   };
 
   const openZ = {
-    circle: "3",   // apskritimas vizualiai virš overlay
+    circle: "3",   
     background: "2",
     links: "4",
     burger: "5"
@@ -33,16 +33,18 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
   };
 
   const closeMenu = () => {
-    nav.style.width = "0";
+  nav.style.width = "0";
+
+  setTimeout(() => {
     document.body.classList.remove("menu-active");
 
-    // z-index, kai menu closed:
     headerCircle.style.zIndex = defaultZ.circle;
     nav.style.zIndex = defaultZ.background;
     navLinks.style.zIndex = defaultZ.links;
     hamburgerClosed.style.zIndex = defaultZ.burger;
     hamburgerOpen.style.zIndex = defaultZ.burger;
-  };
+  }, 300);
+};
 
   hamburgerClosed.addEventListener("click", openMenu);
   hamburgerOpen.addEventListener("click", closeMenu);
@@ -50,4 +52,5 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
   window.addEventListener("resize", () => {
     if(window.innerWidth > 767) closeMenu();
   });
+
 }

@@ -241,14 +241,14 @@ header {
     height: 700px;
     padding-bottom: 400px;
     width: 0;
-    position: absolute;
+    position:fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    background-color: var(--sec-mirage-blue); /* Black*/
+    overflow-x: hidden; 
+    background-color: var(--sec-mirage-blue); 
     padding-top: 49px;
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    transition: 0.5s; 
   }
 
   .hamburgerMenuOpen {

@@ -7,15 +7,15 @@ const navLinks = document.querySelector(".nav-links");
 if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
 
   const defaultZ = {
-    circle: "1",   // normaliai apskritimas po nav overlay
-    overlay: "2",  // nav overlay virš apskritimo
+    circle: "1",  
+    background: "2", 
     links: "3",
     burger: "4"
   };
 
   const openZ = {
     circle: "3",   // apskritimas vizualiai virš overlay
-    overlay: "2",
+    background: "2",
     links: "4",
     burger: "5"
   };
@@ -24,9 +24,9 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
     nav.style.width = "300px";
     document.body.classList.add("menu-active");
 
-    // Set z-index only when menu is open
+    // z-index, kai menu open:
     headerCircle.style.zIndex = openZ.circle;
-    nav.style.zIndex = openZ.overlay;
+    nav.style.zIndex = openZ.background;
     navLinks.style.zIndex = openZ.links;
     hamburgerClosed.style.zIndex = openZ.burger;
     hamburgerOpen.style.zIndex = openZ.burger;
@@ -36,9 +36,9 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
     nav.style.width = "0";
     document.body.classList.remove("menu-active");
 
-    // Reset z-index when menu closed
+    // z-index, kai menu closed:
     headerCircle.style.zIndex = defaultZ.circle;
-    nav.style.zIndex = defaultZ.overlay;
+    nav.style.zIndex = defaultZ.background;
     navLinks.style.zIndex = defaultZ.links;
     hamburgerClosed.style.zIndex = defaultZ.burger;
     hamburgerOpen.style.zIndex = defaultZ.burger;
@@ -48,6 +48,6 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
   hamburgerOpen.addEventListener("click", closeMenu);
 
   window.addEventListener("resize", () => {
-    if(window.innerWidth > 768) closeMenu();
+    if(window.innerWidth > 767) closeMenu();
   });
 }

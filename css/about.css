@@ -86,6 +86,22 @@
   font-weight: 100;
 }
 
+/* ==== FIRST PARAGRAPH MEDIA ==== */
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  main .h1-sm {
+    text-align: center;
+    margin: 90px auto;
+    width: 100%;
+    max-width: 600px;
+    font-size: var(--text-h2-size);
+    letter-spacing: var(--text-h2-letter-spacing);
+    
+  }
+}
+
 /* ============= TRUST SIGNALS =============== */
 .team-photo {
   margin: 0;

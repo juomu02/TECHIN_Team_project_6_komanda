@@ -6,7 +6,6 @@
 }
 body {
   background-color: var(--background-light);
-  /* min-width: 1440px; */
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -127,7 +126,8 @@ header {
   text-align: center;
 }
 
-.hamburgerMenuButton {
+.hamburgerMenuOpen,
+.hamburgerMenuClosed {
   display: none;
   text-align: right;
   margin-bottom: 4px;
@@ -147,7 +147,7 @@ header {
   }
 }
 @media (max-width: 767px) {
-  .hamburgerMenuButton {
+  .hamburgerMenuClosed {
     display: inline-block;
   }
 }
@@ -208,9 +208,6 @@ header {
   .container_footer {
     flex-direction: column;
   }
-  .nav-header {
-    display: none;
-  }
   .nav-links ul {
     flex-direction: column;
   }
@@ -225,6 +222,71 @@ header {
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+  /*==============FOR BURGER MENU==============*/
+  .hamburgerMenuClosed {
+    display: block;
+  }
+  .hamburgerMenuOpen {
+    display: none;
+  }
+  body.menu-active .hamburgerMenuClosed {
+    display: none;
+  }
+  body.menu-active .hamburgerMenuOpen {
+    display: block;
+  }
+  .nav-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0px;
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow: hidden; 
+    background-color: var(--sec-mirage-blue); 
+    padding-top: 49px;
+    transition: 0.3s; 
+    flex-grow: 0;
+  }
+  .hamburgerMenuOpen {
+    align-self: flex-end;
+    padding-right: 26px;
+    padding-bottom: 20px;
+  }
+  header .nav-left {
+    border-top: 2px solid #fbfcfe15;
+    padding-top: 42px;
+  }
+  header .nav-left {
+    width: 249px;
+    display: grid;
+    place-items: center;
+  }
+  header .nav-left .nav-links ul > li {
+    margin: 0px;
+  }
+  header .nav-links ul > li > a {
+    display: block;
+    margin-bottom: 32px;
+    transition: 0.3s;
+    font-size: 20px;
+    color: var(--prime-link-water-white);
+    font-weight: var(--font-weight-bold);
+    opacity: 70%;
+    line-height: 24px;
+  }
+
+  .nav-right button {
+    width: 252px;
+    padding: 16px 36px 15px 38px;
+    margin-top: 0px;
   }
 }
 /*============CALL TO ACTION============*/

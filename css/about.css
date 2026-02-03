@@ -19,6 +19,7 @@
 /* ============= HEAD =============== */
 
 .header-circle {
+  pointer-events: none;
   position: absolute;
   width: 780px;
   height: 780px;

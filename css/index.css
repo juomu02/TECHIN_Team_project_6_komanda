@@ -21,6 +21,7 @@
 /* ============= HEAD =============== */
 
 .header-circle {
+  pointer-events: none;
   position: absolute;
   top: -172px;
   left: 800px;

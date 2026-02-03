@@ -30,11 +30,18 @@
             </a>
           </div>
           <img
-            class="hamburgerMenuButton"
+            class="hamburgerMenuClosed"
+            onclick="openNav()"
             src="assets/shared/mobile/menu.svg"
-            alt="hamburger menu logo"
+            alt="hamburger menu logo open"
           />
-          <div class="nav-header">
+          <div id="myNavHeader" class="nav-header">
+            <img
+              class="hamburgerMenuOpen"
+              onclick="closeNav()"
+              src="assets/shared/mobile/close.svg"
+              alt="hamburger menu logo closed"
+            />
             <div class="nav-left">
               <nav class="nav-links textColorSanJuanBlue">
                 <ul>
@@ -284,5 +291,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/app.js"></script>
   </body>
 </html>

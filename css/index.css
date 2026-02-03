@@ -178,10 +178,12 @@
   flex-direction: column;
   align-items: center;
   /*width: 1440px;*/
+  
   width: 100%;
   max-width: 1440px;
   margin-inline: auto;
   padding-inline: 165px;
+  
   /*margin-inline: -165px;*/
   background-color: var(--sec-mirage-blue);
   text-align: center;
@@ -195,6 +197,7 @@
   flex-direction: row;
   gap: 131px;
   padding: 70px 0 100px 0;
+  
   width: 100%;
   max-width: 1110px;
   margin: 0 auto;

@@ -13,7 +13,7 @@
 }
 @media (max-width: 767px) {
   .pricing_wrapper {
-    padding-inline: 24px;
+    padding-inline: 24px 23px;
   }
 }
 /* ============= HEAD =============== */
@@ -148,4 +148,107 @@ ul {
   background-color: var(--sec-san-juan-blue);
   color: var(--prime-link-water-white);
   font-weight: var(--font-weight-bold);
+}
+
+/* ==== PRICING MEDIA ==== */
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .pricing {
+    margin-inline: -97px;
+    padding-inline: 39px 40px;
+  }
+  .h1-sm {
+    justify-content: center;
+    font-size: var(--text-h2-size);
+    margin: 90px 0 65px 0;
+  }
+  .pricing-card {
+    margin: 0 auto 110px;
+    align-items: center;
+  }
+  .pricing-card:first-child .h3-lg, .pricing-card:first-child .h1-sm  {
+    transform: translate(-3px, 0px);
+  }
+  .pricing-card:nth-child(3) .h3-lg, .pricing-card:nth-child(3) .h1-sm {
+    transform: translate(3px, 0px);
+  }
+  .h3-lg {
+    font-size: var(--text-h4-size);
+    letter-spacing: var(--text-h4-letter-spacing);
+    text-align: center;
+    margin: 0 auto 15px;
+  }
+  .pricing-card .body {
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+  }
+  .pricing .h1-sm {
+    font-size: var(--text-h2-size);
+    margin: 27px auto 23px;
+    padding: 0 auto;
+  }
+  .pricing-card_features {
+    width: 95%;
+    padding-left: 49px;
+  }
+  .pricing-card .btn-sec-dk {
+    margin-left: 29px;
+  }
+  .pricing-card:nth-child(3) .btn-sec-dk {
+    margin-left: 35px;
+  }
+  .container_cta {
+    margin: 0 0 83px 0;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .h1-sm {
+    justify-content: center;
+    font-size: var(--text-h3-lg-size);
+    margin: 53px 0 52px 0;
+  }
+  .pricing_container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .pricing-card {
+    margin: 0 auto 101px;
+    width: 100%;
+  }
+  .h3-lg {
+    font-size: var(--text-h4-size);
+    letter-spacing: var(--text-h4-letter-spacing);
+    text-align: center;
+    margin: 0 auto 4px;
+  }
+  .pricing-card .body {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 350px;
+  }
+  .pricing .h1-sm {
+    font-size: var(--text-h1-sm-size);
+    margin: 28px auto 5px;
+    padding: 0 auto;
+  }
+  .pricing-card_features {
+    width: 94%;
+    max-width: 350px;
+    margin: 0 auto 24px;
+    padding-left: 87px;
+  }
+  .pricing-card .btn-sec-dk {
+    display: block;
+    margin: 0 auto -45px;
+  }
+  .container_cta {
+    margin: 30px 0 82px 0;
+  }
 }

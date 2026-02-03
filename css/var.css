@@ -24,6 +24,8 @@ body {
   --background-dark: #1b262f;
   --background-dark-circle: #36536b;
 
+  --error-alert-red: #ff0000;
+
   /* FONT FAMILY */
   --font-family-headings: "DM Serif Display", serif;
   --font-family-h3-sm: "Public Sans", sans-serif;

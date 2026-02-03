@@ -126,17 +126,17 @@ const validateForm = (e) => {
 
   switch (true) {
     case name.value === "":
-      nameErr.textContent = "This field can't be empty.";
+      nameErr.textContent = "This field can't be empty";
       fieldInvalid(name, nameErr);
       isValid = false;
       break;
     case nameNotAllowedRegex.test(name.value):
-      nameErr.textContent = "Invalid symbols used.";
+      nameErr.textContent = "Invalid symbols used";
       fieldInvalid(name, nameErr);
       isValid = false;
       break;
     case !nameRegex.test(name.value):
-      nameErr.textContent = "Please write your full name.";
+      nameErr.textContent = "Please write your full name";
       fieldInvalid(name, nameErr);
       isValid = false;
       break;
@@ -147,12 +147,12 @@ const validateForm = (e) => {
 
   switch (true) {
     case email.value === "":
-      emailErr.textContent = "This field can't be empty.";
+      emailErr.textContent = "This field can't be empty";
       fieldInvalid(email, emailErr);
       isValid = false;
       break;
     case !emailRegex.test(email.value):
-      emailErr.textContent = "Invalid email address.";
+      emailErr.textContent = "Invalid email address";
       fieldInvalid(email, emailErr);
       isValid = false;
       break;
@@ -160,14 +160,14 @@ const validateForm = (e) => {
 
   //checking company field
   if (company.value === "") {
-    companyErr.textContent = "This field can't be empty.";
+    companyErr.textContent = "This field can't be empty";
     fieldInvalid(company, companyErr);
     isValid = false;
   }
 
   //checking title field
   if (title.value === "") {
-    titleErr.textContent = "This field can't be empty.";
+    titleErr.textContent = "This field can't be empty";
     fieldInvalid(title, titleErr);
     isValid = false;
   }

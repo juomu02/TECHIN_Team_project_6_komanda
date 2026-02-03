@@ -126,7 +126,7 @@ const validateForm = (e) => {
 
   switch (true) {
     case name.value === "":
-      nameErr.textContent = "This field cannot be empty.";
+      nameErr.textContent = "This field can't be empty.";
       fieldInvalid(name, nameErr);
       isValid = false;
       break;
@@ -147,7 +147,7 @@ const validateForm = (e) => {
 
   switch (true) {
     case email.value === "":
-      emailErr.textContent = "This field cannot be empty.";
+      emailErr.textContent = "This field can't be empty.";
       fieldInvalid(email, emailErr);
       isValid = false;
       break;
@@ -160,21 +160,21 @@ const validateForm = (e) => {
 
   //checking company field
   if (company.value === "") {
-    companyErr.textContent = "This field cannot be empty.";
+    companyErr.textContent = "This field can't be empty.";
     fieldInvalid(company, companyErr);
     isValid = false;
   }
 
   //checking title field
   if (title.value === "") {
-    titleErr.textContent = "This field cannot be empty.";
+    titleErr.textContent = "This field can't be empty.";
     fieldInvalid(title, titleErr);
     isValid = false;
   }
 
   //checking message field
   if (message.value === "") {
-    messageErr.textContent = "This field cannot be empty.";
+    messageErr.textContent = "This field can't be empty.";
     fieldInvalid(message, messageErr);
     isValid = false;
   }

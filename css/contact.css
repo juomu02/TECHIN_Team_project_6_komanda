@@ -276,7 +276,7 @@
 @media (max-width: 767.98px) {
   .container_sponsors {
     width: 327px;
-    margin: 0 auto 84px;
+    margin: 0 auto 86px;
   }
   .container_sponsors h4 {
     margin: 0 auto 25px;
@@ -284,7 +284,6 @@
     text-align: center;
     padding-right: 5px;
   }
-
   .sponsors-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -293,7 +292,6 @@
     align-items: center;
     justify-items: center;
   }
-
   .sponsors-grid img:nth-child(1) {
     width: 106px;
     height: 14px;

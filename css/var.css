@@ -47,6 +47,10 @@ body {
   --text-h3-lg-line: 1.25;
   --text-h3-lg-letter-spacing: -0.25px;
 
+  --text-h3-med-size: 36px;
+  --text-h3-med-line: 1;
+  --text-h3-med-letter-spacing: -0.28px;
+
   --text-h3-sm-size: 18px;
   --text-h3-sm-line: 1.39;
   --text-h3-sm-letter-spacing: -0.14px;
@@ -156,7 +160,8 @@ header {
   align-items: center;
   justify-content: flex-start;
 }
-.nav {
+.nav-header,
+.nav-footer {
   flex: 1 1 100%;
   display: flex;
   flex-direction: row;
@@ -200,8 +205,26 @@ header {
   .container_header {
     justify-content: space-between;
   }
-  .nav {
+  .container_footer {
+    flex-direction: column;
+  }
+  .nav-header {
     display: none;
+  }
+  .nav-links ul {
+    flex-direction: column;
+  }
+  .nav-footer {
+    flex-direction: column;
+  }
+  .nav-links li:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .container_footer .logo-wrapper .payapiLogo {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 /*============CALL TO ACTION============*/
@@ -354,7 +377,7 @@ footer {
 footer > img {
   position: absolute;
   bottom: -544px;
-  left: 1050px;
+  right: -390px;
   width: 780px;
   height: 780px;
   z-index: 1;
@@ -403,3 +426,34 @@ footer > img {
 .social a:hover .linkedinLogo {
   background-color: var(--prime-bg-hover);
 }
+
+/* ============= FOOTER MEDIA =============== */
+@media (min-width: 768px) and (max-width: 1439px) {
+  footer {
+    margin-inline: -97px;
+  }
+  .container_footer {
+    padding-inline: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    margin-inline: -24px;
+  }
+  .container_footer {
+    height: auto;
+    padding-inline: 24px;
+  }
+  .social {
+    margin-bottom: 55px;
+    margin-top: 40px;
+  }
+  footer > img {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 604px);
+  }
+}
+
+

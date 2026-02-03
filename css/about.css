@@ -155,9 +155,7 @@ main > .h1-sm {
     letter-spacing: var(--text-body-letter-spacing);
     transform: translate(2px, 0px);
   }
-  /* .container_about-us-article:nth-child(2).body {
-   margin-bottom: -10px;
-  } */
+ 
 }
 
 /* ============= TRUST SIGNALS =============== */

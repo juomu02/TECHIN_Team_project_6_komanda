@@ -92,26 +92,33 @@ const validateForm = (e) => {
 
   let isValid = true;
 
-  const resetFields = () => {
-    const elementArray = [
-      name,
-      nameErr,
-      email,
-      emailErr,
-      company,
-      companyErr,
-      title,
-      titleErr,
-      message,
-      messageErr,
-    ];
+  const elementArray = [
+    name,
+    nameErr,
+    email,
+    emailErr,
+    company,
+    companyErr,
+    title,
+    titleErr,
+    message,
+    messageErr,
+  ];
+
+  const resetFieldValues = () => {
     elementArray.forEach((element) => {
-      element.style.color = "";
-      element.style.borderColor = "";
       element.value = "";
     });
   };
 
+  const resetFieldColors = () => {
+    elementArray.forEach((element) => {
+      element.removeAttribute("style");
+      // element.style.color = "";
+      // element.style.borderColor = "";
+    });
+  };
+  resetFieldColors();
   //checking Name field
   const nameRegex =
     /^(?=[^ ]+ +[^ ]+)(?=.{1,50}$)[a-zA-Zà-ÿÀ-ß]+(?: [a-zA-Zà-ÿÀ-ß]+)*$/;
@@ -174,7 +181,7 @@ const validateForm = (e) => {
 
   if (isValid) {
     alert("Form submitted successfully!");
-    resetFields();
+    resetFieldValues();
     return true;
   } else {
     return false;

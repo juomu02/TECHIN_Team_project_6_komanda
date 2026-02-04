@@ -68,12 +68,16 @@
             <div class="container_cta-index">
               <div class="cta-form">
                 <input
+                  id="cta_home_hero_input"
                   type="email"
                   placeholder="Enter email address"
                   class="cta-input"
                 />
-                <button class="btn-prime">Schedule a Demo</button>
+                <button id="cta_home_hero_btn" class="btn-prime">
+                  Schedule a Demo
+                </button>
               </div>
+              <div id="cta_home_hero_err" class="alert-demo"></div>
               <p class="cta-footer-text">
                 Have any questions?
                 <a href="pages/contact.html" class="contact-link">Contact Us</a>
@@ -244,13 +248,19 @@
           <div class="container_cta">
             <h2 class="h2">Ready to start?</h2>
 
-            <div class="cta-form">
-              <input
-                type="email"
-                class="cta-input"
-                placeholder="Enter email address"
-              />
-              <button class="btn-prime">Schedule a Demo</button>
+            <div class="container_cta-wrapper">
+              <div class="cta-form">
+                <input
+                  id="cta_home_cta_input"
+                  type="email"
+                  class="cta-input"
+                  placeholder="Enter email address"
+                />
+                <button id="cta_home_cta_btn" class="btn-prime">
+                  Schedule a Demo
+                </button>
+              </div>
+              <div id="cta_home_cta_err" class="alert-demo"></div>
             </div>
           </div>
         </section>

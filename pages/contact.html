@@ -65,26 +65,49 @@
         </h1>
 
         <section class="submit_and_sponsors">
-          <form class="contact-form" action="#" method="post">
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="#"
+            method="post"
+            novalidate
+          >
             <div class="contact-form_container">
               <div class="form-group">
-                <input type="text" placeholder="Name" required />
+                <input id="form_input_name" type="text" placeholder="Name" />
+                <div id="form_input_name-error" class="alert"></div>
               </div>
 
               <div class="form-group">
-                <input type="email" placeholder="Email Address" required />
+                <input
+                  id="form_input_email"
+                  type="email"
+                  placeholder="Email Address"
+                />
+                <div id="form_input_email-error" class="alert"></div>
               </div>
 
               <div class="form-group">
-                <input type="text" placeholder="Company Name" required />
+                <input
+                  id="form_input_company"
+                  type="text"
+                  placeholder="Company Name"
+                />
+                <div id="form_input_company-error" class="alert"></div>
               </div>
 
               <div class="form-group">
-                <input type="text" placeholder="Title" required />
+                <input id="form_input_title" type="text" placeholder="Title" />
+                <div id="form_input_title-error" class="alert"></div>
               </div>
 
               <div class="form-group">
-                <textarea placeholder="Message" rows="3"></textarea>
+                <textarea
+                  id="form_input_message"
+                  placeholder="Message"
+                  rows="3"
+                ></textarea>
+                <div id="form_input_message-error" class="alert"></div>
               </div>
 
               <div class="checkbox-group">
@@ -125,15 +148,20 @@
         <section class="cta">
           <div class="container_cta">
             <h2 class="h2">Ready to start?</h2>
-            <!--change-->
 
-            <div class="cta-form">
-              <input
-                type="email"
-                class="cta-input"
-                placeholder="Enter email address"
-              />
-              <button class="btn-prime">Schedule a Demo</button>
+            <div class="container_cta-wrapper">
+              <div class="cta-form">
+                <input
+                  id="cta_contact_cta_input"
+                  type="email"
+                  class="cta-input"
+                  placeholder="Enter email address"
+                />
+                <button id="cta_contact_cta_btn" class="btn-prime">
+                  Schedule a Demo
+                </button>
+              </div>
+              <div id="cta_contact_cta_err" class="alert-demo"></div>
             </div>
           </div>
         </section>

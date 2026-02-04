@@ -130,7 +130,10 @@ header {
 .hamburgerMenuClosed {
   display: none;
   text-align: right;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
+}
+.hamburgerMenuClosed {
+  padding-right: 0px;
 }
 
 .container_header {
@@ -227,9 +230,16 @@ header {
   /*==============FOR BURGER MENU==============*/
   .hamburgerMenuClosed {
     display: block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    
   }
   .hamburgerMenuOpen {
     display: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
   }
   body.menu-active .hamburgerMenuClosed {
     display: none;
@@ -251,7 +261,7 @@ header {
     right: 0;
     overflow: hidden; 
     background-color: var(--sec-mirage-blue); 
-    padding-top: 49px;
+    padding-top: 47px;
     transition: 0.3s; 
     flex-grow: 0;
   }

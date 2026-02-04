@@ -22,6 +22,7 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
 
   const openMenu = () => {
     nav.style.width = "300px";
+    nav.hidden = false;
     document.body.classList.add("menu-active");
 
     // z-index, kai menu open:
@@ -30,6 +31,10 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
     navLinks.style.zIndex = openZ.links;
     hamburgerClosed.style.zIndex = openZ.burger;
     hamburgerOpen.style.zIndex = openZ.burger;
+
+    // Fokusas
+    nav.focus();
+    hamburgerClosed.setAttribute("aria-expanded", "true")
   };
 
   const closeMenu = () => {
@@ -43,6 +48,10 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
     navLinks.style.zIndex = defaultZ.links;
     hamburgerClosed.style.zIndex = defaultZ.burger;
     hamburgerOpen.style.zIndex = defaultZ.burger;
+
+    nav.hidden = true;
+    hamburgerClosed.setAttribute("aria-expanded", "false");
+    hamburgerClosed.focus();
   }, 300);
 };
 
@@ -52,5 +61,11 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
   window.addEventListener("resize", () => {
     if(window.innerWidth > 767) closeMenu();
   });
+
+document.addEventListener("keydown", (x) => {
+  if (x.key === "Escape" && !nav.hidden) {
+    closeMenu();
+  }
+});
 
 }

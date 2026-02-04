@@ -66,7 +66,7 @@ const fieldInvalid = (element, elementErr) => {
   }
   element.style.borderColor = errColor;
 
-  elementErr.style.marginBottom = "-12px";
+  // elementErr.style.marginBottom = "-12px";
 };
 
 const disableDefaultAlerts = (formElement) => {
@@ -117,12 +117,9 @@ const validateForm = (e) => {
   const resetFieldColors = () => {
     elementArray.forEach((element) => {
       element.removeAttribute("style");
-      // element.style.color = "";
-      // element.style.borderColor = "";
     });
   };
   resetFieldColors();
-  //checking Name field
   const nameRegex =
     /^(?=[^ ]+ +[^ ]+)(?=.{1,50}$)[a-zA-Zà-ÿÀ-ß]+(?: [a-zA-Zà-ÿÀ-ß]+)*$/;
   const nameNotAllowedRegex = /[0-9_!@#$%^&*()=+[\]{};:"\\|,.<>/?~`]/;
@@ -221,7 +218,7 @@ const validateScheduleDemoInput = (buttonId) => {
     {
       buttonId: "cta_about_cta_btn",
       inputId: "cta_about_cta_input",
-      errId: "cta_habout_cta_err",
+      errId: "cta_about_cta_err",
     },
 
     {

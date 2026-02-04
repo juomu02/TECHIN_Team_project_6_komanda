@@ -65,7 +65,13 @@
         </h1>
 
         <section class="submit_and_sponsors">
-          <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="#"
+            method="post"
+            novalidate
+          >
             <div class="contact-form_container">
               <div class="form-group">
                 <input id="form_input_name" type="text" placeholder="Name" />
@@ -142,15 +148,20 @@
         <section class="cta">
           <div class="container_cta">
             <h2 class="h2">Ready to start?</h2>
-            <!--change-->
 
-            <div class="cta-form">
-              <input
-                type="email"
-                class="cta-input"
-                placeholder="Enter email address"
-              />
-              <button class="btn-prime">Schedule a Demo</button>
+            <div class="container_cta-wrapper">
+              <div class="cta-form">
+                <input
+                  id="cta_contact_cta_input"
+                  type="email"
+                  class="cta-input"
+                  placeholder="Enter email address"
+                />
+                <button id="cta_contact_cta_btn" class="btn-prime">
+                  Schedule a Demo
+                </button>
+              </div>
+              <div id="cta_contact_cta_err" class="alert-demo"></div>
             </div>
           </div>
         </section>

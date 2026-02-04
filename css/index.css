@@ -563,7 +563,7 @@
   opacity: 70%;
 }
 .tablet-break {
-  display: inline;
+  display: none;
 }
 
 /*for pixel perfect*/
@@ -640,6 +640,6 @@
     margin: 0px auto 14px;
   }
   .tablet-break {
-    display: inline;
+    display: none;
   }
 }

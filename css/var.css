@@ -321,7 +321,7 @@ header {
   background-color: var(--prime-link-water-white);
   box-shadow: 10px 10px 25px #36536b40;
 }
-.container_cta .cta-form {
+.container_cta-index {
   margin-bottom: 18px;
 }
 .cta-input {
@@ -417,7 +417,7 @@ header {
     background-color: var(--prime-link-water-white);
     box-shadow: 10px 10px 25px #36536b40;
   }
-  .container_cta .cta-form {
+  .container_cta-index {
     margin-bottom: 0px;
   }
 

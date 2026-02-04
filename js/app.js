@@ -61,8 +61,11 @@ const form = document.getElementById("contact-form");
 
 const fieldInvalid = (element, elementErr) => {
   const errColor = "#FF000080";
-  element.style.color = errColor;
+  if (element.value !== "") {
+    element.style.color = errColor;
+  }
   element.style.borderColor = errColor;
+
   elementErr.style.marginBottom = "-12px";
 };
 
@@ -196,10 +199,6 @@ if (form) {
 /* ============= SCHEDULE A DEMO INPUTS =============== */
 
 const validateScheduleDemoInput = (buttonId) => {
-  console.log(buttonId);
-  let inputId = "";
-  let errId = "";
-
   var demoIdArray = [
     {
       buttonId: "cta_home_hero_btn",
@@ -232,12 +231,35 @@ const validateScheduleDemoInput = (buttonId) => {
     },
   ];
 
+  const resetDemoInputErrors = (demoIdArray) => {
+    demoIdArray.forEach((value) => {
+      const error = document.getElementById(value.errId);
+
+      if (error) {
+        error.textContent = "";
+        error.removeAttribute("style");
+      }
+    });
+  };
+
+  const resetDemoInputValues = (demoIdArray) => {
+    demoIdArray.forEach((value) => {
+      const input = document.getElementById(value.inputId);
+
+      if (input) {
+        input.value = "";
+        input.removeAttribute("style");
+      }
+    });
+  };
   const validateInput = (inputId, errId) => {
     const email = document.getElementById(inputId);
     const emailErr = document.getElementById(errId);
 
     //checking Email field
     const emailRegex = /^([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})$/;
+
+    resetDemoInputErrors(demoIdArray);
 
     let isValid = true;
     switch (true) {
@@ -254,21 +276,15 @@ const validateScheduleDemoInput = (buttonId) => {
     }
     if (isValid) {
       alert("Form submitted successfully!");
-      // resetFieldValues();
-      // return true;
+      resetDemoInputValues(demoIdArray);
     }
   };
 
   demoIdArray.forEach((value) => {
-    // console.log(value);
-    // console.log(value.inputId);
-    // console.log(value.errId);
     if (value.buttonId === buttonId) {
-      // console.log(buttonId);
       validateInput(value.inputId, value.errId);
     }
   });
-  // console.log(`IDs are: inputId: ${inputId}; errId: ${errId}`);
 };
 
 document.addEventListener("click", (event) => {

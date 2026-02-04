@@ -188,6 +188,92 @@ const validateForm = (e) => {
   }
 };
 
-disableDefaultAlerts(form);
+if (form) {
+  disableDefaultAlerts(form);
+  form.addEventListener("submit", validateForm);
+}
 
-form.addEventListener("submit", validateForm);
+/* ============= SCHEDULE A DEMO INPUTS =============== */
+
+const validateScheduleDemoInput = (buttonId) => {
+  console.log(buttonId);
+  let inputId = "";
+  let errId = "";
+
+  var demoIdArray = [
+    {
+      buttonId: "cta_home_hero_btn",
+      inputId: "cta_home_hero_input",
+      errId: "cta_home_hero_err",
+    },
+
+    {
+      buttonId: "cta_home_cta_btn",
+      inputId: "cta_home_cta_input",
+      errId: "cta_home_cta_err",
+    },
+
+    {
+      buttonId: "cta_pricing_cta_btn",
+      inputId: "cta_pricing_cta_input",
+      errId: "cta_pricing_cta_err",
+    },
+
+    {
+      buttonId: "cta_about_cta_btn",
+      inputId: "cta_about_cta_input",
+      errId: "cta_habout_cta_err",
+    },
+
+    {
+      buttonId: "cta_contact_cta_btn",
+      inputId: "cta_contact_cta_input",
+      errId: "cta_contact_cta_err",
+    },
+  ];
+
+  const validateInput = (inputId, errId) => {
+    const email = document.getElementById(inputId);
+    const emailErr = document.getElementById(errId);
+
+    //checking Email field
+    const emailRegex = /^([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})$/;
+
+    let isValid = true;
+    switch (true) {
+      case email.value === "":
+        emailErr.textContent = "This field can't be empty";
+        fieldInvalid(email, emailErr);
+        isValid = false;
+        break;
+      case !emailRegex.test(email.value):
+        emailErr.textContent = "Invalid email address";
+        fieldInvalid(email, emailErr);
+        isValid = false;
+        break;
+    }
+    if (isValid) {
+      alert("Form submitted successfully!");
+      // resetFieldValues();
+      // return true;
+    }
+  };
+
+  demoIdArray.forEach((value) => {
+    // console.log(value);
+    // console.log(value.inputId);
+    // console.log(value.errId);
+    if (value.buttonId === buttonId) {
+      // console.log(buttonId);
+      validateInput(value.inputId, value.errId);
+    }
+  });
+  // console.log(`IDs are: inputId: ${inputId}; errId: ${errId}`);
+};
+
+document.addEventListener("click", (event) => {
+  if (event.target.matches(".btn-prime")) {
+    const clickedId = event.target.id;
+    validateScheduleDemoInput(clickedId);
+  }
+});

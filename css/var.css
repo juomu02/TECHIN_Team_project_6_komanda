@@ -357,7 +357,16 @@ header {
 .btn-prime:hover {
   background-color: var(--sec-charm-pink-actives);
 }
-
+.alert {
+  font-size: 11px;
+  font-family: var(--font-family-body);
+  line-height: var(--text-body-line-small);
+  font-weight: var(--font-weight-thin);
+  color: var(--error-alert-red);
+  opacity: 0.5;
+  letter-spacing: -0.08px;
+  margin-left: 20px;
+}
 /*==========CALL TO ACTION FOR TABLET=========*/
 @media (min-width: 768px) and (max-width: 1439px) {
   .container_cta {

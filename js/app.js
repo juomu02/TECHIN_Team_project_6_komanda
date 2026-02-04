@@ -65,8 +65,7 @@ const fieldInvalid = (element, elementErr) => {
     element.style.color = errColor;
   }
   element.style.borderColor = errColor;
-
-  // elementErr.style.marginBottom = "-12px";
+  elementErr.style.marginBottom = "-12px";
 };
 
 const disableDefaultAlerts = (formElement) => {

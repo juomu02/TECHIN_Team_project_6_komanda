@@ -119,6 +119,7 @@ const validateForm = (e) => {
     });
   };
   resetFieldColors();
+  
   const nameRegex =
     /^(?=[^ ]+ +[^ ]+)(?=.{1,50}$)[a-zA-Zà-ÿÀ-ß]+(?: [a-zA-Zà-ÿÀ-ß]+)*$/;
   const nameNotAllowedRegex = /[0-9_!@#$%^&*()=+[\]{};:"\\|,.<>/?~`]/;

@@ -74,7 +74,12 @@
           >
             <div class="contact-form_container">
               <div class="form-group">
-                <input id="form_input_name" type="text" placeholder="Name" />
+                <input
+                  id="form_input_name"
+                  type="text"
+                  aria-label="Full Name (Required)"
+                  placeholder="Name"
+                />
                 <div id="form_input_name-error" class="alert"></div>
               </div>
 
@@ -82,6 +87,7 @@
                 <input
                   id="form_input_email"
                   type="email"
+                  aria-label="Email (Required)"
                   placeholder="Email Address"
                 />
                 <div id="form_input_email-error" class="alert"></div>
@@ -91,19 +97,26 @@
                 <input
                   id="form_input_company"
                   type="text"
+                  aria-label="Company Name (Required)"
                   placeholder="Company Name"
                 />
                 <div id="form_input_company-error" class="alert"></div>
               </div>
 
               <div class="form-group">
-                <input id="form_input_title" type="text" placeholder="Title" />
+                <input
+                  id="form_input_title"
+                  type="text"
+                  aria-label="Title (Required)"
+                  placeholder="Title"
+                />
                 <div id="form_input_title-error" class="alert"></div>
               </div>
 
               <div class="form-group">
                 <textarea
                   id="form_input_message"
+                  aria-label="Message (Required)"
                   placeholder="Message"
                   rows="3"
                 ></textarea>

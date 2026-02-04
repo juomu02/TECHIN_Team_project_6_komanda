@@ -182,35 +182,34 @@
 }
 
 /*========== PARTNERS SECTION ==========*/
+/* ===== PARTNERS SECTION ===== */
 
 .partners {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*width: 1440px;*/
   
   width: 100%;
-  max-width: 1440px;
-  margin-inline: auto;
-  padding-inline: 165px;
+  margin-left: 165px;
   
-  /*margin-inline: -165px;*/
+  
   background-color: var(--sec-mirage-blue);
   text-align: center;
   background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
   background-position: left -235px top -355px;
+
+  transform: translateX(-165px);
 }
 
 .container_partners {
   display: flex;
   flex-direction: row;
-  gap: 131px;
+  gap: 121px;
   padding: 70px 0 100px 0;
   
-  width: 100%;
-  max-width: 1110px;
-  margin: 0 auto;
+  max-width: 1275px;
+  margin: 0;
 }
 
 .partners-text {
@@ -269,31 +268,20 @@
 }
 
 .sponsors-grid {
-  width: 536px;
-  height: 103px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 60px;
+  width: 100%;
+  max-width: 536px;
   margin-top: 115px;
-}
-
-.sponsors-row {
-  width: 536px;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.sponsors-row img {
-  width: auto;
+.sponsors-grid img {
+  justify-self: center;
   filter: brightness(0) invert(1);
-}
-
-.sponsors-tesla {
-  height: 17px;
-}
-.sponsors-microsoft {
-  margin-left: 5px;
 }
 
 /*========== PARTNERS SECTION MEDIA ==========*/
@@ -306,7 +294,7 @@
   }
 
   .partners-text {
-    width: 100%;
+    /*width: 100%;*/
     max-width: 600px;
     text-align: center;
     align-self: center;
@@ -314,6 +302,7 @@
 
   .sponsors-grid {
     margin-top: 0;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -325,15 +314,19 @@
     background-position: center top -200px;
   }
 
-  .sponsors-grid,
-  .sponsors-row {
-    width: 100%;
+  .container_partners {
+    flex-direction: column-reverse;
+    gap: 56px;
   }
 
-  .sponsors-row {
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+  .sponsors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 40px;
+    margin-top: 0;
+  }
+
+  .partners-text {
+    text-align: center;
   }
 
   .partners-text button {

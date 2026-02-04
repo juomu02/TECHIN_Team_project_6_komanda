@@ -68,9 +68,8 @@ document.addEventListener("keydown", (x) => {
     closeMenu();
   }
 });
+}
 
-}
-}
 /* ============= INPUT VALIDATION =============== */
 /* ============= CONTACTS FORM =============== */
 

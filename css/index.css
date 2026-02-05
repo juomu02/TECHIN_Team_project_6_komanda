@@ -287,7 +287,8 @@
   .container_partners {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    padding-top: 88px;
   }
 
   .partners-text {
@@ -297,9 +298,15 @@
     align-self: center;
   }
 
+  .partners-text .body {
+    margin-bottom: 30px;
+  }
+
   .sponsors-grid {
     margin-top: 0;
-    column-gap: 60px;
+    margin-bottom: 0;
+    column-gap: 57px;
+    row-gap: 40px;
     grid-template-columns: repeat(3, 1fr);
   }
 }

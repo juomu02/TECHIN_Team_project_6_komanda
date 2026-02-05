@@ -21,33 +21,42 @@
         <img
           class="header-circle"
           src="../assets/shared/desktop/bg-pattern-circle.svg"
-          alt="background circle"
+          alt=""
         />
         <div class="container_header">
           <div class="logo-wrapper">
             <a href="../index.html">
-              <img src="../assets/shared/desktop/logo.svg" alt="payapi logo" />
+              <img
+                src="../assets/shared/desktop/logo.svg"
+                alt="Payapi logo, press to go back to index page"
+              />
             </a>
           </div>
-          <img
+          <button
             class="hamburgerMenuClosed"
             onclick="openNav()"
-            src="../assets/shared/mobile/menu.svg"
-            alt="hamburger menu logo open"
-          />
-          <div id="myNavHeader" class="nav-header">
-            <img
+            aria-label="Open navigation bar"
+            aria-expanded="false"
+            aria-controls="myNavHeader"
+          >
+            <img src="../assets/shared/mobile/menu.svg" alt="" />
+          </button>
+
+          <div id="myNavHeader" class="nav-header" hidden tabindex="-1">
+            <button
               class="hamburgerMenuOpen"
               onclick="closeNav()"
-              src="../assets/shared/mobile/close.svg"
-              alt="hamburger menu logo closed"
-            />
+              aria-label="Close navigation bar"
+            >
+              <img src="../assets/shared/mobile/close.svg" alt="" />
+            </button>
+
             <div class="nav-left">
               <nav class="nav-links textColorSanJuanBlue">
                 <ul>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="../pages/pricing.html">Pricing</a></li>
+                  <li><a href="../pages/about.html">About</a></li>
+                  <li><a href="../pages/contact.html">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -57,6 +66,7 @@
             </div>
           </div>
         </div>
+      </header>
       </header>
 
       <main>
@@ -168,33 +178,40 @@
       </main>
 
       <footer>
-        <img
-          src="../assets/shared/desktop/bg-pattern-circle.svg"
-          alt="background circle"
-        />
+        <img src="assets/shared/desktop/bg-pattern-circle.svg" alt="" />
         <div class="container_footer">
           <div class="logo-wrapper logoColorLinkWaterWhite">
-            <a href="../index.html" class="payapiLogo"></a>
+            <a
+              href="index.html"
+              class="payapiLogo"
+              aria-label="Payapi logo, press to go back to index page"
+            ></a>
           </div>
           <div class="nav-footer">
             <div class="nav-left">
               <nav class="nav-links textColorLinkWaterWhite">
                 <ul>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="pages/pricing.html">Pricing</a></li>
+                  <li><a href="pages/about.html">About</a></li>
+                  <li><a href="pages/contact.html">Contact</a></li>
                 </ul>
               </nav>
             </div>
 
             <div class="social">
-              <a href="https://www.facebook.com">
+              <a
+                href="https://www.facebook.com"
+                aria-label="Press to go to Payapi Facebook"
+              >
                 <div class="facebookLogo"></div>
               </a>
-              <a href="http://x.com">
+              <a href="http://x.com" aria-label="Press to go to Payapi Twitter">
                 <div class="twitterLogo"></div>
               </a>
-              <a href="http://www.linkedin.com">
+              <a
+                href="http://www.linkedin.com"
+                aria-label="Press to go to Payapi LinkedIn"
+              >
                 <div class="linkedinLogo"></div>
               </a>
             </div>

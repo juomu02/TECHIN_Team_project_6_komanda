@@ -605,7 +605,7 @@
     margin-left: 3px;
   }
   .tablet-break {
-    display: block;
+    display: none;
   }
 }
 /*=========BENEFITS FOR MOBILE=========*/
@@ -635,6 +635,10 @@
     margin-bottom: 34px;
     margin-left: 1px;
     margin-right: 0px;
+  }
+
+   .features-item:nth-child(3) p {
+    width: 210px;
   }
   .features-item .h3-sm {
     margin: 0px auto 14px;

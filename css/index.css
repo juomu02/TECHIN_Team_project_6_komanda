@@ -14,13 +14,14 @@
 /* FOR MOBILE */
 @media (max-width: 767px) {
   .index_wrapper {
-    padding-inline: 24px;
+    padding-inline: 24px 23px;
   }
 }
 
 /* ============= HEAD =============== */
 
 .header-circle {
+  pointer-events: none;
   position: absolute;
   top: -172px;
   left: 800px;

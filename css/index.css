@@ -292,7 +292,6 @@
   }
 
   .partners-text {
-    /*width: 100%;*/
     max-width: 600px;
     text-align: center;
     align-self: center;
@@ -320,22 +319,63 @@
 
   .container_partners {
     flex-direction: column-reverse;
-    gap: 56px;
+    /*gap: 56px;*/
+    row-gap: 0;
+    padding: 75px 0 80px 24px;
+  }
+
+  .partners-text {
+    margin-top: 36px;
+  }
+
+  .partners-text .h2 {
+    font-size: 32px;
+    margin-bottom: 6px;
+    transform: translateX(-12px);
+
+  }
+
+  .partners-text .body {
+    margin: 5px 0 63px 0;
+    width: 380px;
+
+    text-align: center;
+
+    padding-left: 42px;
+
+    letter-spacing: -0.01px;
+    transform: scaleX(0.95);
+    transform-origin: center;
+  }
+
+  .partners-text button {
+    margin: 0 auto;
+    transform: translateX(-12px);
   }
 
   .sponsors-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px 40px;
+    gap: 33px 0;
     margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 45px;
+    width: 85%;
   }
+
+  .sponsors-grid > * {
+    transform: scale(0.85); /* tweak this value */
+    transform-origin: center;
+  }
+
+  /*.sponsors-grid img {
+    width: 110px;
+    height: auto;
+  }*/
 
   .partners-text {
     text-align: center;
   }
 
-  .partners-text button {
-    margin: 0 auto;
-  }
 }
 
 /* ============= EASY TO IMPLEMENT =============== */

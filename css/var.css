@@ -202,6 +202,10 @@ header {
   opacity: 1;
 }
 
+.logoColorLinkWaterWhite:focus-within {
+  border: 2px solid white;
+}
+
 /* ============= HEAD & FOOTER MEDIA =============== */
 @media (max-width: 767px) {
   .container_header {
@@ -336,6 +340,7 @@ header {
   color: var(--sec-san-juan-blue);
   outline: none;
 }
+
 .cta-input::placeholder {
   opacity: var(--prime-opacity-disabled);
   color: var(--sec-san-juan-blue);
@@ -534,4 +539,15 @@ footer > img {
   }
 }
 
+/* =============FOCUS=============== */
 
+.focus:focus-visible {
+  border: 2px solid var(--background-dark);
+  outline: unset;
+}
+
+.focus_white:focus-visible   {
+  border: 2px solid var(--background-dark);
+  outline: 2px solid white;
+  outline-offset: 2px;
+}

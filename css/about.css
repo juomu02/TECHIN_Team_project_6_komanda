@@ -292,6 +292,7 @@ main > .h1-sm {
   }
   .stats {
     margin-inline: -57px;
+    margin-bottom: 60px;
   }
 }
 /* ============= SECOND PARAGRAPH =============== */
@@ -309,4 +310,43 @@ main > .h1-sm {
   line-height: var(--text-body-line);
   margin: 0 0 58px 0; /*does not match adobe, but match design spacing*/
   font-weight: 100;
+}
+
+/* ============= SECOND PARAGRAPH MEDIA =============== */
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .container_about-us-article-people {
+    display: flex;
+  }
+
+  #about-us-culture-text {
+    letter-spacing: -0.05px;
+    /*font-size: 14px;*/
+  }
+
+  .container_about-us-article-people .body {
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto 63px;
+    letter-spacing: var(--text-h3-sm-letter-spacing);
+    transform: translate(2px, 0px);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .container_about-us-article-people {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .container_about-us-article-people .body {
+    width: 100%;
+    max-width: 630px;
+    margin: 5px auto 60px;
+    letter-spacing: var(--text-body-letter-spacing);
+    transform: translate(2px, 0px);
+  }
 }

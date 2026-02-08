@@ -339,13 +339,22 @@ main > .h1-sm {
   .container_about-us-article-people {
     flex-direction: column;
     align-items: center;
-    margin-top: 0;
+    margin-top: 0px;
+  }
+
+#about-us-culture {
+    margin-top: -12px;
+  }
+
+  #about-us-people {
+    margin-top: 0.4px;
+    /*margin-bottom: 3px;*/
   }
 
   .container_about-us-article-people .body {
     width: 100%;
     max-width: 630px;
-    margin: 5px auto 60px;
+    margin: 5px auto 36px;
     letter-spacing: var(--text-body-letter-spacing);
     transform: translate(2px, 0px);
   }

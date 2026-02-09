@@ -84,6 +84,7 @@ const fieldInvalid = (element, elementErr) => {
   element.style.borderColor = errColor;
   elementErr.style.marginBottom = "-12px";
   elementErr.classList.add("focus");
+  elementErr.setAttribute("tabindex", "0");
   if (firstErrorField === "") {
     firstErrorField = elementErr;
   }
@@ -107,11 +108,19 @@ const validateForm = (e) => {
   const titleErr = document.getElementById("form_input_title-error");
   const messageErr = document.getElementById("form_input_message-error");
 
-  nameErr.textContent = "";
-  emailErr.textContent = "";
-  companyErr.textContent = "";
-  titleErr.textContent = "";
-  messageErr.textContent = "";
+  const resetErrorFields = (error) => {
+    error.textContent = "";
+    error.removeAttribute("tabindex");
+    error.classList.remove("focus");
+  };
+
+  resetErrorFields(nameErr);
+  resetErrorFields(emailErr);
+  resetErrorFields(companyErr);
+  resetErrorFields(titleErr);
+  resetErrorFields(messageErr);
+
+  firstErrorField = "";
 
   let isValid = true;
 
@@ -206,7 +215,7 @@ const validateForm = (e) => {
     return confirm("Do you really want to submit the form?");
   } else {
     console.log(firstErrorField);
-    alert("Please correct the errors in the form!");
+    // alert("Please correct the errors in the form!");
     console.log(firstErrorField);
     firstErrorField.focus();
     return true;

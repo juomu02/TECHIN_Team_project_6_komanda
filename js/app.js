@@ -35,7 +35,7 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
 
     // Fokusas
     nav.focus();
-    hamburgerClosed.setAttribute("aria-expanded", "true")
+    hamburgerClosed.setAttribute("aria-expanded", "true");
   };
 
   const closeMenu = () => {
@@ -44,17 +44,17 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
     setTimeout(() => {
       document.body.classList.remove("menu-active");
 
-    headerCircle.style.zIndex = defaultZ.circle;
-    nav.style.zIndex = defaultZ.background;
-    navLinks.style.zIndex = defaultZ.links;
-    hamburgerClosed.style.zIndex = defaultZ.burger;
-    hamburgerOpen.style.zIndex = defaultZ.burger;
+      headerCircle.style.zIndex = defaultZ.circle;
+      nav.style.zIndex = defaultZ.background;
+      navLinks.style.zIndex = defaultZ.links;
+      hamburgerClosed.style.zIndex = defaultZ.burger;
+      hamburgerOpen.style.zIndex = defaultZ.burger;
 
-    nav.hidden = true;
-    hamburgerClosed.setAttribute("aria-expanded", "false");
-    hamburgerClosed.focus();
-  }, 300);
-};
+      nav.hidden = true;
+      hamburgerClosed.setAttribute("aria-expanded", "false");
+      hamburgerClosed.focus();
+    }, 300);
+  };
 
   hamburgerClosed.addEventListener("click", openMenu);
   hamburgerOpen.addEventListener("click", closeMenu);
@@ -63,17 +63,18 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
     if (window.innerWidth > 767) closeMenu();
   });
 
-document.addEventListener("keydown", (x) => {
-  if (x.key === "Escape" && !nav.hidden) {
-    closeMenu();
-  }
-});
+  document.addEventListener("keydown", (x) => {
+    if (x.key === "Escape" && !nav.hidden) {
+      closeMenu();
+    }
+  });
 }
 
 /* ============= INPUT VALIDATION =============== */
 /* ============= CONTACTS FORM =============== */
 
 const form = document.getElementById("contact-form");
+let firstErrorField = "";
 
 const fieldInvalid = (element, elementErr) => {
   const errColor = "#FF000080";
@@ -82,6 +83,9 @@ const fieldInvalid = (element, elementErr) => {
   }
   element.style.borderColor = errColor;
   elementErr.style.marginBottom = "-12px";
+  if (firstErrorField === "") {
+    firstErrorField = elementErr;
+  }
 };
 
 const disableDefaultAlerts = (formElement) => {
@@ -135,7 +139,7 @@ const validateForm = (e) => {
     });
   };
   resetFieldColors();
-  
+
   const nameRegex =
     /^(?=[^ ]+ +[^ ]+)(?=.{1,50}$)[a-zA-Zà-ÿÀ-ß]+(?: [a-zA-Zà-ÿÀ-ß]+)*$/;
   const nameNotAllowedRegex = /[0-9_!@#$%^&*()=+[\]{};:"\\|,.<>/?~`]/;
@@ -152,7 +156,8 @@ const validateForm = (e) => {
       isValid = false;
       break;
     case !nameRegex.test(name.value):
-      nameErr.textContent = "Please write your full name";
+      nameErr.textContent =
+        "Please write your full name. It must be two or more words.";
       fieldInvalid(name, nameErr);
       isValid = false;
       break;
@@ -196,11 +201,11 @@ const validateForm = (e) => {
   }
 
   if (isValid) {
-    alert("Form submitted successfully!");
     resetFieldValues();
-    return true;
+    return confirm("Do you really want to submit the form?");
   } else {
-    return false;
+    firstErrorField.focus();
+    return alert("Please correct the errors in the form!");
   }
 };
 

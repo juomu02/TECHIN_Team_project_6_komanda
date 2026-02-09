@@ -141,7 +141,7 @@
   }
 
   .cta-footer-text {
-    margin: 0 auto 100px;
+    margin: 0 auto 98px;
   }
 }
 
@@ -281,14 +281,15 @@
 /* FOR TABLET */
 @media (min-width: 768px) and (max-width: 1439px) {
   .partners {
-    background-position: center top -570px;
+    background-position: center top -550px;
   }
 
   .container_partners {
     flex-direction: column-reverse;
     align-items: center;
     gap: 30px;
-    padding-top: 88px;
+    padding-top: 87px;
+    padding-bottom: 88px;
   }
 
   .partners-text {
@@ -297,8 +298,15 @@
     align-self: center;
   }
 
+  #partners-title {
+    margin-top: 44px;
+    margin-bottom: 0;
+  }
+
   .partners-text .body {
-    margin-bottom: 30px;
+    margin-top: 11px;
+    margin-bottom: 34.5px;
+    letter-spacing: -0.35px;
   }
 
   .sponsors-grid {
@@ -332,7 +340,6 @@
     font-size: 32px;
     margin-bottom: 6px;
     transform: translateX(-12px);
-
   }
 
   .partners-text .body {
@@ -358,8 +365,13 @@
     gap: 33px 0;
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 45px;
+    padding-left: 44px;
     width: 85%;
+  }
+
+  .sponsors-grid img:nth-child(5),
+  .sponsors-grid img:nth-child(6) {
+    transform: translateX(-8px) translateY(4px) scale(0.8);
   }
 
   .sponsors-grid > * {
@@ -375,7 +387,6 @@
   .partners-text {
     text-align: center;
   }
-
 }
 
 /* ============= EASY TO IMPLEMENT =============== */
@@ -418,7 +429,7 @@
   .container_implementation {
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
   }
   .implementation-image {
     margin: 0 auto;

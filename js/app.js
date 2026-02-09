@@ -75,27 +75,39 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
 
 const form = document.getElementById("contact-form");
 
+//first input field with error, used for both contact and cta forms
 let firstErrorField = "";
 
 const fieldInvalid = (element, elementErr) => {
   const errColor = "#FF000080";
+  //input field is colored red only if something wrong is entered
   if (element.value !== "") {
     element.style.color = errColor;
-  }  
+  }
+
   element.style.borderColor = errColor;
-  elementErr.style.marginBottom = "-12px";  
+  elementErr.style.marginBottom = "-12px";
+
+  //first field with error message is set if there is none yet, this is later used for focus() command
   if (firstErrorField === "") {
     firstErrorField = element;
   }
-  element.setAttribute('aria-describedby', elementErr.id);
+
+  //aria-describedby is created and connected to error element
+  element.setAttribute("aria-describedby", elementErr.id);
 };
 
 const disableDefaultAlerts = (formElement) => {
   formElement.noValidate = true;
 };
 
+const resetErrorFields = (error) => {
+  error.textContent = "";
+};
+
 const validateForm = (e) => {
   e.preventDefault();
+
   const name = document.getElementById("form_input_name");
   const email = document.getElementById("form_input_email");
   const company = document.getElementById("form_input_company");
@@ -107,13 +119,8 @@ const validateForm = (e) => {
   const companyErr = document.getElementById("form_input_company-error");
   const titleErr = document.getElementById("form_input_title-error");
   const messageErr = document.getElementById("form_input_message-error");
-  
-  const resetErrorFields = (error) => {
-    error.textContent = "";
-    error.removeAttribute("tabindex");
-    error.classList.remove("focus");
-  };
 
+  //reset textContent of error fields
   resetErrorFields(nameErr);
   resetErrorFields(emailErr);
   resetErrorFields(companyErr);
@@ -124,6 +131,7 @@ const validateForm = (e) => {
 
   let isValid = true;
 
+  //element array used for full reset after successfull form submit
   const elementArray = [
     name,
     nameErr,
@@ -137,23 +145,30 @@ const validateForm = (e) => {
     messageErr,
   ];
 
+  //function used for full reset after successfull form submit
   const resetFieldValues = () => {
     elementArray.forEach((element) => {
       element.value = "";
     });
   };
 
+  //function that removes color, bordercolor and margin style elements from all array fields
   const resetFieldColors = () => {
     elementArray.forEach((element) => {
       element.removeAttribute("style");
     });
   };
+
   resetFieldColors();
 
+  //regex that requires at least two words foor full name, limited to 50 symbols
   const nameRegex =
     /^(?=[^ ]+ +[^ ]+)(?=.{1,50}$)[a-zA-Zà-ÿÀ-ß]+(?: [a-zA-Zà-ÿÀ-ß]+)*$/;
+
+  //regex that prevents use of listed symbols
   const nameNotAllowedRegex = /[0-9_!@#$%^&*()=+[\]{};:"\\|,.<>/?~`]/;
 
+  //checking Full Name field
   switch (true) {
     case name.value === "":
       nameErr.textContent = "This field can't be empty";
@@ -210,6 +225,7 @@ const validateForm = (e) => {
     isValid = false;
   }
 
+  //final evaluation if form is valid
   if (isValid) {
     resetFieldValues();
     return confirm("Do you really want to submit the form?");
@@ -281,6 +297,7 @@ const validateScheduleDemoInput = (buttonId) => {
       }
     });
   };
+
   const validateInput = (inputId, errId) => {
     const email = document.getElementById(inputId);
     const emailErr = document.getElementById(errId);
@@ -303,9 +320,15 @@ const validateScheduleDemoInput = (buttonId) => {
         isValid = false;
         break;
     }
+    
+    //final evaluation if form is valid
     if (isValid) {
-      alert("Form submitted successfully!");
       resetDemoInputValues(demoIdArray);
+      return confirm("Do you really want to submit the form?");
+    } else {
+      alert("Please correct the errors in the form!");
+      firstErrorField.focus();
+      return true;
     }
   };
 

@@ -582,8 +582,8 @@
   .features-item {
     flex-basis: 223px;
   }
-.features-item .body {
-    letter-spacing: var(--text-body-letter-spacing);
+  .features-item .body {
+    letter-spacing: -0.47px;
   }
   .features-item .icon-circle {
     width: 88px;

@@ -81,14 +81,13 @@ const fieldInvalid = (element, elementErr) => {
   const errColor = "#FF000080";
   if (element.value !== "") {
     element.style.color = errColor;
-  }
+  }  
   element.style.borderColor = errColor;
-  elementErr.style.marginBottom = "-12px";
-  // elementErr.classList.add("focus");
-  // elementErr.setAttribute("tabindex", "0");
+  elementErr.style.marginBottom = "-12px";  
   if (firstErrorField === "") {
     firstErrorField = element;
   }
+  element.setAttribute('aria-describedby', elementErr.id);
 };
 
 const disableDefaultAlerts = (formElement) => {
@@ -108,7 +107,7 @@ const validateForm = (e) => {
   const companyErr = document.getElementById("form_input_company-error");
   const titleErr = document.getElementById("form_input_title-error");
   const messageErr = document.getElementById("form_input_message-error");
-
+  
   const resetErrorFields = (error) => {
     error.textContent = "";
     error.removeAttribute("tabindex");
@@ -158,20 +157,17 @@ const validateForm = (e) => {
   switch (true) {
     case name.value === "":
       nameErr.textContent = "This field can't be empty";
-      name.ariaLabel += nameErr.textContent;
       fieldInvalid(name, nameErr);
       isValid = false;
       break;
     case nameNotAllowedRegex.test(name.value):
       nameErr.textContent = "Invalid symbols used";
-      name.ariaLabel += nameErr.textContent;
       fieldInvalid(name, nameErr);
       isValid = false;
       break;
     case !nameRegex.test(name.value):
       nameErr.textContent =
         "Please write your full name. It must be two or more words.";
-      name.ariaLabel += nameErr.textContent;
       fieldInvalid(name, nameErr);
       isValid = false;
       break;

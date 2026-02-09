@@ -62,11 +62,10 @@
             </div>
 
             <div class="nav-right">
-              <button class="btn-prime">Schedule a Demo</button>
+              <button class="btn-prime focus">Schedule a Demo</button>
             </div>
           </div>
         </div>
-      </header>
       </header>
 
       <main>
@@ -99,6 +98,7 @@
                   type="email"
                   aria-label="Email (Required)"
                   placeholder="Email Address"
+                  class="form-input focus"
                 />
                 <div id="form_input_email-error" class="alert"></div>
               </div>
@@ -109,6 +109,7 @@
                   type="text"
                   aria-label="Company Name (Required)"
                   placeholder="Company Name"
+                  class="form-input focus"
                 />
                 <div id="form_input_company-error" class="alert"></div>
               </div>
@@ -119,6 +120,7 @@
                   type="text"
                   aria-label="Title (Required)"
                   placeholder="Title"
+                  class="form-input focus"
                 />
                 <div id="form_input_title-error" class="alert"></div>
               </div>
@@ -129,13 +131,14 @@
                   aria-label="Message (Required)"
                   placeholder="Message"
                   rows="3"
+                  class="form-input focus"
                 ></textarea>
                 <div id="form_input_message-error" class="alert"></div>
               </div>
 
               <div class="checkbox-group">
                 <div class="checkbox-background">
-                  <input type="checkbox" id="request_help" />
+                  <input type="checkbox" id="request_help" class="focus" />
                 </div>
                 <label for="request_help" class="body">
                   Stay up-to-date with company announcements and updates to our
@@ -143,7 +146,7 @@
                 </label>
               </div>
 
-              <button type="submit" class="btn-submit">Submit</button>
+              <button type="submit" class="btn-submit focus">Submit</button>
             </div>
           </form>
 
@@ -161,9 +164,18 @@
                 src="../assets/shared/desktop/hewlett-packard.svg"
                 alt="Hewlett Packard logo"
               />
-              <img src="../assets/shared/desktop/oracle(2).png" alt="Oracle logo" />
-              <img src="../assets/shared/desktop/google.svg" alt="Google logo" />
-              <img src="../assets/shared/desktop/nvidia.svg" alt="Nvidia logo" />
+              <img
+                src="../assets/shared/desktop/oracle(2).png"
+                alt="Oracle logo"
+              />
+              <img
+                src="../assets/shared/desktop/google.svg"
+                alt="Google logo"
+              />
+              <img
+                src="../assets/shared/desktop/nvidia.svg"
+                alt="Nvidia logo"
+              />
             </div>
           </div>
         </section>
@@ -177,11 +189,11 @@
                 <input
                   id="cta_home_cta_input"
                   type="email"
-                  class="cta-input"
+                  class="cta-input focus"
                   placeholder="Enter email address"
                   aria-label="Enter Email Address"
                 />
-                <button id="cta_contact_cta_btn" class="btn-prime">
+                <button id="cta_contact_cta_btn" class="btn-prime focus">
                   Schedule a Demo
                 </button>
               </div>
@@ -205,9 +217,13 @@
             <div class="nav-left">
               <nav class="nav-links textColorLinkWaterWhite">
                 <ul>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li>
+                    <a href="pricing.html" class="focus_white">Pricing</a>
+                  </li>
+                  <li><a href="about.html" class="focus_white">About</a></li>
+                  <li>
+                    <a href="contact.html" class="focus_white">Contact</a>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -215,15 +231,21 @@
             <div class="social">
               <a
                 href="https://www.facebook.com"
+                class="focus_white"
                 aria-label="Press to go to Payapi Facebook"
               >
                 <div class="facebookLogo"></div>
               </a>
-              <a href="http://x.com" aria-label="Press to go to Payapi Twitter">
+              <a
+                href="http://x.com"
+                class="focus_white"
+                aria-label="Press to go to Payapi Twitter"
+              >
                 <div class="twitterLogo"></div>
               </a>
               <a
                 href="http://www.linkedin.com"
+                class="focus_white"
                 aria-label="Press to go to Payapi LinkedIn"
               >
                 <div class="linkedinLogo"></div>

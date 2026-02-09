@@ -136,8 +136,7 @@
 }
 .checkbox-group input[type="checkbox"] {
   appearance: none;
-  background-color: var(--sec-san-juan-blue);
-  opacity: 25%;
+  background-color: rgba(54, 83, 107, 0.25);
   width: 24px;
   height: 24px;
   margin: 0;

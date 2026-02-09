@@ -491,7 +491,7 @@
     margin: 0 auto;
     align-items: center;
   }
-  
+
   .UI-content h2 {
     margin: 0 auto;
     padding: 0;
@@ -562,9 +562,6 @@
   margin: 0;
   opacity: 70%;
 }
-.tablet-break {
-  display: none;
-}
 
 /*for pixel perfect*/
 .features-item:first-child .icon-circle {
@@ -584,6 +581,8 @@
   }
   .features-item {
     flex-basis: 223px;
+  }
+.features-item .body {
     letter-spacing: var(--text-body-letter-spacing);
   }
   .features-item .icon-circle {
@@ -603,9 +602,6 @@
   .features-item:first-child .icon-circle {
     margin-right: 0px;
     margin-left: 3px;
-  }
-  .tablet-break {
-    display: none;
   }
 }
 /*=========BENEFITS FOR MOBILE=========*/
@@ -637,13 +633,10 @@
     margin-right: 0px;
   }
 
-   .features-item:nth-child(3) p {
+  .features-item:nth-child(3) p {
     width: 210px;
   }
   .features-item .h3-sm {
     margin: 0px auto 14px;
-  }
-  .tablet-break {
-    display: none;
   }
 }

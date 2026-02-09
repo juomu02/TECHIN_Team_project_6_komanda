@@ -74,6 +74,7 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
 /* ============= CONTACTS FORM =============== */
 
 const form = document.getElementById("contact-form");
+
 let firstErrorField = "";
 
 const fieldInvalid = (element, elementErr) => {
@@ -83,10 +84,10 @@ const fieldInvalid = (element, elementErr) => {
   }
   element.style.borderColor = errColor;
   elementErr.style.marginBottom = "-12px";
-  elementErr.classList.add("focus");
-  elementErr.setAttribute("tabindex", "0");
+  // elementErr.classList.add("focus");
+  // elementErr.setAttribute("tabindex", "0");
   if (firstErrorField === "") {
-    firstErrorField = elementErr;
+    firstErrorField = element;
   }
 };
 
@@ -157,17 +158,20 @@ const validateForm = (e) => {
   switch (true) {
     case name.value === "":
       nameErr.textContent = "This field can't be empty";
+      name.ariaLabel += nameErr.textContent;
       fieldInvalid(name, nameErr);
       isValid = false;
       break;
     case nameNotAllowedRegex.test(name.value):
       nameErr.textContent = "Invalid symbols used";
+      name.ariaLabel += nameErr.textContent;
       fieldInvalid(name, nameErr);
       isValid = false;
       break;
     case !nameRegex.test(name.value):
       nameErr.textContent =
         "Please write your full name. It must be two or more words.";
+      name.ariaLabel += nameErr.textContent;
       fieldInvalid(name, nameErr);
       isValid = false;
       break;
@@ -214,9 +218,7 @@ const validateForm = (e) => {
     resetFieldValues();
     return confirm("Do you really want to submit the form?");
   } else {
-    console.log(firstErrorField);
-    // alert("Please correct the errors in the form!");
-    console.log(firstErrorField);
+    alert("Please correct the errors in the form!");
     firstErrorField.focus();
     return true;
   }

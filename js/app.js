@@ -83,6 +83,7 @@ const fieldInvalid = (element, elementErr) => {
   }
   element.style.borderColor = errColor;
   elementErr.style.marginBottom = "-12px";
+  elementErr.classList.add("focus");
   if (firstErrorField === "") {
     firstErrorField = elementErr;
   }
@@ -204,8 +205,11 @@ const validateForm = (e) => {
     resetFieldValues();
     return confirm("Do you really want to submit the form?");
   } else {
+    console.log(firstErrorField);
+    alert("Please correct the errors in the form!");
+    console.log(firstErrorField);
     firstErrorField.focus();
-    return alert("Please correct the errors in the form!");
+    return true;
   }
 };
 

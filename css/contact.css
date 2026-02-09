@@ -18,6 +18,7 @@
 /* =============HEAD=============== */
 
 .header-circle {
+  pointer-events: none;
   position: absolute;
   width: 780px;
   height: 780px;
@@ -69,7 +70,7 @@
     padding-right: 9px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .contact_wrapper .h1-sm {
     text-align: center;
     max-width: 320px;
@@ -135,8 +136,7 @@
 }
 .checkbox-group input[type="checkbox"] {
   appearance: none;
-  background-color: var(--sec-san-juan-blue);
-  opacity: 25%;
+  background-color: rgba(54, 83, 107, 0.25);
   width: 24px;
   height: 24px;
   margin: 0;
@@ -188,7 +188,7 @@
     align-items: center;
   }
   .contact-form_container {
-    margin-bottom: 71px;
+    margin-bottom: 73px;
     width: 445px;
   }
   .btn-submit {
@@ -197,7 +197,7 @@
   }
 }
 /*=============HELP REQUEST FORM MOBILE=============*/
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .submit_and_sponsors {
     display: flex;
     flex-direction: column;
@@ -236,9 +236,9 @@
 
 /*Grid*/
 .sponsors-grid {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-content: space-between;
   width: 541px;
   height: 104px;
   align-content: space-between;
@@ -259,4 +259,69 @@
 }
 .sponsors-grid img:nth-child(5) {
   margin-left: -7px;
+}
+
+/*=============SPONSORS FORM TABLET=============*/
+@media (min-width: 768px) and (max-width: 1439px) {
+  .container_sponsors {
+    margin: 0 auto 111px;
+  }
+  .container_sponsors h4 {
+    text-align: center;
+    margin: 0 auto 32px;
+  }
+}
+
+/*=============SPONSORS FORM MOBILE=============*/
+@media (max-width: 767.98px) {
+  .container_sponsors {
+    width: 327px;
+    margin: 0 auto 86px;
+  }
+  .container_sponsors h4 {
+    margin: 0 auto 25px;
+    width: 327px;
+    text-align: center;
+    padding-right: 5px;
+  }
+  .sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 280px;
+    height: 154px;
+    align-items: center;
+    justify-items: center;
+  }
+  .sponsors-grid img:nth-child(1) {
+    width: 106px;
+    height: 14px;
+    margin-left: 2px;
+  }
+  .sponsors-grid img:nth-child(2) {
+    width: 119px;
+    height: 26px;
+    justify-self: end;
+    margin-right: 2px;
+  }
+  .sponsors-grid img:nth-child(3) {
+    width: 115px;
+    height: 22px;
+    justify-self: start;
+  }
+  .sponsors-grid img:nth-child(4) {
+    width: 108px;
+    height: 14px;
+    justify-self: end;
+  }
+  .sponsors-grid img:nth-child(5) {
+    width: 79px;
+    height: 27px;
+    justify-self: start;
+    margin-left: 8px;
+  }
+  .sponsors-grid img:nth-child(6) {
+    width: 113px;
+    height: 21px;
+    margin-right: 9px;
+  }
 }

@@ -21,35 +21,52 @@
         <img
           class="header-circle"
           src="../assets/shared/desktop/bg-pattern-circle.svg"
-          alt="background circle"
+          alt=""
         />
         <div class="container_header">
           <div class="logo-wrapper">
-            <a href="../index.html">
-              <img src="../assets/shared/desktop/logo.svg" alt="payapi logo" />
+            <a href="../index.html" class="focus">
+              <img
+                src="../assets/shared/desktop/logo.svg"
+                alt="Payapi logo, press to go back to index page"
+              />
             </a>
           </div>
-          <img
-            class="hamburgerMenuButton"
-            src="../assets/shared/mobile/menu.svg"
-            alt="hamburger menu logo"
-          />
-          <div class="nav-header">
+          <button
+            class="hamburgerMenuClosed"
+            onclick="openNav()"
+            aria-label="Open navigation bar"
+            aria-expanded="false"
+            aria-controls="myNavHeader"
+          >
+            <img src="../assets/shared/mobile/menu.svg" alt="" />
+          </button>
+
+          <div id="myNavHeader" class="nav-header" hidden tabindex="-1">
+            <button
+              class="hamburgerMenuOpen"
+              onclick="closeNav()"
+              aria-label="Close navigation bar"
+            >
+              <img src="../assets/shared/mobile/close.svg" alt="" />
+            </button>
+
             <div class="nav-left">
               <nav class="nav-links textColorSanJuanBlue">
                 <ul>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="../pages/pricing.html" class="focus">Pricing</a></li>
+                  <li><a href="../pages/about.html" class="focus">About</a></li>
+                  <li><a href="../pages/contact.html" class="focus">Contact</a></li>
                 </ul>
               </nav>
             </div>
 
             <div class="nav-right">
-              <button class="btn-prime">Schedule a Demo</button>
+              <button class="btn-prime focus">Schedule a Demo</button>
             </div>
           </div>
         </div>
+      </header>
       </header>
 
       <main>
@@ -58,31 +75,54 @@
         </h1>
 
         <section class="submit_and_sponsors">
-          <form class="contact-form" action="#" method="post">
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="#"
+            method="post"
+            novalidate
+          >
             <div class="contact-form_container">
               <div class="form-group">
-                <input type="text" placeholder="Name" required />
+                <input id="form_input_name" type="text" placeholder="Name" class="form-input focus"/>
+                <div id="form_input_name-error" class="alert"></div>
               </div>
 
               <div class="form-group">
-                <input type="email" placeholder="Email Address" required />
+                <input
+                  id="form_input_email"
+                  type="email"
+                  placeholder="Email Address" class="form-input focus"
+                />
+                <div id="form_input_email-error" class="alert"></div>
               </div>
 
               <div class="form-group">
-                <input type="text" placeholder="Company Name" required />
+                <input
+                  id="form_input_company"
+                  type="text"
+                  placeholder="Company Name" class="form-input focus"
+                />
+                <div id="form_input_company-error" class="alert"></div>
               </div>
 
               <div class="form-group">
-                <input type="text" placeholder="Title" required />
+                <input id="form_input_title" type="text" placeholder="Title" class="form-input focus"/>
+                <div id="form_input_title-error" class="alert"></div>
               </div>
 
               <div class="form-group">
-                <textarea placeholder="Message" rows="3"></textarea>
+                <textarea
+                  id="form_input_message"
+                  placeholder="Message"
+                  rows="3" class="form-input focus"
+                ></textarea>
+                <div id="form_input_message-error" class="alert"></div>
               </div>
 
               <div class="checkbox-group">
                 <div class="checkbox-background">
-                  <input type="checkbox" id="request_help" />
+                  <input type="checkbox" id="request_help" class="focus"/>
                 </div>
                 <label for="request_help" class="body">
                   Stay up-to-date with company announcements and updates to our
@@ -90,7 +130,7 @@
                 </label>
               </div>
 
-              <button type="submit" class="btn-submit">Submit</button>
+              <button type="submit" class="btn-submit focus">Submit</button>
             </div>
           </form>
 
@@ -118,48 +158,60 @@
         <section class="cta">
           <div class="container_cta">
             <h2 class="h2">Ready to start?</h2>
-            <!--change-->
 
-            <div class="cta-form">
-              <input
-                type="email"
-                class="cta-input"
-                placeholder="Enter email address"
-              />
-              <button class="btn-prime">Schedule a Demo</button>
+            <div class="container_cta-wrapper">
+              <div class="cta-form">
+                <input
+                  id="cta_contact_cta_input"
+                  type="email"
+                  class="cta-input focus"
+                  placeholder="Enter email address"
+                />
+                <button id="cta_contact_cta_btn" class="btn-prime focus">
+                  Schedule a Demo
+                </button>
+              </div>
+              <div id="cta_contact_cta_err" class="alert-demo"></div>
             </div>
           </div>
         </section>
       </main>
 
       <footer>
-        <img
-          src="../assets/shared/desktop/bg-pattern-circle.svg"
-          alt="background circle"
-        />
+        <img src="../assets/shared/desktop/bg-pattern-circle.svg" alt="" />
         <div class="container_footer">
           <div class="logo-wrapper logoColorLinkWaterWhite">
-            <a href="../index.html" class="payapiLogo"></a>
+            <a
+              href="../index.html"
+              class="payapiLogo"
+              aria-label="Payapi logo, press to go back to index page"
+            ></a>
           </div>
           <div class="nav-footer">
             <div class="nav-left">
               <nav class="nav-links textColorLinkWaterWhite">
                 <ul>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="pricing.html" class="focus_white">Pricing</a></li>
+                  <li><a href="about.html" class="focus_white">About</a></li>
+                  <li><a href="contact.html" class="focus_white">Contact</a></li>
                 </ul>
               </nav>
             </div>
-
+ 
             <div class="social">
-              <a href="https://www.facebook.com">
+              <a
+                href="https://www.facebook.com" class="focus_white"
+                aria-label="Press to go to Payapi Facebook"
+              >
                 <div class="facebookLogo"></div>
               </a>
-              <a href="http://x.com">
+              <a href="http://x.com" class="focus_white" aria-label="Press to go to Payapi Twitter">
                 <div class="twitterLogo"></div>
               </a>
-              <a href="http://www.linkedin.com">
+              <a
+                href="http://www.linkedin.com" class="focus_white"
+                aria-label="Press to go to Payapi LinkedIn"
+              >
                 <div class="linkedinLogo"></div>
               </a>
             </div>
@@ -167,5 +219,6 @@
         </div>
       </footer>
     </div>
+    <script src="../js/app.js"></script>
   </body>
 </html>

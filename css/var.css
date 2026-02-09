@@ -6,7 +6,6 @@
 }
 body {
   background-color: var(--background-light);
-  /* min-width: 1440px; */
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -24,6 +23,8 @@ body {
   --background-light-circle: #36536b40;
   --background-dark: #1b262f;
   --background-dark-circle: #36536b;
+
+  --error-alert-red: #ff0000;
 
   /* FONT FAMILY */
   --font-family-headings: "DM Serif Display", serif;
@@ -127,10 +128,14 @@ header {
   text-align: center;
 }
 
-.hamburgerMenuButton {
+.hamburgerMenuOpen,
+.hamburgerMenuClosed {
   display: none;
   text-align: right;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
+}
+.hamburgerMenuClosed {
+  padding-right: 0px;
 }
 
 .container_header {
@@ -147,7 +152,7 @@ header {
   }
 }
 @media (max-width: 767px) {
-  .hamburgerMenuButton {
+  .hamburgerMenuClosed {
     display: inline-block;
   }
 }
@@ -200,6 +205,10 @@ header {
   opacity: 1;
 }
 
+.logoColorLinkWaterWhite:focus-within {
+  border: 2px solid white;
+}
+
 /* ============= HEAD & FOOTER MEDIA =============== */
 @media (max-width: 767px) {
   .container_header {
@@ -207,9 +216,6 @@ header {
   }
   .container_footer {
     flex-direction: column;
-  }
-  .nav-header {
-    display: none;
   }
   .nav-links ul {
     flex-direction: column;
@@ -225,6 +231,78 @@ header {
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+  /*==============FOR BURGER MENU==============*/
+  .hamburgerMenuClosed {
+    display: block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    
+  }
+  .hamburgerMenuOpen {
+    display: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  body.menu-active .hamburgerMenuClosed {
+    display: none;
+  }
+  body.menu-active .hamburgerMenuOpen {
+    display: block;
+  }
+  .nav-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0px;
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow: hidden; 
+    background-color: var(--sec-mirage-blue); 
+    padding-top: 47px;
+    transition: 0.3s; 
+    flex-grow: 0;
+  }
+  .hamburgerMenuOpen {
+    align-self: flex-end;
+    padding-right: 26px;
+    padding-bottom: 20px;
+  }
+  header .nav-left {
+    border-top: 2px solid #fbfcfe15;
+    padding-top: 42px;
+  }
+  header .nav-left {
+    width: 249px;
+    display: grid;
+    place-items: center;
+  }
+  header .nav-left .nav-links ul > li {
+    margin: 0px;
+  }
+  header .nav-links ul > li > a {
+    display: block;
+    margin-bottom: 32px;
+    transition: 0.3s;
+    font-size: 20px;
+    color: var(--prime-link-water-white);
+    font-weight: var(--font-weight-bold);
+    opacity: 70%;
+    line-height: 24px;
+  }
+
+  .nav-right button {
+    width: 252px;
+    padding: 16px 36px 15px 38px;
+    margin-top: 0px;
   }
 }
 /*============CALL TO ACTION============*/
@@ -257,11 +335,12 @@ header {
   background-color: var(--prime-link-water-white);
   box-shadow: 10px 10px 25px #36536b40;
 }
-.container_cta .cta-form {
+.container_cta-wrapper {
   margin-bottom: 18px;
 }
 .cta-input {
   padding: 16px 0px 15px 27px;
+  border-radius: 24px 0 0 24px;
   flex: 1;
   border: none;
   text-align: left;
@@ -272,6 +351,7 @@ header {
   color: var(--sec-san-juan-blue);
   outline: none;
 }
+
 .cta-input::placeholder {
   opacity: var(--prime-opacity-disabled);
   color: var(--sec-san-juan-blue);
@@ -293,6 +373,20 @@ header {
 .btn-prime:hover {
   background-color: var(--sec-charm-pink-actives);
 }
+.alert,
+.alert-demo {
+  font-size: 11px;
+  font-family: var(--font-family-body);
+  line-height: var(--text-body-line-small);
+  font-weight: var(--font-weight-thin);
+  color: var(--error-alert-red);
+  opacity: 0.5;
+  letter-spacing: -0.08px;
+}
+.alert{
+  margin-left: 20px;}
+.alert-demo{
+  margin-left: 27px;}
 
 /*==========CALL TO ACTION FOR TABLET=========*/
 @media (min-width: 768px) and (max-width: 1439px) {
@@ -339,12 +433,12 @@ header {
     width: 327px;
   }
   .cta-input {
-    padding: 16px 158px 15px 27px;
+    padding: 16px 0 15px 27px;
     border-radius: var(--btn-radius);
     background-color: var(--prime-link-water-white);
     box-shadow: 10px 10px 25px #36536b40;
   }
-  .container_cta .cta-form {
+  .container_cta-wrapper {
     margin-bottom: 0px;
   }
 
@@ -456,4 +550,15 @@ footer > img {
   }
 }
 
+/* =============FOCUS=============== */
 
+.focus:focus-visible {
+  border: 2px solid var(--background-dark);
+  outline: unset;
+}
+
+.focus_white:focus-visible {
+  border: 2px solid var(--background-dark);
+  outline: 2px solid white;
+  outline-offset: 2px;
+}

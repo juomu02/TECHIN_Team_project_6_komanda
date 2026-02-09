@@ -21,27 +21,36 @@
         <img
           class="header-circle"
           src="assets/shared/desktop/bg-pattern-circle.svg"
-          alt="background circle"
+          alt=""
         />
         <div class="container_header">
           <div class="logo-wrapper">
             <a href="index.html">
-              <img src="assets/shared/desktop/logo.svg" alt="payapi logo" />
+              <img
+                src="assets/shared/desktop/logo.svg"
+                alt="Payapi logo, press to go back to index page"
+              />
             </a>
           </div>
-          <img
+          <button
             class="hamburgerMenuClosed"
             onclick="openNav()"
-            src="assets/shared/mobile/menu.svg"
-            alt="hamburger menu logo open"
-          />
-          <div id="myNavHeader" class="nav-header">
-            <img
+            aria-label="Open navigation bar"
+            aria-expanded="false"
+            aria-controls="myNavHeader"
+          >
+            <img src="assets/shared/mobile/menu.svg" alt="" />
+          </button>
+
+          <div id="myNavHeader" class="nav-header" hidden tabindex="-1">
+            <button
               class="hamburgerMenuOpen"
               onclick="closeNav()"
-              src="assets/shared/mobile/close.svg"
-              alt="hamburger menu logo closed"
-            />
+              aria-label="Close navigation bar"
+            >
+              <img src="assets/shared/mobile/close.svg" alt="" />
+            </button>
+
             <div class="nav-left">
               <nav class="nav-links textColorSanJuanBlue">
                 <ul>
@@ -72,6 +81,7 @@
                   type="email"
                   placeholder="Enter email address"
                   class="cta-input"
+                  aria-label="Enter Email Address"
                 />
                 <button id="cta_home_hero_btn" class="btn-prime">
                   Schedule a Demo
@@ -87,7 +97,7 @@
           <div class="container_phone-mockup">
             <img
               src="assets/home/desktop/illustration-phone-mockup.svg"
-              alt="Illustration-phone-mockup"
+              alt=""
             />
           </div>
         </section>
@@ -111,34 +121,34 @@
                 <img
                   class="sponsors-tesla"
                   src="assets/shared/desktop/tesla.svg"
-                  alt="Tesla"
+                  alt="Tesla logo"
                 />
                 <img
                   class="sponsors-microsoft"
                   src="assets/shared/desktop/microsoft.svg"
-                  alt="Microsoft"
+                  alt="Microsoft logo"
                 />
                 <img
                   class="sponsors-hewlett-packard"
                   src="assets/shared/desktop/hewlett-packard.svg"
-                  alt="Hewlett Packard"
+                  alt="Hewlett Packard logo"
                 />
               </div>
               <div class="sponsors-row">
                 <img
                   class="sponsors-oracle"
                   src="assets/shared/desktop/oracle(2).png"
-                  alt="Oracle"
+                  alt="Oracle logo"
                 />
                 <img
                   class="sponsors-google"
                   src="assets/shared/desktop/google.svg"
-                  alt="Google"
+                  alt="Google logo"
                 />
                 <img
                   class="sponsors-nvidia"
                   src="assets/shared/desktop/nvidia.svg"
-                  alt="Nvidia"
+                  alt="Nvidia logo"
                 />
               </div>
             </div>
@@ -150,7 +160,7 @@
             <div class="implementation-image">
               <img
                 src="assets/home/desktop/illustration-easy-to-implement.svg"
-                alt="Code Example"
+                alt=""
               />
             </div>
 
@@ -169,7 +179,7 @@
           <img
             class="simple-UI-circle"
             src="assets/shared/desktop/bg-pattern-circle.svg"
-            alt="background circle"
+            alt=""
           />
           <div class="container_simple-UI">
             <div class="UI-content">
@@ -184,7 +194,7 @@
               <img
                 class="UI-image"
                 src="assets/home/desktop/illustration-simple-ui.svg"
-                alt="UI example"
+                alt=""
               />
             </div>
           </div>
@@ -196,7 +206,7 @@
               <div class="icon-circle">
                 <img
                   src="assets/home/desktop/icon-personal-finances.svg"
-                  alt="Personal Finances"
+                  alt=""
                 />
               </div>
 
@@ -212,7 +222,7 @@
               <div class="icon-circle">
                 <img
                   src="assets/home/desktop/icon-banking-and-coverage.svg"
-                  alt="Banking and Coverage"
+                  alt=""
                 />
               </div>
 
@@ -228,17 +238,16 @@
               <div class="icon-circle">
                 <img
                   src="assets/home/desktop/icon-consumer-payments.svg"
-                  alt="Consumer Payments"
+                  alt=""
                 />
               </div>
 
               <h3 class="h3-sm">Consumer Payments</h3>
-              <p class="body">
+              <p class="body" role="text">
                 It’s easier to set up secure bank payments with us through a
                 flow designed with the user experience in mind. Customers could
-                <span class="tablet-break">
-                  instantly authenticate their account.
-                </span>
+                <br class="tablet-break" />
+                instantly authenticate their account.
               </p>
             </div>
           </div>
@@ -246,7 +255,7 @@
 
         <section class="cta">
           <div class="container_cta">
-            <h2 class="h2">Ready to start?</h2>
+            <h2 class="h2" id="cta-title">Ready to start?</h2>
 
             <div class="container_cta-wrapper">
               <div class="cta-form">
@@ -255,6 +264,7 @@
                   type="email"
                   class="cta-input"
                   placeholder="Enter email address"
+                  aria-label="Enter Email Address"
                 />
                 <button id="cta_home_cta_btn" class="btn-prime">
                   Schedule a Demo
@@ -267,13 +277,14 @@
       </main>
 
       <footer>
-        <img
-          src="assets/shared/desktop/bg-pattern-circle.svg"
-          alt="background circle"
-        />
+        <img src="assets/shared/desktop/bg-pattern-circle.svg" alt="" />
         <div class="container_footer">
           <div class="logo-wrapper logoColorLinkWaterWhite">
-            <a href="index.html" class="payapiLogo"></a>
+            <a
+              href="index.html"
+              class="payapiLogo"
+              aria-label="Payapi logo, press to go back to index page"
+            ></a>
           </div>
           <div class="nav-footer">
             <div class="nav-left">
@@ -287,13 +298,19 @@
             </div>
 
             <div class="social">
-              <a href="https://www.facebook.com">
+              <a
+                href="https://www.facebook.com"
+                aria-label="Press to go to Payapi Facebook"
+              >
                 <div class="facebookLogo"></div>
               </a>
-              <a href="http://x.com">
+              <a href="http://x.com" aria-label="Press to go to Payapi Twitter">
                 <div class="twitterLogo"></div>
               </a>
-              <a href="http://www.linkedin.com">
+              <a
+                href="http://www.linkedin.com"
+                aria-label="Press to go to Payapi LinkedIn"
+              >
                 <div class="linkedinLogo"></div>
               </a>
             </div>

@@ -92,6 +92,8 @@ const fieldInvalid = (element, elementErr) => {
   if (firstErrorField === "") {
     firstErrorField = element;
   }
+  
+  elementErr.classList.remove("hidden");
 
   //aria-describedby is created and connected to error element
   // element.setAttribute("aria-describedby", elementErr.id);
@@ -103,6 +105,7 @@ const disableDefaultAlerts = (formElement) => {
 
 const resetErrorFields = (error) => {
   error.textContent = "";
+  error.classList.add("hidden");
 };
 
 const validateForm = (e) => {

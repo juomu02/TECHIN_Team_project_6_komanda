@@ -158,13 +158,18 @@ main > .h1-sm {
 
 /* ============= TRUST SIGNALS =============== */
 .team-photo {
-  margin: 0;
-  padding: 0;
-  height: 0px;
+display: block; 
+  width: 100vw;   
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;    
 }
 .team-photo img {
   display: block;
-  margin-inline: -165px;
+  width: 100%;
+  height: auto;
   margin-bottom: 72px;
 }
 
@@ -243,7 +248,6 @@ main > .h1-sm {
 /* ============= TRUST SIGNALS MEDIA =============== */
 @media (max-width: 767px) {
   .team-photo img {
-    margin-inline: -24px;
     margin-bottom: 48px;
   }
   .trust-circle {
@@ -280,7 +284,6 @@ main > .h1-sm {
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .team-photo img {
-    margin-inline: -97px;
     margin-bottom: 64px;
   }
   .stats-grid {

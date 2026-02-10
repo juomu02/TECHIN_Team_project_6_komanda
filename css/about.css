@@ -334,6 +334,7 @@ main > .h1-sm {
     margin-top: -2.5px;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   #about-us-people-header {
@@ -341,7 +342,8 @@ main > .h1-sm {
   }
 
   #about-us-people-text {
-     width: 327px;
+    width: 100%;
+    /*width: 327px;*/
      margin-top: -5px;
      margin-bottom: 40px;  
   }

@@ -94,7 +94,7 @@ const fieldInvalid = (element, elementErr) => {
   }
 
   //aria-describedby is created and connected to error element
-  element.setAttribute("aria-describedby", elementErr.id);
+  // element.setAttribute("aria-describedby", elementErr.id);
 };
 
 const disableDefaultAlerts = (formElement) => {

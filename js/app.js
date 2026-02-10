@@ -92,11 +92,9 @@ const fieldInvalid = (element, elementErr) => {
   if (firstErrorField === "") {
     firstErrorField = element;
   }
-  
-  elementErr.classList.remove("hidden");
 
   //aria-describedby is created and connected to error element
-  // element.setAttribute("aria-describedby", elementErr.id);
+  element.setAttribute("aria-describedby", elementErr.id);
 };
 
 const disableDefaultAlerts = (formElement) => {
@@ -105,7 +103,6 @@ const disableDefaultAlerts = (formElement) => {
 
 const resetErrorFields = (error) => {
   error.textContent = "";
-  error.classList.add("hidden");
 };
 
 const validateForm = (e) => {
@@ -159,7 +156,6 @@ const validateForm = (e) => {
   const resetFieldColors = () => {
     elementArray.forEach((element) => {
       element.removeAttribute("style");
-      element.removeAttribute("aria-describedby");
     });
   };
 
@@ -310,7 +306,6 @@ const validateScheduleDemoInput = (buttonId) => {
     const emailRegex = /^([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})$/;
 
     resetDemoInputErrors(demoIdArray);
-    firstErrorField = "";
 
     let isValid = true;
     switch (true) {

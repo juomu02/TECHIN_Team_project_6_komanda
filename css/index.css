@@ -142,7 +142,7 @@
   }
 
   .cta-footer-text {
-    margin: 0 auto 100px;
+    margin: 0 auto 98px;
   }
 }
 
@@ -188,8 +188,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1440px;
   margin-inline: -165px;
+
   background-color: var(--sec-mirage-blue);
   text-align: center;
   background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
@@ -200,8 +200,11 @@
 .container_partners {
   display: flex;
   flex-direction: row;
-  gap: 131px;
-  padding: 70px 0 100px 0;
+  gap: 121px;
+  padding: 70px 0 100px 0px;
+
+  max-width: 1275px;
+  margin: 0;
 }
 
 .partners-text {
@@ -260,31 +263,131 @@
 }
 
 .sponsors-grid {
-  width: 536px;
-  height: 103px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 115px;
-}
-
-.sponsors-row {
-  width: 536px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
+  row-gap: -160px;
+  width: 100%;
+  max-width: 536px;
+  margin: 100px 0 60px 0;
   align-items: center;
-  justify-content: space-between;
 }
 
-.sponsors-row img {
-  width: auto;
+.sponsors-grid img {
+  justify-self: center;
   filter: brightness(0) invert(1);
 }
 
-.sponsors-tesla {
-  height: 17px;
+/*========== PARTNERS SECTION MEDIA ==========*/
+/* FOR TABLET */
+@media (min-width: 768px) and (max-width: 1439px) {
+  .partners {
+    background-position: center top -550px;
+  }
+
+  .container_partners {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+    padding-top: 87px;
+    padding-bottom: 88px;
+  }
+
+  .partners-text {
+    max-width: 600px;
+    text-align: center;
+    align-self: center;
+  }
+
+  #partners-title {
+    margin-top: 44px;
+    margin-bottom: 0;
+  }
+
+  .partners-text .body {
+    margin-top: 11px;
+    margin-bottom: 34.5px;
+    letter-spacing: -0.35px;
+  }
+
+  .sponsors-grid {
+    margin-top: 0;
+    margin-bottom: 0;
+    column-gap: 57px;
+    row-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-.sponsors-microsoft {
-  margin-left: 5px;
+
+/* FOR MOBILE */
+@media (max-width: 767px) {
+  .partners {
+    padding-inline: 24px;
+    background-position: center top -600px;
+  }
+
+  .container_partners {
+    flex-direction: column-reverse;
+    /*gap: 56px;*/
+    row-gap: 0;
+    padding: 75px 0 80px 24px;
+  }
+
+  .partners-text {
+    margin-top: 36px;
+  }
+
+  .partners-text .h2 {
+    font-size: 32px;
+    margin-bottom: 6px;
+    transform: translateX(-12px);
+  }
+
+  .partners-text .body {
+    margin: 5px 0 63px 0;
+    width: 380px;
+
+    text-align: center;
+
+    padding-left: 42px;
+
+    letter-spacing: -0.01px;
+    transform: scaleX(0.95);
+    transform-origin: center;
+  }
+
+  .partners-text button {
+    margin: 0 auto;
+    transform: translateX(-12px);
+  }
+
+  .sponsors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 33px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 44px;
+    width: 85%;
+  }
+
+  .sponsors-grid img:nth-child(5),
+  .sponsors-grid img:nth-child(6) {
+    transform: translateX(-8px) translateY(4px) scale(0.8);
+  }
+
+  .sponsors-grid > * {
+    transform: scale(0.85); /* tweak this value */
+    transform-origin: center;
+  }
+
+  /*.sponsors-grid img {
+    width: 110px;
+    height: auto;
+  }*/
+
+  .partners-text {
+    text-align: center;
+  }
 }
 
 /* ============= EASY TO IMPLEMENT =============== */
@@ -327,7 +430,7 @@
   .container_implementation {
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
   }
   .implementation-image {
     margin: 0 auto;

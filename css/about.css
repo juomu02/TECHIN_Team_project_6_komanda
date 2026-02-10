@@ -197,7 +197,7 @@ display: block;
   text-align: left;
 }
 
-.stat > h1 {
+.stat > .h1-sm {
   font-size: var(--text-h1-sm-size);
   font-family: var(--font-family-headings);
   font-weight: var(--font-weight-normal);

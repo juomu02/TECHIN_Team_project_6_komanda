@@ -60,7 +60,7 @@ main > .h1-sm {
   margin: 90px 0 61px 95px; /*does not match adobe, but match design spacing*/
 }
 .container_about-us {
-  margin-bottom: 45px; /*additional margin on top of body for picture aligment*/
+  margin-bottom: 46px; /*additional margin on top of body for picture aligment*/
 }
 .container_about-us-article {
   display: flex;
@@ -212,7 +212,7 @@ main > .h1-sm {
 }
 
 .stats {
-  margin-bottom: 58px;
+  margin-bottom: 68px;
 }
 
 .trust-circle-wrapper {

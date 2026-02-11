@@ -158,13 +158,18 @@ main > .h1-sm {
 
 /* ============= TRUST SIGNALS =============== */
 .team-photo {
-  margin: 0;
-  padding: 0;
-  height: 0px;
+display: block; 
+  width: 100vw;   
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;    
 }
 .team-photo img {
   display: block;
-  margin-inline: -165px;
+  width: 100%;
+  height: auto;
   margin-bottom: 72px;
 }
 
@@ -208,7 +213,7 @@ main > .h1-sm {
 }
 
 .stats {
-  margin-bottom: 70px;
+  margin-bottom: 58px;
 }
 
 .trust-circle-wrapper {
@@ -243,7 +248,6 @@ main > .h1-sm {
 /* ============= TRUST SIGNALS MEDIA =============== */
 @media (max-width: 767px) {
   .team-photo img {
-    margin-inline: -24px;
     margin-bottom: 48px;
   }
   .trust-circle {
@@ -280,7 +284,6 @@ main > .h1-sm {
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .team-photo img {
-    margin-inline: -97px;
     margin-bottom: 64px;
   }
   .stats-grid {
@@ -308,4 +311,41 @@ main > .h1-sm {
   line-height: var(--text-body-line);
   margin: 0 0 58px 0; /*does not match adobe, but match design spacing*/
   font-weight: 100;
+  /*letter-spacing: var(--text-body-letter-spacing);*/
+}
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  #about-us-people-header {
+   width: 230.67px;
+  }
+
+  #about-us-people-text {
+    width: 461.33px;
+  }
+
+  .container_about-us-article-people {
+    margin-bottom: -15px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .container_about-us-article-people {
+    margin-top: -2.5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-us-people-header {
+    margin-bottom: 10px;
+  }
+
+  #about-us-people-text {
+     width: 327px;
+     margin-top: -5px;
+     margin-bottom: 40px;  
+  }
 }

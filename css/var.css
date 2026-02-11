@@ -239,7 +239,6 @@ header {
     outline: none;
     border: none;
     background-color: transparent;
-    
   }
   .hamburgerMenuOpen {
     display: none;
@@ -253,6 +252,9 @@ header {
   body.menu-active .hamburgerMenuOpen {
     display: block;
   }
+  [hidden] {
+    display: none !important;
+  }
   .nav-header {
     display: flex;
     flex-direction: column;
@@ -265,11 +267,21 @@ header {
     z-index: 1;
     top: 0;
     right: 0;
-    overflow: hidden; 
-    background-color: var(--sec-mirage-blue); 
+    overflow: hidden;
+    background-color: var(--sec-mirage-blue);
     padding-top: 47px;
-    transition: 0.3s; 
+    transition: 0.3s;
     flex-grow: 0;
+    visibility: hidden;
+    transition:
+      0.3s,
+      visibility 0s 0.3s;
+  }
+  body.menu-active .nav-header {
+    visibility: visible;
+    transition:
+      0.3s,
+      visibility 0s 0s;
   }
   .hamburgerMenuOpen {
     align-self: flex-end;
@@ -383,10 +395,12 @@ header {
   opacity: 0.5;
   letter-spacing: -0.08px;
 }
-.alert{
-  margin-left: 20px;}
-.alert-demo{
-  margin-left: 27px;}
+.alert {
+  margin-left: 20px;
+}
+.alert-demo {
+  margin-left: 27px;
+}
 
 /*==========CALL TO ACTION FOR TABLET=========*/
 @media (min-width: 768px) and (max-width: 1439px) {

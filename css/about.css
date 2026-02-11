@@ -332,6 +332,10 @@ main > .h1-sm {
     letter-spacing: var(--text-h3-sm-letter-spacing);
     transform: translate(2px, 0px);
   }
+
+  #about-us-2nd-para-cont {
+    margin-bottom: 23px;
+  }
 }
 
 /* MOBILE */
@@ -348,6 +352,10 @@ main > .h1-sm {
 
   #about-us-people {
     margin-top: 0.4px;
+  }
+
+#about-us-2nd-para-cont {
+    margin-top: 50px;
   }
 
   .container_about-us-article-people .body {

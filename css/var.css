@@ -132,7 +132,10 @@ header {
 .hamburgerMenuClosed {
   display: none;
   text-align: right;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
+}
+.hamburgerMenuClosed {
+  padding-right: 0px;
 }
 
 .container_header {
@@ -202,6 +205,10 @@ header {
   opacity: 1;
 }
 
+.logoColorLinkWaterWhite:focus-within {
+  border: 2px solid white;
+}
+
 /* ============= HEAD & FOOTER MEDIA =============== */
 @media (max-width: 767px) {
   .container_header {
@@ -229,9 +236,16 @@ header {
   /*==============FOR BURGER MENU==============*/
   .hamburgerMenuClosed {
     display: block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    
   }
   .hamburgerMenuOpen {
     display: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
   }
   body.menu-active .hamburgerMenuClosed {
     display: none;
@@ -253,7 +267,7 @@ header {
     right: 0;
     overflow: hidden; 
     background-color: var(--sec-mirage-blue); 
-    padding-top: 49px;
+    padding-top: 47px;
     transition: 0.3s; 
     flex-grow: 0;
   }
@@ -326,6 +340,7 @@ header {
 }
 .cta-input {
   padding: 16px 0px 15px 27px;
+  border-radius: 24px 0 0 24px;
   flex: 1;
   border: none;
   text-align: left;
@@ -336,6 +351,7 @@ header {
   color: var(--sec-san-juan-blue);
   outline: none;
 }
+
 .cta-input::placeholder {
   opacity: var(--prime-opacity-disabled);
   color: var(--sec-san-juan-blue);
@@ -417,7 +433,7 @@ header {
     width: 327px;
   }
   .cta-input {
-    padding: 16px 158px 15px 27px;
+    padding: 16px 0 15px 27px;
     border-radius: var(--btn-radius);
     background-color: var(--prime-link-water-white);
     box-shadow: 10px 10px 25px #36536b40;
@@ -534,4 +550,15 @@ footer > img {
   }
 }
 
+/* =============FOCUS=============== */
 
+.focus:focus-visible {
+  border: 2px solid var(--background-dark);
+  outline: unset;
+}
+
+.focus_white:focus-visible {
+  border: 2px solid var(--background-dark);
+  outline: 2px solid white;
+  outline-offset: 2px;
+}

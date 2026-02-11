@@ -3,8 +3,7 @@
 .about_wrapper {
   padding-inline: 165px;
   position: relative;
-  overflow-x: visible;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .about_wrapper {
@@ -159,13 +158,18 @@ main > .h1-sm {
 
 /* ============= TRUST SIGNALS =============== */
 .team-photo {
-  margin: 0;
-  padding: 0;
-  height: 0px;
+  display: block;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 .team-photo img {
   display: block;
-  margin-inline: -165px;
+  width: 100%;
+  height: auto;
   margin-bottom: 72px;
 }
 
@@ -184,7 +188,6 @@ main > .h1-sm {
 .body2 {
   font-family: var(--font-family-body);
   color: var(--sec-san-juan-blue);
-  /* font-size: var(--text-body2-size); */
   font-size: 15px;
   opacity: var(--text-body2-opacity);
   letter-spacing: 0px;
@@ -209,7 +212,7 @@ main > .h1-sm {
 }
 
 .stats {
-  margin-bottom: 70px;
+  margin-bottom: 58px;
 }
 
 .trust-circle-wrapper {
@@ -244,7 +247,6 @@ main > .h1-sm {
 /* ============= TRUST SIGNALS MEDIA =============== */
 @media (max-width: 767px) {
   .team-photo img {
-    margin-inline: -24px;
     margin-bottom: 48px;
   }
   .trust-circle {
@@ -281,7 +283,6 @@ main > .h1-sm {
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .team-photo img {
-    margin-inline: -97px;
     margin-bottom: 64px;
   }
   .stats-grid {
@@ -322,7 +323,6 @@ main > .h1-sm {
 
   #about-us-culture-text {
     letter-spacing: -0.05px;
-    /*font-size: 14px;*/
   }
 
   .container_about-us-article-people .body {
@@ -342,13 +342,12 @@ main > .h1-sm {
     margin-top: 0px;
   }
 
-#about-us-culture {
+  #about-us-culture {
     margin-top: -12px;
   }
 
   #about-us-people {
     margin-top: 0.4px;
-    /*margin-bottom: 3px;*/
   }
 
   .container_about-us-article-people .body {

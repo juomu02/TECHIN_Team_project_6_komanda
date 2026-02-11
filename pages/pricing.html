@@ -21,39 +21,48 @@
         <img
           class="header-circle"
           src="../assets/shared/desktop/bg-pattern-circle.svg"
-          alt="background circle"
+          alt=""
         />
         <div class="container_header">
           <div class="logo-wrapper">
-            <a href="../index.html">
-              <img src="../assets/shared/desktop/logo.svg" alt="payapi logo" />
+            <a href="../index.html" class="focus">
+              <img
+                src="../assets/shared/desktop/logo.svg"
+                alt="Payapi logo, press to go back to index page"
+              />
             </a>
           </div>
-          <img
+          <button
             class="hamburgerMenuClosed"
             onclick="openNav()"
-            src="../assets/shared/mobile/menu.svg"
-            alt="hamburger menu logo open"
-          />
-          <div id="myNavHeader" class="nav-header">
-            <img
+            aria-label="Open navigation bar"
+            aria-expanded="false"
+            aria-controls="myNavHeader"
+          >
+            <img src="../assets/shared/mobile/menu.svg" alt="" />
+          </button>
+
+          <div id="myNavHeader" class="nav-header" hidden tabindex="-1">
+            <button
               class="hamburgerMenuOpen"
               onclick="closeNav()"
-              src="../assets/shared/mobile/close.svg"
-              alt="hamburger menu logo closed"
-            />
+              aria-label="Close navigation bar"
+            >
+              <img src="../assets/shared/mobile/close.svg" alt="" />
+            </button>
+
             <div class="nav-left">
               <nav class="nav-links textColorSanJuanBlue">
                 <ul>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="../pages/pricing.html" class="focus">Pricing</a></li>
+                  <li><a href="../pages/about.html" class="focus">About</a></li>
+                  <li><a href="../pages/contact.html" class="focus">Contact</a></li>
                 </ul>
               </nav>
             </div>
 
             <div class="nav-right">
-              <button class="btn-prime">Schedule a Demo</button>
+              <button class="btn-prime focus">Schedule a Demo</button>
             </div>
           </div>
         </div>
@@ -75,20 +84,30 @@
                 <li class="active">
                   <img
                     src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
                   />Transactions
                 </li>
                 <li class="active">
-                  <img src="../assets/shared/desktop/icon-check.svg" />Auth
+                  <img
+                    src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
+                  />Auth
                 </li>
                 <li class="active">
-                  <img src="../assets/shared/desktop/icon-check.svg" />Identity
+                  <img
+                    src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
+                  />Identity
                 </li>
-                <li class="inactive">Investments</li>
-                <li class="inactive">Assets</li>
-                <li class="inactive">Liabilities</li>
-                <li class="inactive">Income</li>
+                <li class="inactive" aria-hidden="true">Investments</li>
+                <li class="inactive" aria-hidden="true">Assets</li>
+                <li class="inactive" aria-hidden="true">Liabilities</li>
+                <li class="inactive" aria-hidden="true">Income</li>
               </ul>
-              <button class="btn-sec-dk">Request Access</button>
+              <button class="btn-sec-dk focus">Request Access</button>
             </article>
 
             <article class="pricing-card">
@@ -102,26 +121,42 @@
                 <li class="active">
                   <img
                     src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
                   />Transactions
-                </li>
-                <li class="active">
-                  <img src="../assets/shared/desktop/icon-check.svg" />Auth
-                </li>
-                <li class="active">
-                  <img src="../assets/shared/desktop/icon-check.svg" />Identity
                 </li>
                 <li class="active">
                   <img
                     src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
+                  />Auth
+                </li>
+                <li class="active">
+                  <img
+                    src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
+                  />Identity
+                </li>
+                <li class="active">
+                  <img
+                    src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
                   />Investments
                 </li>
                 <li class="active">
-                  <img src="../assets/shared/desktop/icon-check.svg" />Assets
+                  <img
+                    src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
+                  />Assets
                 </li>
-                <li class="inactive">Liabilities</li>
-                <li class="inactive">Income</li>
+                <li class="inactive" aria-hidden="true">Liabilities</li>
+                <li class="inactive" aria-hidden="true">Income</li>
               </ul>
-              <button class="btn-sec-dk">Request Access</button>
+              <button class="btn-sec-dk focus">Request Access</button>
             </article>
 
             <article class="pricing-card">
@@ -135,32 +170,54 @@
                 <li class="active">
                   <img
                     src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
                   />Transactions
                 </li>
                 <li class="active">
-                  <img src="../assets/shared/desktop/icon-check.svg" />Auth
-                </li>
-                <li class="active">
-                  <img src="../assets/shared/desktop/icon-check.svg" />Identity
+                  <img
+                    src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
+                  />Auth
                 </li>
                 <li class="active">
                   <img
                     src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
+                  />Identity
+                </li>
+                <li class="active">
+                  <img
+                    src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
                   />Investments
                 </li>
                 <li class="active">
-                  <img src="../assets/shared/desktop/icon-check.svg" />Assets
+                  <img
+                    src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
+                  />Assets
                 </li>
                 <li class="active">
                   <img
                     src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
                   />Liabilities
                 </li>
                 <li class="active">
-                  <img src="../assets/shared/desktop/icon-check.svg" />Income
+                  <img
+                    src="../assets/shared/desktop/icon-check.svg"
+                    alt="Active service"
+                    aria-hidden="true"
+                  />Income
                 </li>
               </ul>
-              <button class="btn-sec-dk">Request Access</button>
+              <button class="btn-sec-dk focus">Request Access</button>
             </article>
           </div>
         </section>
@@ -174,10 +231,11 @@
                 <input
                   id="cta_pricing_cta_input"
                   type="email"
-                  class="cta-input"
+                  class="cta-input focus"
                   placeholder="Enter email address"
+                  aria-label="Enter Email Address"
                 />
-                <button id="cta_pricing_cta_btn" class="btn-prime">
+                <button id="cta_pricing_cta_btn" class="btn-prime focus">
                   Schedule a Demo
                 </button>
               </div>
@@ -188,33 +246,40 @@
       </main>
 
       <footer>
-        <img
-          src="../assets/shared/desktop/bg-pattern-circle.svg"
-          alt="background circle"
-        />
+        <img src="../assets/shared/desktop/bg-pattern-circle.svg" alt="" />
         <div class="container_footer">
           <div class="logo-wrapper logoColorLinkWaterWhite">
-            <a href="../index.html" class="payapiLogo"></a>
+            <a
+              href="../index.html"
+              class="payapiLogo"
+              aria-label="Payapi logo, press to go back to index page"
+            ></a>
           </div>
           <div class="nav-footer">
             <div class="nav-left">
               <nav class="nav-links textColorLinkWaterWhite">
                 <ul>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="pricing.html" class="focus_white">Pricing</a></li>
+                  <li><a href="about.html" class="focus_white">About</a></li>
+                  <li><a href="contact.html" class="focus_white">Contact</a></li>
                 </ul>
               </nav>
             </div>
 
             <div class="social">
-              <a href="https://www.facebook.com">
+              <a
+                href="https://www.facebook.com" class="focus_white"
+                aria-label="Press to go to Payapi Facebook"
+              >
                 <div class="facebookLogo"></div>
               </a>
-              <a href="http://x.com">
+              <a href="http://x.com" class="focus_white" aria-label="Press to go to Payapi Twitter">
                 <div class="twitterLogo"></div>
               </a>
-              <a href="http://www.linkedin.com">
+              <a
+                href="http://www.linkedin.com" class="focus_white"
+                aria-label="Press to go to Payapi LinkedIn"
+              >
                 <div class="linkedinLogo"></div>
               </a>
             </div>

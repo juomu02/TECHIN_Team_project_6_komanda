@@ -21,39 +21,48 @@
         <img
           class="header-circle"
           src="assets/shared/desktop/bg-pattern-circle.svg"
-          alt="background circle"
+          alt=""
         />
         <div class="container_header">
           <div class="logo-wrapper">
-            <a href="index.html">
-              <img src="assets/shared/desktop/logo.svg" alt="payapi logo" />
+            <a href="index.html" class="focus">
+              <img
+                src="assets/shared/desktop/logo.svg"
+                alt="Payapi logo, press to go back to index page"
+              class="focus"/>
             </a>
           </div>
-          <img
+          <button
             class="hamburgerMenuClosed"
             onclick="openNav()"
-            src="assets/shared/mobile/menu.svg"
-            alt="hamburger menu logo open"
-          />
-          <div id="myNavHeader" class="nav-header">
-            <img
+            aria-label="Open navigation bar"
+            aria-expanded="false"
+            aria-controls="myNavHeader"
+          >
+            <img src="assets/shared/mobile/menu.svg" alt="" />
+          </button>
+
+          <div id="myNavHeader" class="nav-header" hidden tabindex="-1">
+            <button
               class="hamburgerMenuOpen"
               onclick="closeNav()"
-              src="assets/shared/mobile/close.svg"
-              alt="hamburger menu logo closed"
-            />
+              aria-label="Close navigation bar"
+            >
+              <img src="assets/shared/mobile/close.svg" alt="" />
+            </button>
+
             <div class="nav-left">
               <nav class="nav-links textColorSanJuanBlue">
                 <ul>
-                  <li><a href="pages/pricing.html">Pricing</a></li>
-                  <li><a href="pages/about.html">About</a></li>
-                  <li><a href="pages/contact.html">Contact</a></li>
+                  <li><a href="pages/pricing.html" class="focus">Pricing</a></li>
+                  <li><a href="pages/about.html" class="focus">About</a></li>
+                  <li><a href="pages/contact.html" class="focus">Contact</a></li>
                 </ul>
               </nav>
             </div>
 
             <div class="nav-right">
-              <button class="btn-prime">Schedule a Demo</button>
+              <button class="btn-prime focus">Schedule a Demo</button>
             </div>
           </div>
         </div>
@@ -71,23 +80,24 @@
                   id="cta_home_hero_input"
                   type="email"
                   placeholder="Enter email address"
-                  class="cta-input"
+                  class="cta-input focus"
+                  aria-label="Enter Email Address"
                 />
-                <button id="cta_home_hero_btn" class="btn-prime">
+                <button id="cta_home_hero_btn" class="btn-prime focus ">
                   Schedule a Demo
                 </button>
               </div>
               <div id="cta_home_hero_err" class="alert-demo"></div>
               <p class="cta-footer-text">
                 Have any questions?
-                <a href="pages/contact.html" class="contact-link">Contact Us</a>
+                <a href="pages/contact.html" class="contact-link focus">Contact Us</a>
               </p>
             </div>
           </div>
           <div class="container_phone-mockup">
             <img
               src="assets/home/desktop/illustration-phone-mockup.svg"
-              alt="Illustration-phone-mockup"
+              alt=""
             />
           </div>
         </section>
@@ -103,44 +113,33 @@
                 accessible experiences for their users.
               </p>
 
-              <button id="about-us-button" class="btn-sec-lt">About Us</button>
+            <button id="about-us-button" class="btn-sec-lt focus_white" onclick="window.open('pages/about.html', 'noopener')">About Us</button>
+
+            <!-- <a href="pages/about.html"    rel="noopener" class="btn-sec-lt focus_white" id="about-us-button">About Us
+            </a> -->
+
+            <!-- <a href="pages/about.html" rel="noopener">
+              <button id="about-us-button" class="btn-sec-lt focus_white"> About Us
+              </button>
+            </a> -->
             </div>
 
             <div class="sponsors-grid">
-              <div class="sponsors-row">
-                <img
-                  class="sponsors-tesla"
-                  src="assets/shared/desktop/tesla.svg"
-                  alt="Tesla"
-                />
-                <img
-                  class="sponsors-microsoft"
-                  src="assets/shared/desktop/microsoft.svg"
-                  alt="Microsoft"
-                />
-                <img
-                  class="sponsors-hewlett-packard"
-                  src="assets/shared/desktop/hewlett-packard.svg"
-                  alt="Hewlett Packard"
-                />
-              </div>
-              <div class="sponsors-row">
-                <img
-                  class="sponsors-oracle"
-                  src="assets/shared/desktop/oracle(2).png"
-                  alt="Oracle"
-                />
-                <img
-                  class="sponsors-google"
-                  src="assets/shared/desktop/google.svg"
-                  alt="Google"
-                />
-                <img
-                  class="sponsors-nvidia"
-                  src="assets/shared/desktop/nvidia.svg"
-                  alt="Nvidia"
-                />
-              </div>
+              <img src="assets/shared/desktop/tesla.svg" alt="Tesla logo" />
+              <img
+                src="assets/shared/desktop/microsoft.svg"
+                alt="Microsoft logo"
+              />
+              <img
+                src="assets/shared/desktop/hewlett-packard.svg"
+                alt="Hewlett Packard logo"
+              />
+              <img
+                src="assets/shared/desktop/oracle(2).png"
+                alt="Oracle logo"
+              />
+              <img src="assets/shared/desktop/google.svg" alt="Google logo" />
+              <img src="assets/shared/desktop/nvidia.svg" alt="Nvidia logo" />
             </div>
           </div>
         </section>
@@ -150,7 +149,7 @@
             <div class="implementation-image">
               <img
                 src="assets/home/desktop/illustration-easy-to-implement.svg"
-                alt="Code Example"
+                alt=""
               />
             </div>
 
@@ -169,7 +168,7 @@
           <img
             class="simple-UI-circle"
             src="assets/shared/desktop/bg-pattern-circle.svg"
-            alt="background circle"
+            alt=""
           />
           <div class="container_simple-UI">
             <div class="UI-content">
@@ -184,7 +183,7 @@
               <img
                 class="UI-image"
                 src="assets/home/desktop/illustration-simple-ui.svg"
-                alt="UI example"
+                alt=""
               />
             </div>
           </div>
@@ -196,7 +195,7 @@
               <div class="icon-circle">
                 <img
                   src="assets/home/desktop/icon-personal-finances.svg"
-                  alt="Personal Finances"
+                  alt=""
                 />
               </div>
 
@@ -212,7 +211,7 @@
               <div class="icon-circle">
                 <img
                   src="assets/home/desktop/icon-banking-and-coverage.svg"
-                  alt="Banking and Coverage"
+                  alt=""
                 />
               </div>
 
@@ -228,7 +227,7 @@
               <div class="icon-circle">
                 <img
                   src="assets/home/desktop/icon-consumer-payments.svg"
-                  alt="Consumer Payments"
+                  alt=""
                 />
               </div>
 
@@ -236,9 +235,7 @@
               <p class="body">
                 It’s easier to set up secure bank payments with us through a
                 flow designed with the user experience in mind. Customers could
-                <span class="tablet-break">
-                  instantly authenticate their account.
-                </span>
+                instantly authenticate their account.
               </p>
             </div>
           </div>
@@ -246,17 +243,18 @@
 
         <section class="cta">
           <div class="container_cta">
-            <h2 class="h2">Ready to start?</h2>
+            <h2 class="h2" id="cta-title">Ready to start?</h2>
 
             <div class="container_cta-wrapper">
               <div class="cta-form">
                 <input
                   id="cta_home_cta_input"
                   type="email"
-                  class="cta-input"
+                  class="cta-input focus"
                   placeholder="Enter email address"
+                  aria-label="Enter Email Address"
                 />
-                <button id="cta_home_cta_btn" class="btn-prime">
+                <button id="cta_home_cta_btn" class="btn-prime focus">
                   Schedule a Demo
                 </button>
               </div>
@@ -267,33 +265,40 @@
       </main>
 
       <footer>
-        <img
-          src="assets/shared/desktop/bg-pattern-circle.svg"
-          alt="background circle"
-        />
+        <img src="assets/shared/desktop/bg-pattern-circle.svg" alt="" />
         <div class="container_footer">
           <div class="logo-wrapper logoColorLinkWaterWhite">
-            <a href="index.html" class="payapiLogo"></a>
+            <a
+              href="index.html"
+              class="payapiLogo"
+              aria-label="Payapi logo, press to go back to index page"
+            ></a>
           </div>
           <div class="nav-footer">
             <div class="nav-left">
               <nav class="nav-links textColorLinkWaterWhite">
                 <ul>
-                  <li><a href="pages/pricing.html">Pricing</a></li>
-                  <li><a href="pages/about.html">About</a></li>
-                  <li><a href="pages/contact.html">Contact</a></li>
+                  <li><a href="pages/pricing.html" class="focus_white">Pricing</a></li>
+                  <li><a href="pages/about.html" class="focus_white">About</a></li>
+                  <li><a href="pages/contact.html" class="focus_white">Contact</a></li>
                 </ul>
               </nav>
             </div>
 
             <div class="social">
-              <a href="https://www.facebook.com">
+              <a
+                href="https://www.facebook.com" class="focus_white"
+                aria-label="Press to go to Payapi Facebook"
+              >
                 <div class="facebookLogo"></div>
               </a>
-              <a href="http://x.com">
+              <a href="http://x.com" aria-label="Press to go to Payapi Twitter" class="focus_white">
                 <div class="twitterLogo"></div>
               </a>
-              <a href="http://www.linkedin.com">
+              <a
+                href="http://www.linkedin.com" class="focus_white"
+                aria-label="Press to go to Payapi LinkedIn"
+              >
                 <div class="linkedinLogo"></div>
               </a>
             </div>

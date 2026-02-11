@@ -16,39 +16,52 @@
         <img
           class="header-circle"
           src="../assets/shared/desktop/bg-pattern-circle.svg"
-          alt="background circle"
+          alt=""
         />
         <div class="container_header">
           <div class="logo-wrapper">
-            <a href="../index.html">
-              <img src="../assets/shared/desktop/logo.svg" alt="payapi logo" />
+            <a href="../index.html" class="focus">
+              <img
+                src="../assets/shared/desktop/logo.svg"
+                alt="Payapi logo, press to go back to index page"
+              />
             </a>
           </div>
-          <img
+          <button
             class="hamburgerMenuClosed"
             onclick="openNav()"
-            src="../assets/shared/mobile/menu.svg"
-            alt="hamburger menu logo open"
-          />
-          <div id="myNavHeader" class="nav-header">
-            <img
+            aria-label="Open navigation bar"
+            aria-expanded="false"
+            aria-controls="myNavHeader"
+          >
+            <img src="../assets/shared/mobile/menu.svg" alt="" />
+          </button>
+
+          <div id="myNavHeader" class="nav-header" hidden tabindex="-1">
+            <button
               class="hamburgerMenuOpen"
               onclick="closeNav()"
-              src="../assets/shared/mobile/close.svg"
-              alt="hamburger menu logo closed"
-            />
+              aria-label="Close navigation bar"
+            >
+              <img src="../assets/shared/mobile/close.svg" alt="" />
+            </button>
+
             <div class="nav-left">
               <nav class="nav-links textColorSanJuanBlue">
                 <ul>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li>
+                    <a href="../pages/pricing.html" class="focus">Pricing</a>
+                  </li>
+                  <li><a href="../pages/about.html" class="focus">About</a></li>
+                  <li>
+                    <a href="../pages/contact.html" class="focus">Contact</a>
+                  </li>
                 </ul>
               </nav>
             </div>
 
             <div class="nav-right">
-              <button class="btn-prime">Schedule a Demo</button>
+              <button class="btn-prime focus">Schedule a Demo</button>
             </div>
           </div>
         </div>
@@ -93,7 +106,7 @@
 
           <!-- Tablet: ekranas tarp 375px ir 1439px -->
           <source
-            media="(min-width:768px) and (max-width:1023px)"
+            media="(min-width:768px) and (max-width:1439.98px)"
             srcset="../assets/about/tablet/image-team-members.jpg"
           />
 
@@ -145,7 +158,10 @@
               </p>
             </article>
 
-            <article class="container_about-us-article-people" id="about-us-people">
+            <article
+              class="container_about-us-article-people"
+              id="about-us-people"
+            >
               <h3 class="h3-lg" id="about-us-people-header">The People</h3>
               <p class="body" id="about-us-people-text">
                 We're all passionate about building a more efficient and
@@ -165,10 +181,10 @@
                 <input
                   id="cta_home_cta_input"
                   type="email"
-                  class="cta-input"
+                  class="cta-input focus"
                   placeholder="Enter email address"
                 />
-                <button id="cta_home_cta_btn" class="btn-prime">
+                <button id="cta_home_cta_btn" class="btn-prime focus">
                   Schedule a Demo
                 </button>
               </div>
@@ -179,33 +195,50 @@
       </main>
 
       <footer>
-        <img
-          src="../assets/shared/desktop/bg-pattern-circle.svg"
-          alt="background circle"
-        />
+        <img src="../assets/shared/desktop/bg-pattern-circle.svg" alt="" />
         <div class="container_footer">
           <div class="logo-wrapper logoColorLinkWaterWhite">
-            <a href="../index.html" class="payapiLogo"></a>
+            <a
+              href="../index.html"
+              class="payapiLogo"
+              aria-label="Payapi logo, press to go back to index page"
+            ></a>
           </div>
           <div class="nav-footer">
             <div class="nav-left">
               <nav class="nav-links textColorLinkWaterWhite">
                 <ul>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li>
+                    <a href="pricing.html" class="focus_white">Pricing</a>
+                  </li>
+                  <li><a href="about.html" class="focus_white">About</a></li>
+                  <li>
+                    <a href="contact.html" class="focus_white">Contact</a>
+                  </li>
                 </ul>
               </nav>
             </div>
 
             <div class="social">
-              <a href="https://www.facebook.com">
+              <a
+                href="https://www.facebook.com"
+                class="focus_white"
+                aria-label="Press to go to Payapi Facebook"
+              >
                 <div class="facebookLogo"></div>
               </a>
-              <a href="http://x.com">
+              <a
+                href="http://x.com"
+                aria-label="Press to go to Payapi Twitter"
+                class="focus_white"
+              >
                 <div class="twitterLogo"></div>
               </a>
-              <a href="http://www.linkedin.com">
+              <a
+                href="http://www.linkedin.com"
+                class="focus_white"
+                aria-label="Press to go to Payapi LinkedIn"
+              >
                 <div class="linkedinLogo"></div>
               </a>
             </div>

@@ -158,13 +158,18 @@ main > .h1-sm {
 
 /* ============= TRUST SIGNALS =============== */
 .team-photo {
-  margin: 0;
-  padding: 0;
-  height: 0px;
+  display: block;
+  width: min(100vw, 1440px);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: max(-50vw, -720px);
+  margin-right: max(-50vw, -720px);
 }
 .team-photo img {
   display: block;
-  margin-inline: -165px;
+  width: 100%;
+  height: auto;
   margin-bottom: 72px;
 }
 
@@ -183,7 +188,6 @@ main > .h1-sm {
 .body2 {
   font-family: var(--font-family-body);
   color: var(--sec-san-juan-blue);
-  /* font-size: var(--text-body2-size); */
   font-size: 15px;
   opacity: var(--text-body2-opacity);
   letter-spacing: 0px;
@@ -243,7 +247,6 @@ main > .h1-sm {
 /* ============= TRUST SIGNALS MEDIA =============== */
 @media (max-width: 767px) {
   .team-photo img {
-    margin-inline: -24px;
     margin-bottom: 48px;
   }
   .trust-circle {
@@ -280,7 +283,6 @@ main > .h1-sm {
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .team-photo img {
-    margin-inline: -97px;
     margin-bottom: 64px;
   }
   .stats-grid {
@@ -315,7 +317,7 @@ main > .h1-sm {
 
 @media (min-width: 768px) and (max-width: 1439px) {
   #about-us-people-header {
-   width: 230.67px;
+    width: 230.67px;
   }
 
   #about-us-people-text {
@@ -341,8 +343,8 @@ main > .h1-sm {
   }
 
   #about-us-people-text {
-     width: 327px;
-     margin-top: -5px;
-     margin-bottom: 40px;  
+    width: 327px;
+    margin-top: -5px;
+    margin-bottom: 40px;
   }
 }

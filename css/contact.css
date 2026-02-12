@@ -105,14 +105,16 @@
   border: none;
   border-bottom: 1px solid rgba(54, 83, 107, 0.5);
   outline: none;
-  padding: 23px 0px 21px 20px;
+  padding: 11px 0px 24px 20px;
+  margin: 12px 0 0 0;
   resize: none;
   width: 445px;
-  height: 66px;
+  /* height: 66px; */
 }
 .form-group textarea {
-  height: 113px;
-  padding-top: 25px;
+  /* height: 113px; */
+  padding-top: 13px;
+  padding-bottom: 32px;
 }
 
 .form-group:nth-child(5) {
@@ -208,7 +210,6 @@
   }
   .form-group input,
   .form-group textarea {
-    padding: 24px 0px 22px 20px;
     width: 327px;
   }
   .btn-submit {

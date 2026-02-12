@@ -25,6 +25,7 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
     nav.style.width = "300px";
     nav.hidden = false;
     document.body.classList.add("menu-active");
+    document.body.style.overflow = "hidden";
 
     // z-index, kai menu open:
     headerCircle.style.zIndex = openZ.circle;
@@ -35,39 +36,42 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
 
     // Fokusas
     nav.focus();
-    hamburgerClosed.setAttribute("aria-expanded", "true")
+    hamburgerClosed.setAttribute("aria-expanded", "true");
   };
 
   const closeMenu = () => {
     nav.style.width = "0";
+    document.body.style.overflow = "";
 
     setTimeout(() => {
       document.body.classList.remove("menu-active");
 
-    headerCircle.style.zIndex = defaultZ.circle;
-    nav.style.zIndex = defaultZ.background;
-    navLinks.style.zIndex = defaultZ.links;
-    hamburgerClosed.style.zIndex = defaultZ.burger;
-    hamburgerOpen.style.zIndex = defaultZ.burger;
+      headerCircle.style.zIndex = defaultZ.circle;
+      nav.style.zIndex = defaultZ.background;
+      navLinks.style.zIndex = defaultZ.links;
+      hamburgerClosed.style.zIndex = defaultZ.burger;
+      hamburgerOpen.style.zIndex = defaultZ.burger;
 
-    nav.hidden = true;
-    hamburgerClosed.setAttribute("aria-expanded", "false");
-    hamburgerClosed.focus();
-  }, 300);
-};
+      nav.hidden = true;
+      hamburgerClosed.setAttribute("aria-expanded", "false");
+      hamburgerClosed.focus();
+    }, 300);
+  };
 
   hamburgerClosed.addEventListener("click", openMenu);
   hamburgerOpen.addEventListener("click", closeMenu);
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 767) closeMenu();
-  });
-
-document.addEventListener("keydown", (x) => {
-  if (x.key === "Escape" && !nav.hidden) {
+  if (window.innerWidth > 767 && !nav.hidden) {
     closeMenu();
   }
 });
+
+  document.addEventListener("keydown", (x) => {
+    if (x.key === "Escape" && !nav.hidden) {
+      closeMenu();
+    }
+  });
 }
 
 /* ============= INPUT VALIDATION =============== */
@@ -75,22 +79,39 @@ document.addEventListener("keydown", (x) => {
 
 const form = document.getElementById("contact-form");
 
+//first input field with error, used for both contact and cta forms
+let firstErrorField = "";
+
 const fieldInvalid = (element, elementErr) => {
   const errColor = "#FF000080";
+  //input field is colored red only if something wrong is entered
   if (element.value !== "") {
     element.style.color = errColor;
   }
-  element.style.borderColor = errColor;
 
-  // elementErr.style.marginBottom = "-12px";
+  element.style.borderColor = errColor;
+  elementErr.style.marginBottom = "-12px";
+
+  //first field with error message is set if there is none yet, this is later used for focus() command
+  if (firstErrorField === "") {
+    firstErrorField = element;
+  }
+
+  //aria-describedby is created and connected to error element
+  element.setAttribute("aria-describedby", elementErr.id);
 };
 
 const disableDefaultAlerts = (formElement) => {
   formElement.noValidate = true;
 };
 
+const resetErrorFields = (error) => {
+  error.textContent = "";
+};
+
 const validateForm = (e) => {
   e.preventDefault();
+
   const name = document.getElementById("form_input_name");
   const email = document.getElementById("form_input_email");
   const company = document.getElementById("form_input_company");
@@ -103,14 +124,18 @@ const validateForm = (e) => {
   const titleErr = document.getElementById("form_input_title-error");
   const messageErr = document.getElementById("form_input_message-error");
 
-  nameErr.textContent = "";
-  emailErr.textContent = "";
-  companyErr.textContent = "";
-  titleErr.textContent = "";
-  messageErr.textContent = "";
+  //reset textContent of error fields
+  resetErrorFields(nameErr);
+  resetErrorFields(emailErr);
+  resetErrorFields(companyErr);
+  resetErrorFields(titleErr);
+  resetErrorFields(messageErr);
+
+  firstErrorField = "";
 
   let isValid = true;
 
+  //element array used for full reset after successfull form submit
   const elementArray = [
     name,
     nameErr,
@@ -124,22 +149,30 @@ const validateForm = (e) => {
     messageErr,
   ];
 
+  //function used for full reset after successfull form submit
   const resetFieldValues = () => {
     elementArray.forEach((element) => {
       element.value = "";
     });
   };
 
+  //function that removes color, bordercolor and margin style elements from all array fields
   const resetFieldColors = () => {
     elementArray.forEach((element) => {
       element.removeAttribute("style");
     });
   };
+
   resetFieldColors();
+
+  //regex that requires at least two words foor full name, limited to 50 symbols
   const nameRegex =
     /^(?=[^ ]+ +[^ ]+)(?=.{1,50}$)[a-zA-Zà-ÿÀ-ß]+(?: [a-zA-Zà-ÿÀ-ß]+)*$/;
+
+  //regex that prevents use of listed symbols
   const nameNotAllowedRegex = /[0-9_!@#$%^&*()=+[\]{};:"\\|,.<>/?~`]/;
 
+  //checking Full Name field
   switch (true) {
     case name.value === "":
       nameErr.textContent = "This field can't be empty";
@@ -152,7 +185,8 @@ const validateForm = (e) => {
       isValid = false;
       break;
     case !nameRegex.test(name.value):
-      nameErr.textContent = "Please write your full name";
+      nameErr.textContent =
+        "Please write your full name. It must be two or more words.";
       fieldInvalid(name, nameErr);
       isValid = false;
       break;
@@ -195,12 +229,14 @@ const validateForm = (e) => {
     isValid = false;
   }
 
+  //final evaluation if form is valid
   if (isValid) {
-    alert("Form submitted successfully!");
     resetFieldValues();
-    return true;
+    return confirm("Do you really want to submit the form?");
   } else {
-    return false;
+    alert("Please correct the errors in the form!");
+    firstErrorField.focus();
+    return true;
   }
 };
 
@@ -265,6 +301,7 @@ const validateScheduleDemoInput = (buttonId) => {
       }
     });
   };
+
   const validateInput = (inputId, errId) => {
     const email = document.getElementById(inputId);
     const emailErr = document.getElementById(errId);
@@ -273,6 +310,7 @@ const validateScheduleDemoInput = (buttonId) => {
     const emailRegex = /^([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})$/;
 
     resetDemoInputErrors(demoIdArray);
+    firstErrorField = "";
 
     let isValid = true;
     switch (true) {
@@ -287,9 +325,15 @@ const validateScheduleDemoInput = (buttonId) => {
         isValid = false;
         break;
     }
+    
+    //final evaluation if form is valid
     if (isValid) {
-      alert("Form submitted successfully!");
       resetDemoInputValues(demoIdArray);
+      return confirm("Do you really want to submit the form?");
+    } else {
+      alert("Please correct the errors in the form!");
+      firstErrorField.focus();
+      return true;
     }
   };
 

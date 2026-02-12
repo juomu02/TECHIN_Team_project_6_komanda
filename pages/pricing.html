@@ -25,10 +25,15 @@
         />
         <div class="container_header">
           <div class="logo-wrapper">
-            <a href="../index.html" class="focus">
+            <a
+              href="../index.html"
+              class="focus"
+              aria-label="Payapi logo, press to go back to home page"
+            >
               <img
                 src="../assets/shared/desktop/logo.svg"
-                alt="Payapi logo, press to go back to index page"
+                alt=""
+                class="focus"
               />
             </a>
           </div>
@@ -42,7 +47,7 @@
             <img src="../assets/shared/mobile/menu.svg" alt="" />
           </button>
 
-          <div id="myNavHeader" class="nav-header" hidden tabindex="-1">
+          <div id="myNavHeader" class="nav-header" hidden>
             <button
               class="hamburgerMenuOpen"
               onclick="closeNav()"
@@ -54,9 +59,13 @@
             <div class="nav-left">
               <nav class="nav-links textColorSanJuanBlue">
                 <ul>
-                  <li><a href="../pages/pricing.html" class="focus">Pricing</a></li>
+                  <li>
+                    <a href="../pages/pricing.html" class="focus">Pricing</a>
+                  </li>
                   <li><a href="../pages/about.html" class="focus">About</a></li>
-                  <li><a href="../pages/contact.html" class="focus">Contact</a></li>
+                  <li>
+                    <a href="../pages/contact.html" class="focus">Contact</a>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -233,13 +242,16 @@
                   type="email"
                   class="cta-input focus"
                   placeholder="Enter email address"
-                  aria-label="Enter Email Address"
                 />
                 <button id="cta_pricing_cta_btn" class="btn-prime focus">
                   Schedule a Demo
                 </button>
               </div>
-              <div id="cta_pricing_cta_err" class="alert-demo"></div>
+              <div
+                id="cta_pricing_cta_err"
+                class="alert-demo"
+                aria-hidden="true"
+              ></div>
             </div>
           </div>
         </section>
@@ -252,32 +264,42 @@
             <a
               href="../index.html"
               class="payapiLogo"
-              aria-label="Payapi logo, press to go back to index page"
+              aria-label="Payapi logo, press to go back to home page"
             ></a>
           </div>
           <div class="nav-footer">
             <div class="nav-left">
               <nav class="nav-links textColorLinkWaterWhite">
                 <ul>
-                  <li><a href="pricing.html" class="focus_white">Pricing</a></li>
+                  <li>
+                    <a href="pricing.html" class="focus_white">Pricing</a>
+                  </li>
                   <li><a href="about.html" class="focus_white">About</a></li>
-                  <li><a href="contact.html" class="focus_white">Contact</a></li>
+                  <li>
+                    <a href="contact.html" class="focus_white">Contact</a>
+                  </li>
                 </ul>
               </nav>
             </div>
 
             <div class="social">
               <a
-                href="https://www.facebook.com" class="focus_white"
+                href="https://www.facebook.com"
+                class="focus_white"
                 aria-label="Press to go to Payapi Facebook"
               >
                 <div class="facebookLogo"></div>
               </a>
-              <a href="http://x.com" class="focus_white" aria-label="Press to go to Payapi Twitter">
+              <a
+                href="http://x.com"
+                class="focus_white"
+                aria-label="Press to go to Payapi Twitter"
+              >
                 <div class="twitterLogo"></div>
               </a>
               <a
-                href="http://www.linkedin.com" class="focus_white"
+                href="http://www.linkedin.com"
+                class="focus_white"
                 aria-label="Press to go to Payapi LinkedIn"
               >
                 <div class="linkedinLogo"></div>

@@ -25,11 +25,12 @@
         />
         <div class="container_header">
           <div class="logo-wrapper">
-            <a href="../index.html" class="focus">
-              <img
-                src="../assets/shared/desktop/logo.svg"
-                alt="Payapi logo, press to go back to index page"
-              />
+            <a
+              href="../index.html"
+              class="focus"
+              aria-label="Payapi logo, press to go back to home page"
+            >
+              <img src="../assets/shared/desktop/logo.svg" alt="" />
             </a>
           </div>
           <button
@@ -42,7 +43,7 @@
             <img src="../assets/shared/mobile/menu.svg" alt="" />
           </button>
 
-          <div id="myNavHeader" class="nav-header" hidden tabindex="-1">
+          <div id="myNavHeader" class="nav-header" hidden>
             <button
               class="hamburgerMenuOpen"
               onclick="closeNav()"
@@ -54,9 +55,13 @@
             <div class="nav-left">
               <nav class="nav-links textColorSanJuanBlue">
                 <ul>
-                  <li><a href="../pages/pricing.html" class="focus">Pricing</a></li>
+                  <li>
+                    <a href="../pages/pricing.html" class="focus">Pricing</a>
+                  </li>
                   <li><a href="../pages/about.html" class="focus">About</a></li>
-                  <li><a href="../pages/contact.html" class="focus">Contact</a></li>
+                  <li>
+                    <a href="../pages/contact.html" class="focus">Contact</a>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -66,7 +71,6 @@
             </div>
           </div>
         </div>
-      </header>
       </header>
 
       <main>
@@ -84,45 +88,83 @@
           >
             <div class="contact-form_container">
               <div class="form-group">
-                <input id="form_input_name" type="text" placeholder="Name" class="form-input focus"/>
-                <div id="form_input_name-error" class="alert"></div>
+                <input
+                  id="form_input_name"
+                  type="text"
+                  placeholder="Full Name"
+                  class="form-input focus"
+                  required
+                />
+                <div
+                  id="form_input_name-error"
+                  class="alert"
+                  aria-hidden="true"
+                ></div>
               </div>
 
               <div class="form-group">
                 <input
                   id="form_input_email"
                   type="email"
-                  placeholder="Email Address" class="form-input focus"
+                  placeholder="Email Address"
+                  class="form-input focus"
+                  required
                 />
-                <div id="form_input_email-error" class="alert"></div>
+                <div
+                  id="form_input_email-error"
+                  class="alert"
+                  aria-hidden="true"
+                ></div>
               </div>
 
               <div class="form-group">
                 <input
                   id="form_input_company"
                   type="text"
-                  placeholder="Company Name" class="form-input focus"
+                  placeholder="Company Name"
+                  class="form-input focus"
+                  required
                 />
-                <div id="form_input_company-error" class="alert"></div>
+                <div
+                  id="form_input_company-error"
+                  class="alert"
+                  aria-hidden="true"
+                ></div>
               </div>
 
               <div class="form-group">
-                <input id="form_input_title" type="text" placeholder="Title" class="form-input focus"/>
-                <div id="form_input_title-error" class="alert"></div>
+                <input
+                  id="form_input_title"
+                  type="text"
+                  placeholder="Title"
+                  class="form-input focus"
+                  required
+                />
+                <div
+                  id="form_input_title-error"
+                  class="alert"
+                  aria-hidden="true"
+                ></div>
               </div>
 
               <div class="form-group">
                 <textarea
                   id="form_input_message"
                   placeholder="Message"
-                  rows="3" class="form-input focus"
+                  rows="3"
+                  class="form-input focus"
+                  required
                 ></textarea>
-                <div id="form_input_message-error" class="alert"></div>
+                <div
+                  id="form_input_message-error"
+                  class="alert"
+                  aria-hidden="true"
+                ></div>
               </div>
 
               <div class="checkbox-group">
                 <div class="checkbox-background">
-                  <input type="checkbox" id="request_help" class="focus"/>
+                  <input type="checkbox" id="request_help" class="focus" />
                 </div>
                 <label for="request_help" class="body">
                   Stay up-to-date with company announcements and updates to our
@@ -139,18 +181,27 @@
               Join the thousands of innovators already building with us
             </h4>
             <div class="sponsors-grid">
-              <img src="../assets/shared/desktop/tesla.svg" alt="Tesla" />
+              <img src="../assets/shared/desktop/tesla.svg" alt="Tesla logo" />
               <img
                 src="../assets/shared/desktop/microsoft.svg"
-                alt="Microsoft"
+                alt="Microsoft logo"
               />
               <img
                 src="../assets/shared/desktop/hewlett-packard.svg"
-                alt="Hewlett Packard"
+                alt="Hewlett Packard logo"
               />
-              <img src="../assets/shared/desktop/oracle(2).png" alt="Oracle" />
-              <img src="../assets/shared/desktop/google.svg" alt="Google" />
-              <img src="../assets/shared/desktop/nvidia.svg" alt="Nvidia" />
+              <img
+                src="../assets/shared/desktop/oracle(2).png"
+                alt="Oracle logo"
+              />
+              <img
+                src="../assets/shared/desktop/google.svg"
+                alt="Google logo"
+              />
+              <img
+                src="../assets/shared/desktop/nvidia.svg"
+                alt="Nvidia logo"
+              />
             </div>
           </div>
         </section>
@@ -171,7 +222,11 @@
                   Schedule a Demo
                 </button>
               </div>
-              <div id="cta_contact_cta_err" class="alert-demo"></div>
+              <div
+                id="cta_contact_cta_err"
+                class="alert-demo"
+                aria-hidden="true"
+              ></div>
             </div>
           </div>
         </section>
@@ -184,32 +239,42 @@
             <a
               href="../index.html"
               class="payapiLogo"
-              aria-label="Payapi logo, press to go back to index page"
+              aria-label="Payapi logo, press to go back to home page"
             ></a>
           </div>
           <div class="nav-footer">
             <div class="nav-left">
               <nav class="nav-links textColorLinkWaterWhite">
                 <ul>
-                  <li><a href="pricing.html" class="focus_white">Pricing</a></li>
+                  <li>
+                    <a href="pricing.html" class="focus_white">Pricing</a>
+                  </li>
                   <li><a href="about.html" class="focus_white">About</a></li>
-                  <li><a href="contact.html" class="focus_white">Contact</a></li>
+                  <li>
+                    <a href="contact.html" class="focus_white">Contact</a>
+                  </li>
                 </ul>
               </nav>
             </div>
- 
+
             <div class="social">
               <a
-                href="https://www.facebook.com" class="focus_white"
+                href="https://www.facebook.com"
+                class="focus_white"
                 aria-label="Press to go to Payapi Facebook"
               >
                 <div class="facebookLogo"></div>
               </a>
-              <a href="http://x.com" class="focus_white" aria-label="Press to go to Payapi Twitter">
+              <a
+                href="http://x.com"
+                class="focus_white"
+                aria-label="Press to go to Payapi Twitter"
+              >
                 <div class="twitterLogo"></div>
               </a>
               <a
-                href="http://www.linkedin.com" class="focus_white"
+                href="http://www.linkedin.com"
+                class="focus_white"
                 aria-label="Press to go to Payapi LinkedIn"
               >
                 <div class="linkedinLogo"></div>

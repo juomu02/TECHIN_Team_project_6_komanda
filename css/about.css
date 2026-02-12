@@ -293,6 +293,7 @@ main > .h1-sm {
   }
   .stats {
     margin-inline: -57px;
+    margin-bottom: 60px;
   }
 }
 /* ============= SECOND PARAGRAPH =============== */
@@ -310,42 +311,58 @@ main > .h1-sm {
   line-height: var(--text-body-line);
   margin: 0 0 58px 0; /*does not match adobe, but match design spacing*/
   font-weight: 100;
-  /*letter-spacing: var(--text-body-letter-spacing);*/
 }
 
+/* ============= SECOND PARAGRAPH MEDIA =============== */
 /* TABLET */
 
 @media (min-width: 768px) and (max-width: 1439px) {
-  #about-us-people-header {
-    width: 230.67px;
-  }
-
-  #about-us-people-text {
-    width: 461.33px;
-  }
-
   .container_about-us-article-people {
-    margin-bottom: -15px;
+    display: flex;
+  }
+
+  #about-us-culture-text {
+    letter-spacing: -0.05px;
+  }
+
+  .container_about-us-article-people .body {
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto 63px;
+    letter-spacing: var(--text-h3-sm-letter-spacing);
+    transform: translate(2px, 0px);
+  }
+
+  #about-us-2nd-para-cont {
+    margin-bottom: 23px;
   }
 }
 
 /* MOBILE */
-
 @media (max-width: 767px) {
   .container_about-us-article-people {
-    margin-top: -2.5px;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0px;
   }
 
-  #about-us-people-header {
-    margin-bottom: 10px;
+  #about-us-culture {
+    margin-top: -12px;
   }
 
-  #about-us-people-text {
-    width: 327px;
-    margin-top: -5px;
-    margin-bottom: 40px;
+  #about-us-people {
+    margin-top: 0.4px;
+  }
+
+#about-us-2nd-para-cont {
+    margin-top: 50px;
+  }
+
+  .container_about-us-article-people .body {
+    width: 100%;
+    max-width: 630px;
+    margin: 5px auto 36px;
+    letter-spacing: var(--text-body-letter-spacing);
+    transform: translate(2px, 0px);
   }
 }

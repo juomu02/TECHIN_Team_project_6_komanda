@@ -20,11 +20,12 @@
         />
         <div class="container_header">
           <div class="logo-wrapper">
-            <a href="../index.html" class="focus">
-              <img
-                src="../assets/shared/desktop/logo.svg"
-                alt="Payapi logo, press to go back to index page"
-              />
+            <a
+              href="../index.html"
+              class="focus"
+              aria-label="Payapi logo, press to go back to home page"
+            >
+              <img src="../assets/shared/desktop/logo.svg" alt="" />
             </a>
           </div>
           <button
@@ -49,9 +50,13 @@
             <div class="nav-left">
               <nav class="nav-links textColorSanJuanBlue">
                 <ul>
-                  <li><a href="../pages/pricing.html" class="focus">Pricing</a></li>
+                  <li>
+                    <a href="../pages/pricing.html" class="focus">Pricing</a>
+                  </li>
                   <li><a href="../pages/about.html" class="focus">About</a></li>
-                  <li><a href="../pages/contact.html" class="focus">Contact</a></li>
+                  <li>
+                    <a href="../pages/contact.html" class="focus">Contact</a>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -96,20 +101,20 @@
         <picture class="team-photo">
           <!-- Desktop: ekranas ≥ 1440px -->
           <source
-            media="(min-width:1440px)"
+            media="(min-width:769px)"
             srcset="../assets/about/desktop/image-team-members.jpg"
           />
 
           <!-- Tablet: ekranas tarp 375px ir 1439px -->
           <source
-            media="(min-width:768px) and (max-width:1439.98px)"
+            media="(min-width:376px) and (max-width:1439.98px)"
             srcset="../assets/about/tablet/image-team-members.jpg"
           />
 
           <!-- Mobile: ekranas < 375px -->
           <img
             src="../assets/about/mobile/image-team-members.jpg"
-            alt="Team photo"
+            alt="Team photo" aria-hidden="true"
           />
         </picture>
 
@@ -126,17 +131,17 @@
           <div class="stats-grid">
             <div class="stat">
               <p class="body2">Team Members</p>
-              <h1 class="h1-sm">300+</h1>
+              <div class="h1-sm">300+</div>
             </div>
 
             <div class="stat">
               <p class="body2">Offices in the US</p>
-              <h1 class="h1-sm">3</h1>
+              <div class="h1-sm">3</div>
             </div>
 
             <div class="stat">
               <p class="body2">Transactions analyzed</p>
-              <h1 class="h1-sm">10M+</h1>
+              <div class="h1-sm">10M+</div>
             </div>
           </div>
         </section>
@@ -172,16 +177,20 @@
             <div class="container_cta-wrapper">
               <div class="cta-form">
                 <input
-                  id="cta_home_cta_input"
+                  id="cta_about_cta_input"
                   type="email"
                   class="cta-input focus"
                   placeholder="Enter email address"
                 />
-                <button id="cta_home_cta_btn" class="btn-prime focus">
+                <button id="cta_about_cta_btn" class="btn-prime focus">
                   Schedule a Demo
                 </button>
               </div>
-              <div id="cta_home_cta_err" class="alert-demo"></div>
+              <div
+                id="cta_about_cta_err"
+                class="alert-demo"
+                aria-hidden="true"
+              ></div>
             </div>
           </div>
         </section>
@@ -194,32 +203,42 @@
             <a
               href="../index.html"
               class="payapiLogo"
-              aria-label="Payapi logo, press to go back to index page"
+              aria-label="Payapi logo, press to go back to home page"
             ></a>
           </div>
           <div class="nav-footer">
             <div class="nav-left">
               <nav class="nav-links textColorLinkWaterWhite">
                 <ul>
-                  <li><a href="pricing.html" class="focus_white">Pricing</a></li>
+                  <li>
+                    <a href="pricing.html" class="focus_white">Pricing</a>
+                  </li>
                   <li><a href="about.html" class="focus_white">About</a></li>
-                  <li><a href="contact.html" class="focus_white">Contact</a></li>
+                  <li>
+                    <a href="contact.html" class="focus_white">Contact</a>
+                  </li>
                 </ul>
               </nav>
             </div>
 
             <div class="social">
               <a
-                href="https://www.facebook.com" class="focus_white"
+                href="https://www.facebook.com"
+                class="focus_white"
                 aria-label="Press to go to Payapi Facebook"
               >
                 <div class="facebookLogo"></div>
               </a>
-              <a href="http://x.com" aria-label="Press to go to Payapi Twitter" class="focus_white">
+              <a
+                href="http://x.com"
+                aria-label="Press to go to Payapi Twitter"
+                class="focus_white"
+              >
                 <div class="twitterLogo"></div>
               </a>
               <a
-                href="http://www.linkedin.com" class="focus_white"
+                href="http://www.linkedin.com"
+                class="focus_white"
                 aria-label="Press to go to Payapi LinkedIn"
               >
                 <div class="linkedinLogo"></div>

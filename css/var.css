@@ -239,7 +239,6 @@ header {
     outline: none;
     border: none;
     background-color: transparent;
-    
   }
   .hamburgerMenuOpen {
     display: none;
@@ -265,10 +264,10 @@ header {
     z-index: 1;
     top: 0;
     right: 0;
-    overflow: hidden; 
-    background-color: var(--sec-mirage-blue); 
+    overflow: hidden;
+    background-color: var(--sec-mirage-blue);
     padding-top: 47px;
-    transition: 0.3s; 
+    transition: 0.3s;
     flex-grow: 0;
   }
   .hamburgerMenuOpen {
@@ -383,10 +382,12 @@ header {
   opacity: 0.5;
   letter-spacing: -0.08px;
 }
-.alert{
-  margin-left: 20px;}
-.alert-demo{
-  margin-left: 27px;}
+.alert {
+  margin-left: 20px;
+}
+.alert-demo {
+  margin-left: 27px;
+}
 
 /*==========CALL TO ACTION FOR TABLET=========*/
 @media (min-width: 768px) and (max-width: 1439px) {

@@ -252,6 +252,9 @@ header {
   body.menu-active .hamburgerMenuOpen {
     display: block;
   }
+  [hidden] {
+    display: none !important;
+  }
   .nav-header {
     display: flex;
     flex-direction: column;
@@ -269,6 +272,16 @@ header {
     padding-top: 47px;
     transition: 0.3s;
     flex-grow: 0;
+    visibility: hidden;
+    transition:
+      0.3s,
+      visibility 0s 0.3s;
+  }
+  body.menu-active .nav-header {
+    visibility: visible;
+    transition:
+      0.3s,
+      visibility 0s 0s;
   }
   .hamburgerMenuOpen {
     align-self: flex-end;

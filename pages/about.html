@@ -20,11 +20,12 @@
         />
         <div class="container_header">
           <div class="logo-wrapper">
-            <a href="../index.html" class="focus">
-              <img
-                src="../assets/shared/desktop/logo.svg"
-                alt="Payapi logo, press to go back to index page"
-              />
+            <a
+              href="../index.html"
+              class="focus"
+              aria-label="Payapi logo, press to go back to home page"
+            >
+              <img src="../assets/shared/desktop/logo.svg" alt="" />
             </a>
           </div>
           <button
@@ -100,13 +101,13 @@
         <picture class="team-photo">
           <!-- Desktop: ekranas ≥ 1440px -->
           <source
-            media="(min-width:1440px)"
+            media="(min-width:769px)"
             srcset="../assets/about/desktop/image-team-members.jpg"
           />
 
           <!-- Tablet: ekranas tarp 375px ir 1439px -->
           <source
-            media="(min-width:768px) and (max-width:1439.98px)"
+            media="(min-width:376px) and (max-width:1439.98px)"
             srcset="../assets/about/tablet/image-team-members.jpg"
           />
 
@@ -176,16 +177,20 @@
             <div class="container_cta-wrapper">
               <div class="cta-form">
                 <input
-                  id="cta_home_cta_input"
+                  id="cta_about_cta_input"
                   type="email"
                   class="cta-input focus"
                   placeholder="Enter email address"
                 />
-                <button id="cta_home_cta_btn" class="btn-prime focus">
+                <button id="cta_about_cta_btn" class="btn-prime focus">
                   Schedule a Demo
                 </button>
               </div>
-              <div id="cta_home_cta_err" class="alert-demo"></div>
+              <div
+                id="cta_about_cta_err"
+                class="alert-demo"
+                aria-hidden="true"
+              ></div>
             </div>
           </div>
         </section>
@@ -198,7 +203,7 @@
             <a
               href="../index.html"
               class="payapiLogo"
-              aria-label="Payapi logo, press to go back to index page"
+              aria-label="Payapi logo, press to go back to home page"
             ></a>
           </div>
           <div class="nav-footer">

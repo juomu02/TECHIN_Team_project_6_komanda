@@ -62,10 +62,10 @@ if (nav && hamburgerClosed && hamburgerOpen && headerCircle && navLinks) {
   hamburgerOpen.addEventListener("click", closeMenu);
 
   window.addEventListener("resize", () => {
-  if (window.innerWidth > 767 && !nav.hidden) {
-    closeMenu();
-  }
-});
+    if (window.innerWidth > 767 && !nav.hidden) {
+      closeMenu();
+    }
+  });
 
   document.addEventListener("keydown", (x) => {
     if (x.key === "Escape" && !nav.hidden) {
@@ -325,7 +325,7 @@ const validateScheduleDemoInput = (buttonId) => {
         isValid = false;
         break;
     }
-    
+
     //final evaluation if form is valid
     if (isValid) {
       resetDemoInputValues(demoIdArray);

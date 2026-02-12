@@ -234,11 +234,11 @@
 }
 
 .btn-sec-lt {
-  display: inline-flex;          
-  justify-content: center;       
-  align-items: center;           
-  text-decoration: none;         
-  text-align: center;            
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
   background-color: var(--sec-lt-bg-normal);
   color: var(--sec-lt-font-normal);
   border: var(--sec-lt-border);
